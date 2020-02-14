@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://byteli.com/posts/helloworld/</loc>
+    <lastmod>2020-02-13T00:03:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://byteli.com/posts/</loc>
+    <lastmod>2020-02-13T00:03:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://byteli.com/</loc>
+    <lastmod>2020-02-13T00:03:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://byteli.com/about/</loc>
+    <lastmod>2020-02-12T16:32:04+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://byteli.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://byteli.com/tags/</loc>
+  </url>
+  
+</urlset>
