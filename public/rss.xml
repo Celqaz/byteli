@@ -7,23 +7,23 @@
 
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>飞越疯人院</title>
+        <title>byteli</title>
         <link>https://byteli.com/</link>
-        <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
+        <description>达达里昂的人生备份</description>
         <generator>Hugo 0.64.0 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
         
-            <managingEditor>byteli@byteli.com (达达里昂)</managingEditor>
+            <managingEditor>xwerthers@gmail.com (达达里昂)</managingEditor>
         
         
-            <webMaster>byteli@byteli.com (达达里昂)</webMaster>
+            <webMaster>xwerthers@gmail.com (达达里昂)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Fri, 14 Feb 2020 16:12:33 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 14 Feb 2020 20:56:39 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://byteli.com/rss.xml" />
         
@@ -34,7 +34,7 @@
                 <guid isPermaLink="true">https://byteli.com/posts/helloworld/</guid>
                 <pubDate>Wed, 12 Feb 2020 08:24:26 +0000</pubDate>
                 
-                    <author>byteli@byteli.com (达达里昂)</author>
+                    <author>xwerthers@gmail.com (达达里昂)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
                 
