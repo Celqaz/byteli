@@ -9,7 +9,6 @@ categories:
 - 音乐
 description: 李志个人第七张专辑。
 summary: 专辑单曲：《热河》
-draft: true
 
 ---
 秋林龙虾换了新的地方32路还是穿过挹江门。
