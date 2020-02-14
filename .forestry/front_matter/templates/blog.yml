@@ -1,0 +1,30 @@
+---
+label: blog
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- name: tags
+  type: tag_list
+  default: []
+  label: tags
+- name: categories
+  type: tag_list
+  default: []
+  label: categories
+- name: summary
+  type: text
+  config:
+    required: false
+  label: summary
+- name: description
+  type: text
+  config:
+    required: false
+  label: description
+pages:
+- content/posts/helloworld.md
