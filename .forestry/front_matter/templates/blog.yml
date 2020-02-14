@@ -26,3 +26,5 @@ fields:
   config:
     required: false
   label: description
+pages:
+- content/posts/helloworld.md
