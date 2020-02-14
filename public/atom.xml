@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">飞越疯人院</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-02-14T16:02:28+08:00</updated>
+    <updated>2020-02-14T16:12:33+08:00</updated>
     <id>https://byteli.com/</id>
     <link rel="alternate" type="text/html" href="https://byteli.com/" />
     <link rel="self" type="application/atom+xml" href="https://byteli.com/atom.xml" />
@@ -20,16 +20,17 @@
             <title type="text">Helloworld</title>
             <link rel="alternate" type="text/html" href="https://byteli.com/posts/helloworld/" />
             <id>https://byteli.com/posts/helloworld/</id>
-            <updated>2020-02-13T00:03:34+08:00</updated>
-            <published>2020-02-12T16:24:26+08:00</published>
+            <updated>2020-02-14T16:12:02+08:00</updated>
+            <published>2020-02-12T08:24:26+00:00</published>
             <author>
                     <name>达达里昂</name>
                     <uri>https://io-oi.me/</uri>
                     <email>byteli@byteli.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"><![CDATA[秋林龙虾换了新的地方32路还是穿过挹江门。]]></summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"><![CDATA[李志个人第七张专辑。]]></summary>
             
                 <content type="html"><![CDATA[<p>秋林龙虾换了新的地方32路还是穿过挹江门。</p>
+<p>高架桥拆了修了新的隧道，走来走去走不出我的盐仓桥。</p>
 ]]></content>
             
             
@@ -38,7 +39,35 @@
             
                 
                     
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/categories/%E9%9F%B3%E4%B9%90/" term="音乐" label="音乐" />
+                            
+                        
+                    
                 
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/%E7%83%AD%E6%B2%B3/" term="热河" label="热河" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/%E8%BF%99%E4%B8%AA%E4%B8%96%E7%95%8C%E4%BC%9A%E5%A5%BD%E5%90%97/" term="这个世界会好吗" label="这个世界会好吗" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/%E6%9D%8E%E5%BF%97/" term="李志" label="李志" />
+                            
+                        
                     
                 
             
