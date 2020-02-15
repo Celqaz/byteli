@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">飞越疯人院</title>
     <subtitle type="html">达达里昂的人生备份</subtitle>
-    <updated>2020-02-14T21:42:25+08:00</updated>
+    <updated>2020-02-15T18:40:25+08:00</updated>
     <id>https://byteli.com/</id>
     <link rel="alternate" type="text/html" href="https://byteli.com/" />
     <link rel="self" type="application/atom+xml" href="https://byteli.com/atom.xml" />
@@ -16,6 +16,192 @@
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.64.0">Hugo</generator>
+        <entry>
+            <title type="text">利用Hugo构建个人网站-1：前期准备</title>
+            <link rel="alternate" type="text/html" href="https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-1%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87/" />
+            <id>https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-1%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87/</id>
+            <updated>2020-02-15T18:40:03+08:00</updated>
+            <published>2020-02-15T18:36:26+08:00</published>
+            <author>
+                    <name>达达里昂</name>
+                    <uri>https://byteli.com</uri>
+                    <email>xwerthers@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"><![CDATA[这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。]]></summary>
+            
+                <content type="html"><![CDATA[<p>这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。</p>
+<p>主要的思路如下：</p>
+<ol>
+<li>Hugo——生成网页</li>
+<li>GitHub——内容中转</li>
+<li>Netlify——发布网站</li>
+<li>Forestry——内容管理</li>
+</ol>
+<h2 id="1-前期准备">1. 前期准备</h2>
+<p>在我们开始创建网站内容前，我们需要为我们的网站配置好基础的环境，它们包括Hugo、GitHub与Git，本章将具体说明如何进行配置。</p>
+<h3 id="11-hugo配置">1.1 Hugo配置</h3>
+<h4 id="111-下载安装">1.1.1 下载&amp;安装</h4>
+<p>首先下载在 <a href="https://github.com/gohugoio/hugo/releases">这里</a> 下载Hugo压缩包，每个操作系统有普通及拓展（extended）版本，这里建议选择extended版本。</p>
+<p>在这里，由于我是Windows  64位的系统，所以选择了最新的&quot;hugo_extended_0.64.1_Windows-64bit.zip&quot;安装包。</p>
+<p>下载后将Hugo解压到本地磁盘，可以是非系统盘，这里需要记住解压的位置，我们将在下一步使用。</p>
+<p>本次，我在E盘新建了一个Hugo文件夹，将压缩包中的内容解压到了&quot;E:\Hugo&quot;。</p>
+<h4 id="112-配置环境变量">1.1.2 配置环境变量</h4>
+<ol start="0">
+<li>右键点击&quot;我的电脑&quot;，点击“属性”</li>
+</ol>
+<p><img src="https://i.loli.net/2020/02/15/rMh2LDIXogBQVxc.jpg" alt="Hugo配置环境变量.jpg"></p>
+<ol>
+<li>
+<p>点击“高级系统设置”，打开“系统属性窗口”</p>
+</li>
+<li>
+<p>点击“环境变量”，打开“环境变量”窗口</p>
+</li>
+<li>
+<p>在“环境变量”中，选中“系统变量”下的“Path”选项</p>
+</li>
+<li>
+<p>点击“编辑”，打开“编辑环境变量”窗口</p>
+</li>
+<li>
+<p>在“编辑环境变量”中，点击“新建”</p>
+</li>
+<li>
+<p>输入我们解压Hugo压缩包的位置，本例，我输入了“E:\Hugo”</p>
+</li>
+<li>
+<p>输入完成后，依次点击“确定”来应用各个窗口的设置。</p>
+<p>安装完成。</p>
+</li>
+</ol>
+<h4 id="113-验证安装">1.1.3 验证安装</h4>
+<p>通过 win+R 的快捷键，调出运行栏，输入cmd，调出命令行工具。</p>
+<p><img src="https://i.loli.net/2020/02/15/OWRIxqG7AlJXjfC.png" alt="hugo验证-1.png"></p>
+<p>在命令行工具中输入：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">hugo</span> <span class="n">version</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="https://i.loli.net/2020/02/15/KvQZCOoA2EThfgV.png" alt="hugo验证-2.png"></p>
+<p>如能正确显示版本号，即表示安装成功。</p>
+<h3 id="12--github配置">1.2  GitHub配置</h3>
+<ol>
+<li>
+<p>注册全球最大的 <del>同性交友</del> 开源社区<a href="https://github.com/">GitHub</a>账号.</p>
+</li>
+<li>
+<p>登录GitHub，并在<a href="https://github.com/new">这里</a>创建新的仓库（repository），仓库类型设置为公开（public），点击create repository。</p>
+<p><img src="https://i.loli.net/2020/02/15/6IwEftmOUBuhXcR.png" alt="在GitHub中创建仓库.png"></p>
+</li>
+<li>
+<p>创建完成后，我们需要复制下这个仓库的地址信息，即图中的红色部分，在之后将要用到。</p>
+<p><img src="https://i.loli.net/2020/02/15/5FPEaLvnUCMO7dT.png" alt="完成仓库创建.png"></p>
+</li>
+</ol>
+<h3 id="13--git配置">1.3  Git配置</h3>
+<p>Git是目前世界上最先进的分布式版本控制系统，我们安装Git，是为了将我们对本地文件的更改与GitHub进行同步，以实现对网站内容的更新。</p>
+<ol>
+<li>
+<p>Git的安装也十分简单，只需要在<a href="https://git-scm.com/downloads">官网下载</a>，并按默认选项安装即可。</p>
+<p>安装程序完成后，在cmd命令行工具中输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">git</span> <span class="p">-</span><span class="p">-</span><span class="n">version</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>出现相关版本信息，即代表安装成功。</p>
+<p><img src="https://i.loli.net/2020/02/15/9ryVIYZxfAPatMb.png" alt="git 安装成功信息.png"></p>
+</li>
+<li>
+<p>之后，我们需要在git中存储我们的GitHub账号信息，以实现同步，我们需要在命令行输入我们上一步创建GitHub时，所用的用户名及邮箱信息：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="p">-</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s">&#34;Your Name&#34;</span> <span class="c1">//输入时不需要输入&#34;&#34;，完成后回车
+</span><span class="c1"></span><span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="p">-</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="s">&#34;email@example.com&#34;</span> <span class="c1">//输入时不需要输入&#34;&#34;，完成后回车
+</span></code></pre></td></tr></table>
+</div>
+</div><p>这里，正常情况下，命令行不会有任何返回输出，这是正常的。</p>
+</li>
+</ol>
+<h3 id="14-域名申请可选">1.4 域名申请（可选）</h3>
+<p>首先需要说明，这一步对完成我们最终的目标——建立一个任何人都可以访问的网站，不是必需的。很多人可能还没有想好自己的域名，或者是还在摸索如何建站，但都没有关系，Netlify会给我们提供一个以&quot;netlify.com&quot;结尾的免费域名，足够让我们走得够远。</p>
+<p>但是，如果你在一开始就想拥有一个更特别、更好记、更利于访问的域名，我们可以在3分钟内完成这个流程。</p>
+<h4 id="141-godaddy还是万网">1.4.1 Godaddy还是万网</h4>
+<p>关于域名购买的网站，我最初选择的是Godaddy，中间有段时间管理公司网站用的万网，之后还是切回了GoDaddy。主要有以下的原因：</p>
+<ol>
+<li>国内对个人隐私的保护是个问题，起码你在GoDaddy上，不需要验证手机；</li>
+<li>避免被404支配的恐惧，不想让自己的写的东西，因为奇怪的原因就无法访问了；</li>
+<li>万网对个人博客而言太重了，繁复的后台占据了很多我从没用过的功能，然而我需要的只是配置域名；</li>
+<li>多年比较下来，Godaddy比万网的综合费用要低；</li>
+<li>如果有一天你现在的域名不想要了，GoDaddy的域名转卖服务体验也比万网要好太多了；</li>
+</ol>
+<h4 id="142-godaddy域名申请">1.4.2 Godaddy域名申请</h4>
+<p>我们接下里以GoDaddy为例，说明如何选购域名：</p>
+<ol>
+<li>
+<p>打开<a href="https://hk.godaddy.com/">GoDaddy</a>，注册账号后在首页的搜索框内，直接搜索自己想要的域名，推荐用&quot;.com&quot;结尾的域名，因为浏览器支持性很好。不过，我最近觉得&quot;.life&quot;结尾的也很cool。</p>
+</li>
+<li>
+<p>新页面会出现最新报价，如果出现的是外国货币，可以点击页面底部，选择到&quot;新加坡-简体中文&quot;，这样不仅会解决语言和货币单位的问题，还可以支持支付宝付款。如果筛选到了满意的域名，就可以加入购物车并结算。</p>
+<p><img src="https://i.loli.net/2020/02/15/2dI37ipcl4B6UkF.png" alt="godaddy  sg.png"></p>
+</li>
+<li>
+<p>付款前，GoDaddy还会安利下自家的隐私保护盾、免费建站服务和Linux虚拟主机，这些我们都不需要，取消掉后直接进入购物车就好。</p>
+</li>
+<li>
+<p>在购物车页面，确认自己的域名信息、购买年数和付款方式，国内一般用支付宝或银联卡，当然支付宝会方便很多。</p>
+</li>
+<li>
+<p>付款。然后，这个域名就属于你了。你可以说随时在你的GoDaddy页面内查看它。</p>
+<p><img src="https://i.loli.net/2020/02/15/9XlKLOYRT4x2uNc.png" alt="域名设置.png"></p>
+</li>
+</ol>
+<p>至此，我们已经完成了对Hugo、GitHub及Git的配置，我们将在下一节创建一个可以出现在浏览器中的网站。</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/blog101/" term="blog101" label="blog101" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/hugo/" term="Hugo" label="Hugo" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/%E5%BB%BA%E7%AB%99/" term="建站" label="建站" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
         <entry>
             <title type="text">Helloworld</title>
             <link rel="alternate" type="text/html" href="https://byteli.com/posts/helloworld/" />
