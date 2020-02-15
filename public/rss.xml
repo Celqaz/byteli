@@ -23,10 +23,254 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 15 Feb 2020 21:36:32 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 15 Feb 2020 22:48:51 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://byteli.com/rss.xml" />
         
+        
+            <item>
+                <title>利用Hugo构建个人网站-2：生成网页</title>
+                <link>https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-2%E7%94%9F%E6%88%90%E7%BD%91%E9%A1%B5/</link>
+                <guid isPermaLink="true">https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-2%E7%94%9F%E6%88%90%E7%BD%91%E9%A1%B5/</guid>
+                <pubDate>Sat, 15 Feb 2020 22:27:26 +0800</pubDate>
+                
+                    <author>xwerthers@gmail.com (达达里昂)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h2 id="1-生成网页配置hugo">1. 生成网页——配置Hugo</h2>
+<h3 id="11-搭建网站框架">1.1 搭建网站框架</h3>
+<h4 id="111-创建框架文件">1.1.1 创建框架文件</h4>
+<p>再一次打开cmd命令行工具，通过定位到我们此前解压Hugo的文件夹中。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">cd</span> <span class="n">e</span><span class="p">:</span> <span class="c1">//先且换到E盘
+</span><span class="c1"></span><span class="n">cd</span> <span class="n">hugo</span> <span class="c1">//再进入Hugo文件夹，此时定位于&#34;E:\Hugo&#34;
+</span></code></pre></td></tr></table>
+</div>
+</div><p>这时，通过一行语句就可以创建我们个人网站本地的初始文件，下文的&quot;byteli-local&quot;可以替换为你的网站名称。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">hugo</span> <span class="k">new</span> <span class="n">site</span> <span class="n">byteli</span><span class="p">-</span><span class="n">local</span> <span class="c1">//创建网站根目录，byteli-local可以替换为你的网站名称
+</span></code></pre></td></tr></table>
+</div>
+</div><p><img src="https://i.loli.net/2020/02/15/aTcevfpJyX2HrUj.png" alt="2.1hugo创建本地网站.png"></p>
+<p>此时，本地网站初始化成功，我们进入&quot;E:\Hugo&quot;文件夹，可以看到多了一个&quot;byteli-local&quot;的文件夹，里面即是已经创建好的网站初始文件。</p>
+<p><img src="https://i.loli.net/2020/02/15/EsBCwfcrixz9ymR.png" alt="2-2网站初始化.png"></p>
+<p>相关文件夹及文件的说明如下，其中，我们初期只需要了解content、themes和config.html三个文件的位置即可：</p>
+<table>
+<thead>
+<tr>
+<th>子目录名称</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>archetypes</td>
+<td>存放新文章默认的模板</td>
+</tr>
+<tr>
+<td>content</td>
+<td>存放所有<code>Markdown</code>格式的文章</td>
+</tr>
+<tr>
+<td>data</td>
+<td>存放数据文件</td>
+</tr>
+<tr>
+<td>layouts</td>
+<td>存放自定义的版式，可为空</td>
+</tr>
+<tr>
+<td>static</td>
+<td>存放图像、CNAME、css、js等资源，发布后该目录下所有资源将处于网页根目录</td>
+</tr>
+<tr>
+<td>themes</td>
+<td>存放下载的主题</td>
+</tr>
+<tr>
+<td>config.toml</td>
+<td><code>Hugo</code>配置文档</td>
+</tr>
+</tbody>
+</table>
+<h4 id="112-创建并编辑博文内容">1.1.2 创建并编辑博文内容</h4>
+<p>这一步的目的主要是为了之后我们可以在本地预览效果。</p>
+<h5 id="1121-创建博文文件">1.1.2.1 创建博文文件</h5>
+<p>首先，打开cmd命令行工具，进入我们的网站根目录，对我而言，即&quot;E:\Hugo\byteli&quot;。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">cd</span> <span class="n">e</span><span class="p">:</span> <span class="c1">//进入E盘
+</span><span class="c1"></span><span class="n">cd</span> <span class="n">hugo</span> <span class="c1">//再进入E盘下的Hugo文件夹
+</span><span class="c1"></span><span class="n">cd</span> <span class="n">byteli</span><span class="p">-</span><span class="n">local</span> <span class="c1">//替换为你创建的网站文件夹名称
+</span></code></pre></td></tr></table>
+</div>
+</div><p>然后在命令行工具中输入如下代码，创建两篇博文，其中包含一篇我们自定义位置的博文：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">hugo</span> <span class="k">new</span> <span class="n">about</span><span class="p">.</span><span class="n">md</span> <span class="c1">//创建一篇名称为about的文章,格式为Markdown（后缀为.md）
+</span><span class="c1"></span><span class="n">hugo</span> <span class="k">new</span> <span class="n">posts</span><span class="p">/</span><span class="n">helloworld</span><span class="p">.</span><span class="n">md</span> <span class="c1">//在posts文件夹中，创建一篇名称为helloworld的文章,格式为Markdown（后缀为.md）
+</span></code></pre></td></tr></table>
+</div>
+</div><p>命令行反馈在&quot;E:\Hugo\byteli\content&quot;目录下，创建了我们需要的文件。</p>
+<p><img src="https://i.loli.net/2020/02/15/fsYoTwqR8ikGnDd.png" alt="2-3博文创建成功.png"></p>
+<h5 id="1122-编辑博文文件">1.1.2.2 编辑博文文件</h5>
+<p>我们创建的所有文件，默认状态均是草稿（draft），所以不会在网站中展示，需要我们简单修改。</p>
+<p>上一步出现的content目录，即为我们博客文本文件首先存放的地方，它主要存放的是Markdown文件，Markdown为我们提供了可能是最简洁方便的文本编辑方法。</p>
+<p>关于Markdown的介绍和使用，可以参考<a href="https://www.runoob.com/markdown/md-tutorial.html">这里</a>。对于这类文件的编辑，我们可以选择<a href="https://typora.io/">Typora</a>这样一款轻量的Markdown文本编辑器进行编辑。</p>
+<p>我们使用Typora打开about.md文件, 将&quot;draft: true&quot;这句删去，写点内容后，我们即可保存并关闭。</p>
+<p><img src="https://i.loli.net/2020/02/15/WOelNSuUnXgYmrQ.png" alt="2-4about.png"></p>
+<p>同样的，我们打开&quot;posts&quot;文件下的&quot;helloworld.md&quot;，同样删去&quot;draft: true&quot;，写些内容后保存关闭。</p>
+<p>至此，我们就完成了网站内容的创建。</p>
+<h3 id="12-安装网站主题">1.2 安装网站主题</h3>
+<h4 id="121-主题选择">1.2.1 主题选择</h4>
+<p>你可以在<a href="https://themes.gohugo.io/">Hugo官方网站主题库</a>中选择主题，你可以点击每套主题左侧的&quot;Demo&quot;进行预览，选择自己喜欢的主题，该网站上的所有主题都是开源，可以放心使用，随意更换。</p>
+<p>这里，我选择了<a href="https://io-oi.me/">reuixiy</a>编写的<a href="https://themes.gohugo.io/hugo-theme-meme/">MemE</a>：一方面，这套主题具有丰富的拓展性，我觉得完全符合我对博客网站的需求；另一方面作者写有中文注释，对于之后希望自定义的人来说，也提供了一定方便。你可以选择自己更喜欢的主题。</p>
+<h4 id="122-主题安装">1.2.2 主题安装</h4>
+<p>每个主题下方的说明中，第一项都会说明如何安装主题，主要分为两种：</p>
+<ol>
+<li>
+<p>下载主题文件，解压到本地</p>
+<p>这个只需要到每个项目的GitHub页，下载安装包，并解压至&quot;themes/主题名称&quot;文件夹下即可，适用于由于网络原因，git传输效果太差的情况。</p>
+</li>
+<li>
+<p>git同步</p>
+<ol>
+<li>
+<p>git clone 语句</p>
+<p>这个和第一种方法类似，只是通过命令行实现会更cool一些😎，当然，是在网络好的情况下。</p>
+</li>
+<li>
+<p>git submodule add语句（推荐）</p>
+<p>这种方法会将这个主题作为一个你网站项目子模块，这样的优势在于：</p>
+<ol>
+<li>你无法上传对这些文件的更改，所以你的网站主题内部会更稳定，不会因为你的改动引发整个站点的崩溃。这里需要指出的是，在这种情况下，主题创作者都会单独提供一个独立的样式文件（通常是css文件）中，让你可以在那里打造独一无二的网站风格。这样，即使出了问题，你只需删除最近的更新，就可以安全而迅速地回退至上一个稳定版本。</li>
+<li>由于主题创作者的文件成为了你的子项目，你后期可以通过一行代码就将这个主题升级至最新版本，这种便利性对于一个开源主题是至关重要的。此时，如果你选择的是其他方法，你就需要重新下载并安装最新的主题文件。</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<p>基于上述原因，我们选择&quot;git submodule add&quot;语句来安装主题，基本上所有主题都会提供git安装语句，我们遵循作者的引导就好了，需要注意的是，我们复制并执行的是&quot;$&quot;符号之后（不含&quot;$&quot;）代码。</p>
+<p>MemE主题作者为我们提供的安装语句如下。注意，主题作者在标题处表明，hugo版本应为拓展（extened）版。</p>
+<p><img src="https://i.loli.net/2020/02/15/UM3Ym2Ol5ojakvG.png" alt="2-5theme setup.png"></p>
+<p>我们打开命令行，进入博客目录 ，输入:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">git</span> <span class="n">init</span>
+
+<span class="n">git</span> <span class="n">submodule</span> <span class="k">add</span> <span class="n">https</span><span class="p">:</span><span class="c1">//github.com/reuixiy/hugo-theme-meme.git themes/meme
+</span></code></pre></td></tr></table>
+</div>
+</div><p>这一步通常会因为网络情况比较慢，也会出现安装失败的情况，多试几次就好了，正常安装后，命令行会返回如下信息。</p>
+<p><img src="https://i.loli.net/2020/02/15/SJNIBRM14dfkaED.png" alt="2-6submoudle meme.png"></p>
+<p>此时，查看你的&quot;themes&quot;目录，下面会出现名为你所选中的主题名称的文件夹，对我而言，这个文件夹是meme。</p>
+<p><img src="https://i.loli.net/2020/02/15/WUpS1rNIoMuyfJQ.png" alt="2-7meme folder.png"></p>
+<h4 id="123-加载主题">1.2.3 加载主题</h4>
+<p>这一步，我们要让网站知道要用哪个主题。</p>
+<h5 id="1231-通用方法">1.2.3.1 通用方法</h5>
+<p>一般情况，你只需要打开博客根目录下的&quot;config.toml&quot;配置文件，添加新的一行:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">theme</span> <span class="p">=</span> <span class="s">&#34;meme&#34;</span> <span class="c1">//这里替换为你选择的主题名称
+</span></code></pre></td></tr></table>
+</div>
+</div><p>就可以让网站加载指定主题。</p>
+<p><img src="https://i.loli.net/2020/02/15/q5BwTyaWo7bGIQO.png" alt="2-8安装主题.png"></p>
+<p>你可能会注意到，这里就可以更改你网站链接的域名、网站语言、和网站名称。</p>
+<h5 id="1232-一种更好的方法">1.2.3.2 一种更好的方法</h5>
+<p>通常，主题作者会帮我们完成这一步，我们可以在主题文件夹内找到这个&quot;config.toml&quot;配置文件，我们需要做的，只是将它粘贴入网站根目录，替换掉Hugo自己生成的配置文件，然后在新文件中修改域名和网站名称就好了。</p>
+<p>对于meme这个主题而言，作者在项目介绍页直接给了我们&quot;config.toml&quot;配置文件的地址，我们只需要将它移到&quot;E:\Hugo\byteli-local&quot;目录下，替换掉原来的，遵照作者的提示，修改域名和网站名称就好了。</p>
+<p><img src="https://i.loli.net/2020/02/15/Lew8xsWaUFAtok2.png" alt="2-9meme folder.png"></p>
+<p>修改后的配置信息如下，主要就改动了两条信息，其他的自定义选项我们目前可以先跳过：</p>
+<p><img src="https://i.loli.net/2020/02/15/cDvfguOrCiptsNT.png" alt="2-10config-meme.png"></p>
+<h3 id="13-预览网站">1.3 预览网站</h3>
+<p>Finally!</p>
+<p>我们在这一步就可以在本地看到自己网站了,而Hugo让这一步变的尤其简单,打开命令行,切换到我们的博客目录,输入:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">hugo</span> <span class="n">server</span>
+</code></pre></td></tr></table>
+</div>
+</div><p><img src="https://i.loli.net/2020/02/15/JsSxd8T34EkqN6F.png" alt="2-11hugo server.png"></p>
+<p>你就会看到Hugo已经完成了对我们网站的本地部署,我们在浏览器的地址栏中输入 http://localhost:1313 ,你就看到了我们网站的样貌​ :happy:</p>
+<p><img src="https://i.loli.net/2020/02/15/WLhPve4Mu6SIj9g.png" alt="2-12localhost.png"></p>
+<p>接下来，我们按&quot;Ctrl + C&quot;停止预览，然后用hugo根据我们的预览，打包生成浏览器可以理解的各种网站文件，这个核心功能语句只有一个单词，那就是</p>
+<pre><code>hugo
+</code></pre><p><img src="https://i.loli.net/2020/02/15/Vlwh7BzFr4jpPmM.png" alt="2-13hugp.png"></p>
+<p>这个时候，你会发现我们位于博客根目录下，原本为空的&quot;public&quot;文件夹，多出了很多内容，这些，就是Hugo已经帮我们整理好的网站文件。</p>
+<p><img src="https://i.loli.net/2020/02/15/CmfbeltLI9yvnXJ.png" alt="2-14public.png"></p>
+<p>至此，我们的本地网站已经建设完毕，接下来，我们再向前迈一步，让全世界都可以访问到它吧。</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">Hugo创建个人博客指南</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/tags/blog101/">blog101</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/tags/hugo/">Hugo</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/tags/%E5%BB%BA%E7%AB%99/">建站</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>利用Hugo构建个人网站-1：前期准备</title>
@@ -184,6 +428,14 @@
                 
                 
                     
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">Hugo创建个人博客指南</category>
+                                
+                            
                         
                     
                         
