@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="zh-CN" data-theme="light">
     <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
-    <meta charset="UTF-8" /><meta name="theme-color" content="#1c1c21" />
+    <meta charset="UTF-8" /><meta name="theme-color" content="#fff" />
         <script>
             const userPrefers = localStorage.getItem('theme');
             const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
@@ -47,7 +47,7 @@
 
     <title>利用Hugo构建个人网站-1：前期准备 | 飞越疯人院</title>
 
-    <link rel="stylesheet" href="/css/meme.min.7728c9fd5eca31afa04aebd9b3460573cd5f2f76a615511f0e45f1a40e1694ea.css" integrity="sha256-dyjJ/V7KMa+gSuvZs0YFc81fL3amFVEfDkXxpA4WlOo=" data-instant-track />
+    <link rel="stylesheet" href="/css/meme.min.60f2b3249f6c1f95ef340a73727a665997d0e9e0ffef50166bc7aa3f17669bdc.css" integrity="sha256-YPKzJJ9sH5XvNApzcnpmWZfQ6eD/71AWa8eqPxdmm9w=" data-instant-track />
 
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,700,700i|Noto+Serif+SC:400,500,700|Source+Code+Pro:400,400i,700,700i&display=swap&subset=chinese-simplified" rel="stylesheet" />
 
@@ -190,7 +190,7 @@
         
             
         
-        <div id="theme-toggle" onclick="modeSwitcher()" data-hide="true">🌙</div>
+        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
     
 
             
@@ -310,10 +310,10 @@
 <p>在命令行工具中输入：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma-dark"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma-dark"><code class="language-c#" data-lang="c#"><span class="n">hugo</span> <span class="n">version</span>
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">hugo</span> <span class="n">version</span>
 </code></pre></td></tr></table>
 </div>
 </div><p><img src="https://i.loli.net/2020/02/15/KvQZCOoA2EThfgV.png" alt="hugo验证-2.png" data-zoomable></p>
@@ -340,10 +340,10 @@
 <p>安装程序完成后，在cmd命令行工具中输入</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma-dark"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma-dark"><code class="language-c#" data-lang="c#"><span class="n">git</span> <span class="p">-</span><span class="p">-</span><span class="n">version</span>
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">git</span> <span class="p">-</span><span class="p">-</span><span class="n">version</span>
 </code></pre></td></tr></table>
 </div>
 </div><p>出现相关版本信息，即代表安装成功。</p>
@@ -353,11 +353,11 @@
 <p>之后，我们需要在git中存储我们的GitHub账号信息，以实现同步，我们需要在命令行输入我们上一步创建GitHub时，所用的用户名及邮箱信息：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma-dark"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma-dark"><code class="language-c#" data-lang="c#"><span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="p">-</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s">&#34;Your Name&#34;</span> <span class="c1">//输入时不需要输入&#34;&#34;，完成后回车
+<pre class="chroma"><code class="language-c#" data-lang="c#"><span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="p">-</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">name</span> <span class="s">&#34;Your Name&#34;</span> <span class="c1">//输入时不需要输入&#34;&#34;，完成后回车
 </span><span class="c1"></span><span class="n">git</span> <span class="n">config</span> <span class="p">-</span><span class="p">-</span><span class="n">global</span> <span class="n">user</span><span class="p">.</span><span class="n">email</span> <span class="s">&#34;email@example.com&#34;</span> <span class="c1">//输入时不需要输入&#34;&#34;，完成后回车
 </span></code></pre></td></tr></table>
 </div>
@@ -445,15 +445,6 @@
     
     
     
-    
-        <ul class="post-nav">
-            
-            
-                <li class="post-nav-next">
-                    <a href="/posts/helloworld/" rel="next">Helloworld ></a>
-                </li>
-            
-        </ul>
     
 
 
