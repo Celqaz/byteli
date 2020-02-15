@@ -4,6 +4,7 @@ tags: [blog101, Hugo, 建站]
 date: 2020-02-15T18:36:26.000+08:00
 summary: "这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。</br>这一切，从本篇开始。"
 categories: ["Hugo创建个人博客指南"]
+keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub]
 ---
 
 这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。
