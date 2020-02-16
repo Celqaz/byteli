@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">飞越疯人院</title>
     <subtitle type="html">达达里昂的人生备份</subtitle>
-    <updated>2020-02-16T09:14:29+08:00</updated>
+    <updated>2020-02-16T09:56:21+08:00</updated>
     <id>https://byteli.com/</id>
     <link rel="alternate" type="text/html" href="https://byteli.com/" />
     <link rel="self" type="application/atom+xml" href="https://byteli.com/atom.xml" />
@@ -17,10 +17,150 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
     <generator uri="https://gohugo.io/" version="0.64.0">Hugo</generator>
         <entry>
+            <title type="text">利用Hugo构建个人网站-5：内容管理</title>
+            <link rel="alternate" type="text/html" href="https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/" />
+            <id>https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/</id>
+            <updated>2020-02-16T09:55:58+08:00</updated>
+            <published>2020-02-16T09:55:00+08:00</published>
+            <author>
+                    <name>达达里昂</name>
+                    <uri>https://byteli.com</uri>
+                    <email>xwerthers@gmail.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"><![CDATA[网站上线后，forestry将为我们提供简单而高效的内容管理方案。]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="1-内容管理配置forestry">1. 内容管理——配置forestry</h2>
+<p>现在，我们的网站框架已经搭设好，我们再进行最后一步设置，就可以随时编辑和发布文章了。</p>
+<h3 id="11-连接forestry与github">1.1 连接Forestry与Github</h3>
+<ol>
+<li>
+<p>访问<a href="https://forestry.io/">forestry</a>，在登录选项中，选择GitHub登录。</p>
+</li>
+<li>
+<p>登录成功后，点击&quot;Add site&quot;，并选择Hugo及最新的版本号。</p>
+<p><img src="https://i.loli.net/2020/02/16/GAJjqs2c71fr953.png" alt="1forestry添加网站-1.png"></p>
+</li>
+<li>
+<p>在&quot;git provider&quot;中，选择&quot;GitHub&quot;。之后选择我们放置网站的仓库。</p>
+<p><img src="https://i.loli.net/2020/02/16/KGjbXeEcs95VMuY.png" alt="2forestry添加网站-2.png"></p>
+</li>
+<li>
+<p>稍作等待，forestry就已经读取并同步我们的内容。我们可以新建、修改、发布文章。</p>
+<p><img src="https://i.loli.net/2020/02/16/18pUC4yMoRNJ7s3.png" alt="3forestry用户界面.png"></p>
+</li>
+</ol>
+<h3 id="12-通过front-matter进行内容管理">1.2 通过Front Matter进行内容管理</h3>
+<p>这里需要额外提醒的一点是Front matter，这个是我们博客的头文件，用于储存每篇博文的诸如：标签、分类、关键字、摘要等额外信息，既方便了我们对文章的分类及管理，又可以提升网站访问的体验。</p>
+<p>对于Meme主题，作者在主题项目页即详细列出来Meme主题支持的Front matter 字段及说明，我们可以参考。不同的主题，可能有所差异，需要我们参照项目的说明。</p>
+<p><img src="https://i.loli.net/2020/02/16/2Ieylc9oRnpPAkr.png" alt="4Meme支持的Front Matter.png"></p>
+<p>我们点击左侧侧边栏的Front matter，从已经创建的博文中，构建一个通用的模板。</p>
+<p><img src="https://i.loli.net/2020/02/16/EkZAQalGgeFzHdn.png" alt="5forestry新建Front Matter模板.png"></p>
+<p>这里，我添加了如下的字段：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>title</td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td>2</td>
+<td>date</td>
+<td>文章创建日期</td>
+</tr>
+<tr>
+<td>3</td>
+<td>tags</td>
+<td>文章标签</td>
+</tr>
+<tr>
+<td>4</td>
+<td>categories</td>
+<td>文章分类</td>
+</tr>
+<tr>
+<td>5</td>
+<td>summary</td>
+<td>文章摘要，为访客提供文章的简要信息。<br />为空则抓取文章正文的文字。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>description</td>
+<td>文章表述，主要为搜索引擎提供文章的内容信息</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://i.loli.net/2020/02/16/rQh8DSbK14iHCEG.png" alt="6我构建的Front Matter模板.png"></p>
+<h3 id="13-更新预览发布文章">1.3 更新&amp;预览&amp;发布文章</h3>
+<h4 id="131-更新">1.3.1 更新</h4>
+<p>我们点击&quot;helloworld&quot;这篇博文，应用这个模板文件。</p>
+<p><img src="https://i.loli.net/2020/02/16/C9RtGwBA2kpaJ6u.png" alt="7更改博文的Front Matter模板.png"></p>
+<p>这里注意，右上角的眼镜左侧，我们现在&quot;Draft&quot;为&quot;off&quot;，即表示我们保存后就会在网站上进行更新。</p>
+<p>如果你还不想发布，可以将模式点回&quot;On&quot;，这样&quot;Save&quot;选项就会变成&quot;Save Draft&quot;。</p>
+<p><img src="https://i.loli.net/2020/02/16/iPzATCEh3HXlIc7.png" alt="8保存编辑后的草稿文件.png"></p>
+<h4 id="132-预览">1.3.2 预览</h4>
+<p>保存草稿之后，如果我们需要即时预览的话，可以点击左侧的&quot;settings&quot;-&quot;Previews&quot;-&quot;Start Preview&quot;，当显示&quot;SERVER: READY&quot;的信息后，即表明我们的即时预览功能已经开启。</p>
+<p><img src="https://i.loli.net/2020/02/16/4GciUXfx3B1ZTzR.png" alt="9开启forestry的即时预览功能.png"></p>
+<h4 id="133-发布">1.3.3 发布</h4>
+<p>我们预览后，没有问题的话，就可以将&quot;Draft&quot;的状态设置为&quot;Off&quot;，并点击Sav，之后，forestry就会将我们的更改提交上去，我们刷新下自己的网站就能看到更新了。更新后的结果如下：</p>
+<p><img src="https://i.loli.net/2020/02/16/6Q5OznhLc4iV17E.png" alt="10网站完成.png"></p>
+<hr>
+<p>至此，我们已经完成了一个网站的创建，它包括独立的域名、安全的https、分类的页面及方便的内容管理。现在，你已经可以开始着手发布你的第一篇博文了 ✧*｡٩(ˊᗜˋ*)و✧*</p>
+<p>如果还想进一步个性化自己的网站，我们将在下一节给出两种简单有效的路径。</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/" term="Hugo创建个人博客指南" label="Hugo创建个人博客指南" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/blog101/" term="blog101" label="blog101" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/hugo/" term="Hugo" label="Hugo" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://byteli.com/tags/%E5%BB%BA%E7%AB%99/" term="建站" label="建站" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">利用Hugo构建个人网站-4：发布网站</title>
             <link rel="alternate" type="text/html" href="https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/" />
             <id>https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/</id>
-            <updated>2020-02-16T09:14:17+08:00</updated>
+            <updated>2020-02-16T09:54:46+08:00</updated>
             <published>2020-02-16T09:06:26+08:00</published>
             <author>
                     <name>达达里昂</name>
@@ -29,10 +169,10 @@
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights><summary type="html"><![CDATA[现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。]]></summary>
             
-                <content type="html"><![CDATA[<h2 id="发布网站配置netlify">发布网站——配置Netlify</h2>
-<h3 id="将网站托管于netlify">将网站托管于Netlify</h3>
+                <content type="html"><![CDATA[<h2 id="1-发布网站配置netlify">1. 发布网站——配置Netlify</h2>
+<h3 id="11-将网站托管于netlify">1.1 将网站托管于Netlify</h3>
 <p>这一步中，Netlify将会把我们的网站推向整个互联网。</p>
-<h4 id="向全球部署你的网站">向全球部署你的网站</h4>
+<h4 id="111-向全球部署你的网站">1.1.1 向全球部署你的网站</h4>
 <ol>
 <li>
 <p>注册并登录<a href="https://app.netlify.com">Netlify</a>，点击首页的&quot;New site from Git&quot;，然后在下面的页面中点击GitHub进行连接。<img src="https://i.loli.net/2020/02/16/s1erdB7iunl9IUA.png" alt="3选择仓库进行部署.png"></p>
@@ -61,7 +201,7 @@
 <p>之后选择清空缓存并重新部署网站(&quot;Clear cache and deploy site&quot;选项)，网站就部署成功了。</p>
 </li>
 </ol>
-<h4 id="配置个性化域名">配置个性化域名</h4>
+<h4 id="112-配置个性化域名">1.1.2 配置个性化域名</h4>
 <p>目前，你实际已经拥有了自己的网站，如果你对现状很满意，那么就可以直接进入第4章。如果你想让自己的免费域名更个性一些，或者在考虑使用自己购买的个性域名，并免费配置Https提升网站的安全性，那么我们将通过简单的步骤一一实现。</p>
 <ol>
 <li>
@@ -154,7 +294,7 @@
             <title type="text">利用Hugo构建个人网站-3：内容中转</title>
             <link rel="alternate" type="text/html" href="https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-3%E5%86%85%E5%AE%B9%E4%B8%AD%E8%BD%AC/" />
             <id>https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-3%E5%86%85%E5%AE%B9%E4%B8%AD%E8%BD%AC/</id>
-            <updated>2020-02-16T09:06:09+08:00</updated>
+            <updated>2020-02-16T09:26:26+08:00</updated>
             <published>2020-02-15T22:51:26+08:00</published>
             <author>
                     <name>达达里昂</name>

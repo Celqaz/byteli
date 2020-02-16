@@ -4,16 +4,16 @@ tags: [blog101, Hugo, 建站]
 date: 2020-02-16T09:06:26.000+08:00
 summary: "现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。"
 categories: ["Hugo创建个人博客指南"]
-keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub]
+keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub, https]
 ---
 
-## 发布网站——配置Netlify
+## 1. 发布网站——配置Netlify
 
-### 将网站托管于Netlify
+### 1.1 将网站托管于Netlify
 
 这一步中，Netlify将会把我们的网站推向整个互联网。
 
-#### 向全球部署你的网站
+#### 1.1.1 向全球部署你的网站
 
 1. 注册并登录[Netlify](https://app.netlify.com)，点击首页的"New site from Git"，然后在下面的页面中点击GitHub进行连接。![3选择仓库进行部署.png](https://i.loli.net/2020/02/16/s1erdB7iunl9IUA.png)
 
@@ -47,7 +47,7 @@ keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博
 
    之后选择清空缓存并重新部署网站("Clear cache and deploy site"选项)，网站就部署成功了。
 
-#### 配置个性化域名
+#### 1.1.2 配置个性化域名
 
 目前，你实际已经拥有了自己的网站，如果你对现状很满意，那么就可以直接进入第4章。如果你想让自己的免费域名更个性一些，或者在考虑使用自己购买的个性域名，并免费配置Https提升网站的安全性，那么我们将通过简单的步骤一一实现。
 
