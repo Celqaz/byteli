@@ -5,7 +5,6 @@ date: 2020-02-15T22:51:26.000+08:00
 summary: "在完成本地网站的搭建后，我们在这一步中将把GitHub作为我们的内容中转平台，用来在线上存储我们的网站内容。"
 categories: ["Hugo创建个人博客指南"]
 keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub]
-comments: true
 ---
 
 

@@ -23,10 +23,141 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
         
-        <lastBuildDate>Sat, 15 Feb 2020 23:57:02 +0800</lastBuildDate>
+        <lastBuildDate>Sun, 16 Feb 2020 09:14:29 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://byteli.com/rss.xml" />
         
+        
+            <item>
+                <title>利用Hugo构建个人网站-4：发布网站</title>
+                <link>https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/</link>
+                <guid isPermaLink="true">https://byteli.com/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/</guid>
+                <pubDate>Sun, 16 Feb 2020 09:06:26 +0800</pubDate>
+                
+                    <author>xwerthers@gmail.com (达达里昂)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</copyright>
+                
+                    <description><![CDATA[<h2 id="发布网站配置netlify">发布网站——配置Netlify</h2>
+<h3 id="将网站托管于netlify">将网站托管于Netlify</h3>
+<p>这一步中，Netlify将会把我们的网站推向整个互联网。</p>
+<h4 id="向全球部署你的网站">向全球部署你的网站</h4>
+<ol>
+<li>
+<p>注册并登录<a href="https://app.netlify.com">Netlify</a>，点击首页的&quot;New site from Git&quot;，然后在下面的页面中点击GitHub进行连接。<img src="https://i.loli.net/2020/02/16/s1erdB7iunl9IUA.png" alt="3选择仓库进行部署.png"></p>
+</li>
+<li>
+<p>选择授权Netlify的仓库，即我们的项目仓库，点击保存确认，提示&quot;Authorized&quot;即表明授权完成，我们可以进入下一步。</p>
+<p><img src="https://i.loli.net/2020/02/16/K96u57NHhprwed2.png" alt="2选择项目所在仓库.png"></p>
+</li>
+<li>
+<p>这一步 ，我们确认连接的仓库和我们此前创建的一致后，点击这个仓库名称，进入下一步。</p>
+<p><img src="https://i.loli.net/2020/02/16/ju9yUBRxJNe35Sm.png" alt="1连接GitHub与Netlify.png"></p>
+</li>
+<li>
+<p>这一步无需任何更改，点击最下方的&quot;deploy  site&quot;即可：</p>
+<p><img src="https://i.loli.net/2020/02/16/7gpCbkJQXcKd5Iz.png" alt="4部署网站.png"></p>
+</li>
+<li>
+<p>稍等片刻，Netlifty就会将我们的网站部署好，红框内即是我们的域名，点击就可以访问了。</p>
+<p>这里，如果你选择的也是Meme主题，这里可能会因为版本原因部署失败，我们马上会给出解决办法。<img src="https://i.loli.net/2020/02/16/ibxECUGAPBzh9SH.png" alt="5部署成功.png"></p>
+<p><img src="https://i.loli.net/2020/02/16/rsNRkwdDOzvu6pS.png" alt="6新网站.png"></p>
+<p>关于Meme主题提示部署失败的解决办法：</p>
+<p>我这里第一步部署时提示失败，我们可以切换到&quot;Deploy&quot;页面，查看此次报错的日志( Deploy Log)。<img src="https://i.loli.net/2020/02/16/CIQDJg5qE1tiYGv.png" alt="7查看部署日志.png">高亮的部分即首次报错的记录。我们发现，我这次选用的MEME主题，不支持Netlify默认的&quot;Hugo 0.54.0&quot;版本，该主题需要的最低版本号为&quot;Hugo 0.62.2&quot;，所以导致了失败。</p>
+<p>在 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify">Hugo关于Netlify的官方的配置说明</a> 中，我们找到了通过修改&quot;HUGO_VERSION&quot;参数，更改版本号的方法。</p>
+<p>接下来，我们只需要在设置选项中，修改这个参数即可。因为我本地的Hugo版本为&quot;0.64.0&quot;，所以我将Netlify也指定为该版本。</p>
+<p><img src="https://i.loli.net/2020/02/16/bLEaMDW32m9NYTz.png" alt="8定义Netlify运行的Hugo版本.png"></p>
+<p>之后选择清空缓存并重新部署网站(&quot;Clear cache and deploy site&quot;选项)，网站就部署成功了。</p>
+</li>
+</ol>
+<h4 id="配置个性化域名">配置个性化域名</h4>
+<p>目前，你实际已经拥有了自己的网站，如果你对现状很满意，那么就可以直接进入第4章。如果你想让自己的免费域名更个性一些，或者在考虑使用自己购买的个性域名，并免费配置Https提升网站的安全性，那么我们将通过简单的步骤一一实现。</p>
+<ol>
+<li>
+<p>配置nelify域名</p>
+<p>我们在&quot;Domain management&quot;中 ，选择系统随机给我们分配的链接，然后点击&quot;Edit site name&quot;，在弹出的页面中输入我们想要的域名开头，然后保存即可。</p>
+<p>由于你的网站用的书Netlify提供的域名，所以默认已经开启了Https访问。</p>
+<p><img src="https://i.loli.net/2020/02/16/sT1IRG6KLBEmweg.png" alt="9自定义netlify网站域名.png"></p>
+</li>
+<li>
+<p>配置自己的域名</p>
+<ol>
+<li>
+<p>Ntelif添加域名</p>
+<p>还是在&quot;Domain management&quot;中，我们点击&quot;Add custom domain&quot;，添加自己的域名，一路yes点完，我们会看到新的域名已经添加至Netlify。</p>
+<p><img src="https://i.loli.net/2020/02/16/UiIojvAcCPkqKQp.png" alt="10配置DNS.png"></p>
+<p>点击 &quot;Check DNS configuration&quot;，在弹出的窗口中，点击&quot;Set up Netlify DNS for 你的域名&quot;，然后一路确认。</p>
+<p><img src="https://i.loli.net/2020/02/16/BWJL2e5CKZq8xcl.png" alt="11设置Netlify的DNS.png"></p>
+<p>我们最后会停留在这个页面，这时先不要点击Done，也不要关闭网页。</p>
+<p><img src="https://i.loli.net/2020/02/16/z6c8uPATmW5ivr9.png" alt="12获取名称伺服器地址.png"></p>
+</li>
+<li>
+<p>Godaddy设置</p>
+<p>我们打开<a href="https://hk.godaddy.com/">GoDaddy</a>，进入自己的产品页面，选中自己域名的DNS选项。</p>
+<p><img src="https://i.loli.net/2020/02/16/M4bJAE3nWGxOCQU.png" alt="13配置Godaddy名称伺服器-.png"></p>
+<p>之后点击更改我们的名称伺服器：</p>
+<p><img src="https://i.loli.net/2020/02/16/MNTC6wmGoWqYE8d.png" alt="14配置Godaddy名称伺服器-2.png"></p>
+<p>选择&quot;输入我自己的名称伺服器&quot;</p>
+<p><img src="https://i.loli.net/2020/02/16/HVal1GL495NqkTv.png" alt="15配置Godaddy名称伺服器-3.png"></p>
+<p>在这里输入Netlify中给我们列出的四个地址，输入完后，点击保存。</p>
+<p><img src="https://i.loli.net/2020/02/16/bfrZ7Uu45hI8DeP.png" alt="16配置Godaddy名称伺服器-4.png"></p>
+<p>此时再切回Netlify的页面，点击&quot;Done&quot;，稍等片刻，出现如下的标志，即表示我们已经配置完成。</p>
+<p><img src="https://i.loli.net/2020/02/16/yQ31Hop6tMfasbL.png" alt="17DNS配置完成.png"></p>
+</li>
+<li>
+<p>Netlify配置Https</p>
+<p>Netlify配置https非常简单。我们配置完域名后，将页面往下拉，就会看到专门的https区域。点击&quot;Verify DNS configuration&quot;。等待系统处理一段时间后，就已经配置完成了。</p>
+<p><img src="https://i.loli.net/2020/02/16/bxBN2lODTeXSZJg.png" alt="18Netlify为网站开启HTTPS.png"></p>
+<p>完成后的状态：</p>
+<p><img src="https://i.loli.net/2020/02/16/AdfkUoHGFwEWg7K.png" alt="19Netlify成功开启HTTPS.png"></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>不论你采用以上哪种路径，现在任何人只需要在浏览器中输入你的域名，就可以轻松访问到你网站上的内容。注意域名前的那把小锁，它会向访客表示你的网站遵循了一套国际认可的加密标准，去保护访客的安全性。</p>
+<p>在接下来的一节中，我们将讨论如何进行博文的编辑与发布，在这之后，你的网站就可以运行起来了。</p>
+<p><img src="https://i.loli.net/2020/02/16/tu3ovpOMNw8BqWD.png" alt="20线上网站完成.png"></p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">Hugo创建个人博客指南</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/tags/blog101/">blog101</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/tags/hugo/">Hugo</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://byteli.com/tags/%E5%BB%BA%E7%AB%99/">建站</category>
+                                
+                            
+                        
+                    
+                
+            </item>
         
             <item>
                 <title>利用Hugo构建个人网站-3：内容中转</title>
