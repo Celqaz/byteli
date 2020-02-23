@@ -11,10 +11,6 @@ toc = true
 +++
 # Reading 4:Introduction to the Global Investment Performance Standards (GIPS)
 
-[toc]
-
-## 
-
 ## LOS
 
 1. explain why the GIPS standards were created, what parties the GIPS standards apply to, and who is served by the standards
