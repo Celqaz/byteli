@@ -27,4 +27,5 @@ fields:
     required: false
   label: description
 pages:
+- content/CFA/reading-4-global-investment-performance-standards-gips.md
 - content/posts/helloworld.md
