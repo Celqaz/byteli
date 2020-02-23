@@ -2,6 +2,7 @@
 categories = ["CFA", "CFA level 1 笔记"]
 date = 2020-02-23T02:56:00Z
 description = ""
+draft = true
 keywords = ["CFA", "CFA notes", "GIPS", "CFA笔记", "CFA level 1"]
 summary = ""
 tags = ["CFA", "CFA level 1 笔记"]
