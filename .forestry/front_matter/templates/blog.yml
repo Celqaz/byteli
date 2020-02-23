@@ -33,5 +33,3 @@ fields:
 - name: toc
   type: boolean
   label: toc
-pages:
-- content/posts/CFA/reading-4-global-investment-performance-standards-gips.md
