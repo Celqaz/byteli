@@ -5,20 +5,18 @@ description = ""
 draft = true
 keywords = ["CFA", "CFA notes", "GIPS", "CFA笔记", "CFA level 1"]
 summary = ""
-tags = ["CFA", "CFA笔记"]
+tags = ["CFA", "CFA level 1 笔记"]
 title = "Reading 4: Global Investment Performance Standards (GIPS)"
 
 +++
 # Reading 4: Global Investment Performance Standards (GIPS)
-
-\[TOC\]
 
 LOS
 
 1. describe the key features of the GIPS standards and the fundamentals of compliance
 2. describe the scope of the GIPS standards with respect to an investment firm’s definition and historical performance record
 3. explain how the GIPS standards are implemented in countries with existing standards for performance reporting and describe the appropriate response when the GIPS standards and local regulations conflict
-4.  the nine major sections of the GIPS standards
+4. the nine major sections of the GIPS standards
 
 ## 1. Introduction to the Global Investment Performance Standards (GIPS)
 
