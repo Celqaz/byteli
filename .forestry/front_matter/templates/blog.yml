@@ -30,6 +30,9 @@ fields:
   type: tag_list
   default: []
   label: keywords
+- name: toc
+  type: boolean
+  label: toc
 pages:
 - content/CFA/reading-4-global-investment-performance-standards-gips.md
 - content/posts/helloworld.md
