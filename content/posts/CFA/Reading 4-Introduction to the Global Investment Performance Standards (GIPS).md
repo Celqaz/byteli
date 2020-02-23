@@ -5,28 +5,29 @@ description = ""
 keywords = ["CFA", "CFA Level 1 notes", "CFA notes", "CFA 笔记", "CFA GIPS", "CFA笔记", "CFA一级笔记"]
 summary = "Introduction to the Global Investment Performance Standards (GIPS)"
 tags = ["CFA", "CFA Level 1 笔记"]
-title = "Reading 4: Global Investment Performance Standards (GIPS)"
+title = "Reading 4:Introduction to the Global Investment Performance Standards (GIPS)"
 toc = true
 
 +++
-# Reading 4: Global Investment Performance Standards (GIPS)
+# Reading 4:Introduction to the Global Investment Performance Standards (GIPS)
 
-LOS
+[toc]
 
-1. describe the key features of the GIPS standards and the fundamentals of compliance
-2. describe the scope of the GIPS standards with respect to an investment firm’s definition and historical performance record
-3. explain how the GIPS standards are implemented in countries with existing standards for performance reporting and describe the appropriate response when the GIPS standards and local regulations conflict
-4. the nine major sections of the GIPS standards
+## 
 
-## Introduction to the Global Investment Performance Standards (GIPS)
+## LOS
 
-### explain why the GIPS standards were created, what parties the GIPS standards apply to, and who is served by the standards
+1. explain why the GIPS standards were created, what parties the GIPS standards apply to, and who is served by the standards
+2. explain the construction and purpose of composites in performance reporting
+3. explain the requirements for verification
 
-#### why the GIPS standards were created
+## Why Were the GIPS Created, Who Can Claim Compliance & Who Benefits from Compliance
+
+### why the GIPS standards were created
 
 GIPS standards lead investment management firms to avoid misrepresentations of performance and to communicate all relevant information that prospective clients should know in order to evaluate past results.
 
-#### who can claim compliance
+### who can claim compliance
 
 1. any investment management firm may choose to comply with the GIPS standards. Complying with the GIPS standards is voluntary. Compliance with the GIPS standards is not typically required by legal or regulatory authorities.
 2. only investment management firms that _actually manage_ assets can claim compliance with the Standards.
@@ -36,7 +37,7 @@ GIPS standards lead investment management firms to avoid misrepresentations of p
    _Similarly, software (and the vendors who supply software) cannot be “compliant.”_
 3. compliance is a firm-wide process that cannot be achieved on a single product or composite.
 
-#### who benefits from compliance.
+### who benefits from compliance.
 
 1. investment management firms
    1. assure prospective clients that the historical “track record” they report is both complete and fairly presented.
