@@ -19,9 +19,9 @@ LOS
 3. explain how the GIPS standards are implemented in countries with existing standards for performance reporting and describe the appropriate response when the GIPS standards and local regulations conflict
 4. the nine major sections of the GIPS standards
 
-## 1. Introduction to the Global Investment Performance Standards (GIPS)
+## Introduction to the Global Investment Performance Standards (GIPS)
 
-### a. explain why the GIPS standards were created, what parties the GIPS standards apply to, and who is served by the standards
+### explain why the GIPS standards were created, what parties the GIPS standards apply to, and who is served by the standards
 
 #### why the GIPS standards were created
 
@@ -49,17 +49,17 @@ GIPS standards lead investment management firms to avoid misrepresentations of p
 
    the GIPS standards certainly **do not** eliminate the need for in-depth due diligence on the part of the investor, and **do not** provide certainty in what is presented.
 
-## 2. Composites
+## Composites
 
-### b. explain the construction and purpose of composites in performance reporting
+### explain the construction and purpose of composites in performance reporting
 
 A composite must include all actual, fee-paying, discretionary portfolios managed in accordance with the same investment mandate, objective, or strategy.
 
 discretionary portfolios: 全权委托投资组合，投资公司做出全部投资决策；区别于non-discretionary portfolios，客户做出全部投资决策，投资公司仅执行。
 
-## 3. Verification
+## Verification
 
-### c. explain the requirements for verification
+### explain the requirements for verification
 
 firms self-regulate their claim of compliance, responsible for their claim of compliance and for maintaining that compliance.
 
@@ -75,7 +75,7 @@ Verification tests:
 1. Verification is performed with respect to an entire firm, not on specific composites.
 2. Verification does not ensure the accuracy of any specific composite presentation.
 
-## 4. The Structure of the GIPS Standards
+## The Structure of the GIPS Standards
 
 1. Fundamentals of Compliance
 2. Input Data
