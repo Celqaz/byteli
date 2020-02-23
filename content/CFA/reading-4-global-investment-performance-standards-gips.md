@@ -6,6 +6,7 @@ keywords = ["CFA", "CFA notes", "GIPS", "CFA笔记", "CFA level 1"]
 summary = ""
 tags = ["CFA", "CFA level 1 笔记"]
 title = "Reading 4: Global Investment Performance Standards (GIPS)"
+toc = true
 
 +++
 # Reading 4: Global Investment Performance Standards (GIPS)
