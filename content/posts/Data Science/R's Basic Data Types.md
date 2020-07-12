@@ -60,7 +60,7 @@ Matrices must have every element be the same class
 ```
 
 ```r
-# dim()方法转换
+# dim() method
 > m =1:10
 > m
 [1] 1 2 3 4 5 6 7 8 9 10
