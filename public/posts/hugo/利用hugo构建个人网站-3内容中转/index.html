@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>利用Hugo构建个人网站-3：内容中转 - 飞越疯人院</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.72.0" /><meta itemprop="name" content="利用Hugo构建个人网站-3：内容中转">
+<meta itemprop="description" content="在完成本地网站的搭建后，我们在这一步中将把GitHub作为我们的内容中转平台，用来在线上存储我们的网站内容。">
+<meta itemprop="datePublished" content="2020-02-15T22:51:26&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-15T22:51:26&#43;08:00" />
+<meta itemprop="wordCount" content="37">
+
+
+
+<meta itemprop="keywords" content="blog101,Hugo,建站," /><meta property="og:title" content="利用Hugo构建个人网站-3：内容中转" />
+<meta property="og:description" content="在完成本地网站的搭建后，我们在这一步中将把GitHub作为我们的内容中转平台，用来在线上存储我们的网站内容。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-3%E5%86%85%E5%AE%B9%E4%B8%AD%E8%BD%AC/" />
+<meta property="article:published_time" content="2020-02-15T22:51:26+08:00" />
+<meta property="article:modified_time" content="2020-02-15T22:51:26+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="利用Hugo构建个人网站-3：内容中转"/>
+<meta name="twitter:description" content="在完成本地网站的搭建后，我们在这一步中将把GitHub作为我们的内容中转平台，用来在线上存储我们的网站内容。"/>
+<meta name="twitter:site" content="@example"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://byteli.com/img/main/logo.jpg" class="circle" width="" alt="飞越疯人院" /></a>
+  <header>
+    <h1>飞越疯人院</h1>
+  </header>
+  <main>
+    <p>There must be more to life than this.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-3%E5%86%85%E5%AE%B9%E4%B8%AD%E8%BD%AC/">利用Hugo构建个人网站-3：内容中转</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-02-15 22:51:26 &#43;0800 CST">
+      February 15, 2020
+    </time>
+    <span class="author"></span>
+    
+      <p>1 minute read</p>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-3%ef%bc%9a%e5%86%85%e5%ae%b9%e4%b8%ad%e8%bd%ac&amp;url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-3%25E5%2586%2585%25E5%25AE%25B9%25E4%25B8%25AD%25E8%25BD%25AC%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-3%25E5%2586%2585%25E5%25AE%25B9%25E4%25B8%25AD%25E8%25BD%25AC%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-3%25E5%2586%2585%25E5%25AE%25B9%25E4%25B8%25AD%25E8%25BD%25AC%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-3%ef%bc%9a%e5%86%85%e5%ae%b9%e4%b8%ad%e8%bd%ac" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-3%25E5%2586%2585%25E5%25AE%25B9%25E4%25B8%25AD%25E8%25BD%25AC%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-3%ef%bc%9a%e5%86%85%e5%ae%b9%e4%b8%ad%e8%bd%ac" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-3%25E5%2586%2585%25E5%25AE%25B9%25E4%25B8%25AD%25E8%25BD%25AC%2f&amp;description=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-3%ef%bc%9a%e5%86%85%e5%ae%b9%e4%b8%ad%e8%bd%ac" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-3%25E5%2586%2585%25E5%25AE%25B9%25E4%25B8%25AD%25E8%25BD%25AC%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </section>
+    
+
+    <div class="content">
+      <h2 id="1-内容中转配置github">1. 内容中转——配置GitHub</h2>
+<h3 id="11-向github同步网站">1.1 向GitHub同步网站</h3>
+<p>这里我们使用cmd命令行工具，向Github推送我们的更新，现在还不用理解这些代码：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">e:
+cd hugo
+cd byteli-local <span style="color:#75715e">//定位到博客根目录，对我而言，及&#34;E:\Hugo\byteli-local&#34;
+</span><span style="color:#75715e"></span>git init <span style="color:#75715e">//初始化git
+</span><span style="color:#75715e"></span>git <span style="color:#66d9ef">add</span> . <span style="color:#75715e">//添加所有文件，最后有一个&#34;.&#34;，表示选择所有文件
+</span><span style="color:#75715e"></span>git commit -m <span style="color:#e6db74">&#34;byteli&#34;</span> <span style="color:#75715e">//编写提交的备注，方便之后自己查看版本
+</span><span style="color:#75715e"></span>git remote <span style="color:#66d9ef">add</span> origin https:<span style="color:#75715e">//github.com/Celqaz/byteli.git //输入GitHub仓库的地址 
+</span><span style="color:#75715e"></span>git push origin master <span style="color:#75715e">//发出推送命令
+</span></code></pre></div><p>最后一步向我们GitHub仓库推送成功的反馈结果大致如下：</p>
+<p><img src="https://i.loli.net/2020/02/15/OtMP3lGScK6CEds.png" alt="3.1master.png"></p>
+<p>现在，我们再次打开GitHub的仓库页面，可以看到我们的项目已经成功上传。</p>
+<p><img src="https://i.loli.net/2020/02/15/HpJmaBbTuyjZF59.png" alt="3.2upload to github.png"></p>
+<p>至此，我们就完成了本地网站的上传。</p>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/categories/hugo%e5%88%9b%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%8c%87%e5%8d%97/">Hugo创建个人博客指南</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/blog101/">blog101</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e5%bb%ba%e7%ab%99/">建站</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    
+<div>
+  <h2>Say something</h2>
+    <form id="post-js-form" class="post-new-comment" method="POST">
+      
+      <h5 class='post-reply-notice hidden'>
+        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
+      </h5>
+
+      
+      <input type="hidden" name="options[entryId]" value="aec5c3c9955e2ad507784de147468b0a">
+      <input type='hidden' name='fields[replyThread]' value=''>
+      <input type='hidden' name='fields[replyID]' value=''>
+      <input type='hidden' name='fields[replyName]' value=''>
+
+      
+      <input required name='fields[name]' type='text' placeholder='Your name (Required)'>
+      <input name='fields[website]' type='text' placeholder='Your website'>
+      <input required name='fields[email]' type='email' placeholder='Your email address (Required for Gravatar)'>
+      <textarea required name='fields[body]' placeholder='Your message. Feel free to use Markdown (Google &#39;Markdown Cheat Sheet&#39;).' rows='10'></textarea>
+
+      
+      
+
+      
+      <p class='post-submit-notice'>
+        <strong class='post-submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+        <strong class='post-submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission.  Please make sure all required fields have been completed and try again.</strong>
+      </p>
+
+      
+      <input type='submit' value='Submit' class='button'>
+      <input type='submit' value='Submitted' class='hidden button' disabled>
+      <input type='reset' value='Reset' class='button'>
+    </form>
+</div>
+
+
+<div>
+  <h2>Comments</h2>
+
+  
+</div>
+
+  </article>
+
+
+  <div class="pagination">
+  
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-2%E7%94%9F%E6%88%90%E7%BD%91%E9%A1%B5/" class="button"><div class="previous"><div>利用Hugo构建个人网站-2：生成网页</div></div></a>
+  
+  
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/" class="button"><div class="next"><div>利用Hugo构建个人网站-4：发布网站</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/data-science/rs-basic-data-types/">R&#39;s Basic Data Types</a></h2>
+          <time class="published" datetime="">July 11, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E5%AE%89%E9%9D%99%E7%9A%84%E5%8A%9B%E9%87%8F%E5%86%85%E5%90%91%E9%AB%98%E6%95%8F%E8%80%85%E7%9A%84%E8%AF%B4%E6%98%8E%E6%89%8B%E5%86%8C/">安静的力量：内向高敏者的说明手册</a></h2>
+          <time class="published" datetime="">May 16, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E6%BC%AB%E6%BC%AB%E8%87%AA%E7%94%B1%E8%B7%AF/">漫漫自由路：曼德拉自传</a></h2>
+          <time class="published" datetime="">April 6, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/2020%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/">2020阅读计划</a></h2>
+          <time class="published" datetime="">February 23, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/">利用Hugo构建个人网站-6：个性化&amp;总结</a></h2>
+          <time class="published" datetime="">February 16, 2020</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">See more</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">hugo创建个人博客指南<span class="count">6</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/">精神越狱<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/hello-world/">hello-world<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This theme was developed for Hugo static site generator.</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
+<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        飞越疯人院
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.72.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.43312cfb6f0caa80b1d854248cdc1078d6e7e0d05ffbb5508839f05cc3a5aca2.js" integrity="sha256-QzEs&#43;28MqoCx2FQkjNwQeNbn4NBf&#43;7VQiDnwXMOlrKI="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>利用Hugo构建个人网站-4：发布网站 - 飞越疯人院</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.72.0" /><meta itemprop="name" content="利用Hugo构建个人网站-4：发布网站">
+<meta itemprop="description" content="现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。">
+<meta itemprop="datePublished" content="2020-02-16T09:06:26&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-16T09:06:26&#43;08:00" />
+<meta itemprop="wordCount" content="71">
+
+
+
+<meta itemprop="keywords" content="blog101,Hugo,建站," /><meta property="og:title" content="利用Hugo构建个人网站-4：发布网站" />
+<meta property="og:description" content="现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/" />
+<meta property="article:published_time" content="2020-02-16T09:06:26+08:00" />
+<meta property="article:modified_time" content="2020-02-16T09:06:26+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="利用Hugo构建个人网站-4：发布网站"/>
+<meta name="twitter:description" content="现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。"/>
+<meta name="twitter:site" content="@example"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://byteli.com/img/main/logo.jpg" class="circle" width="" alt="飞越疯人院" /></a>
+  <header>
+    <h1>飞越疯人院</h1>
+  </header>
+  <main>
+    <p>There must be more to life than this.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/">利用Hugo构建个人网站-4：发布网站</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-02-16 09:06:26 &#43;0800 CST">
+      February 16, 2020
+    </time>
+    <span class="author"></span>
+    
+      <p>1 minute read</p>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-4%ef%bc%9a%e5%8f%91%e5%b8%83%e7%bd%91%e7%ab%99&amp;url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-4%25E5%258F%2591%25E5%25B8%2583%25E7%25BD%2591%25E7%25AB%2599%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-4%25E5%258F%2591%25E5%25B8%2583%25E7%25BD%2591%25E7%25AB%2599%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-4%25E5%258F%2591%25E5%25B8%2583%25E7%25BD%2591%25E7%25AB%2599%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-4%ef%bc%9a%e5%8f%91%e5%b8%83%e7%bd%91%e7%ab%99" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-4%25E5%258F%2591%25E5%25B8%2583%25E7%25BD%2591%25E7%25AB%2599%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-4%ef%bc%9a%e5%8f%91%e5%b8%83%e7%bd%91%e7%ab%99" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-4%25E5%258F%2591%25E5%25B8%2583%25E7%25BD%2591%25E7%25AB%2599%2f&amp;description=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-4%ef%bc%9a%e5%8f%91%e5%b8%83%e7%bd%91%e7%ab%99" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-4%25E5%258F%2591%25E5%25B8%2583%25E7%25BD%2591%25E7%25AB%2599%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </section>
+    
+
+    <div class="content">
+      <h2 id="1-发布网站配置netlify">1. 发布网站——配置Netlify</h2>
+<h3 id="11-将网站托管于netlify">1.1 将网站托管于Netlify</h3>
+<p>这一步中，Netlify将会把我们的网站推向整个互联网。</p>
+<h4 id="111-向全球部署你的网站">1.1.1 向全球部署你的网站</h4>
+<ol>
+<li>
+<p>注册并登录<a href="https://app.netlify.com">Netlify</a>，点击首页的&quot;New site from Git&rdquo;，然后在下面的页面中点击GitHub进行连接。<img src="https://i.loli.net/2020/02/16/s1erdB7iunl9IUA.png" alt="3选择仓库进行部署.png"></p>
+</li>
+<li>
+<p>选择授权Netlify的仓库，即我们的项目仓库，点击保存确认，提示&quot;Authorized&quot;即表明授权完成，我们可以进入下一步。</p>
+<p><img src="https://i.loli.net/2020/02/16/K96u57NHhprwed2.png" alt="2选择项目所在仓库.png"></p>
+</li>
+<li>
+<p>这一步 ，我们确认连接的仓库和我们此前创建的一致后，点击这个仓库名称，进入下一步。</p>
+<p><img src="https://i.loli.net/2020/02/16/ju9yUBRxJNe35Sm.png" alt="1连接GitHub与Netlify.png"></p>
+</li>
+<li>
+<p>这一步无需任何更改，点击最下方的&quot;deploy  site&quot;即可：</p>
+<p><img src="https://i.loli.net/2020/02/16/7gpCbkJQXcKd5Iz.png" alt="4部署网站.png"></p>
+</li>
+<li>
+<p>稍等片刻，Netlifty就会将我们的网站部署好，红框内即是我们的域名，点击就可以访问了。</p>
+<p>这里，如果你选择的也是Meme主题，这里可能会因为版本原因部署失败，我们马上会给出解决办法。<img src="https://i.loli.net/2020/02/16/ibxECUGAPBzh9SH.png" alt="5部署成功.png"></p>
+<p><img src="https://i.loli.net/2020/02/16/rsNRkwdDOzvu6pS.png" alt="6新网站.png"></p>
+<p>关于Meme主题提示部署失败的解决办法：</p>
+<p>我这里第一步部署时提示失败，我们可以切换到&quot;Deploy&quot;页面，查看此次报错的日志( Deploy Log)。<img src="https://i.loli.net/2020/02/16/CIQDJg5qE1tiYGv.png" alt="7查看部署日志.png">高亮的部分即首次报错的记录。我们发现，我这次选用的MEME主题，不支持Netlify默认的&quot;Hugo 0.54.0&quot;版本，该主题需要的最低版本号为&quot;Hugo 0.62.2&rdquo;，所以导致了失败。</p>
+<p>在 <a href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#configure-hugo-version-in-netlify">Hugo关于Netlify的官方的配置说明</a> 中，我们找到了通过修改&quot;HUGO_VERSION&quot;参数，更改版本号的方法。</p>
+<p>接下来，我们只需要在设置选项中，修改这个参数即可。因为我本地的Hugo版本为&quot;0.64.0&rdquo;，所以我将Netlify也指定为该版本。</p>
+<p><img src="https://i.loli.net/2020/02/16/bLEaMDW32m9NYTz.png" alt="8定义Netlify运行的Hugo版本.png"></p>
+<p>之后选择清空缓存并重新部署网站(&ldquo;Clear cache and deploy site&quot;选项)，网站就部署成功了。</p>
+</li>
+</ol>
+<h4 id="112-配置个性化域名">1.1.2 配置个性化域名</h4>
+<p>目前，你实际已经拥有了自己的网站，如果你对现状很满意，那么就可以直接进入第4章。如果你想让自己的免费域名更个性一些，或者在考虑使用自己购买的个性域名，并免费配置Https提升网站的安全性，那么我们将通过简单的步骤一一实现。</p>
+<ol>
+<li>
+<p>配置nelify域名</p>
+<p>我们在&quot;Domain management&quot;中 ，选择系统随机给我们分配的链接，然后点击&quot;Edit site name&rdquo;，在弹出的页面中输入我们想要的域名开头，然后保存即可。</p>
+<p>由于你的网站用的书Netlify提供的域名，所以默认已经开启了Https访问。</p>
+<p><img src="https://i.loli.net/2020/02/16/sT1IRG6KLBEmweg.png" alt="9自定义netlify网站域名.png"></p>
+</li>
+<li>
+<p>配置自己的域名</p>
+<ol>
+<li>
+<p>Ntelif添加域名</p>
+<p>还是在&quot;Domain management&quot;中，我们点击&quot;Add custom domain&rdquo;，添加自己的域名，一路yes点完，我们会看到新的域名已经添加至Netlify。</p>
+<p><img src="https://i.loli.net/2020/02/16/UiIojvAcCPkqKQp.png" alt="10配置DNS.png"></p>
+<p>点击 &ldquo;Check DNS configuration&rdquo;，在弹出的窗口中，点击&quot;Set up Netlify DNS for 你的域名&rdquo;，然后一路确认。</p>
+<p><img src="https://i.loli.net/2020/02/16/BWJL2e5CKZq8xcl.png" alt="11设置Netlify的DNS.png"></p>
+<p>我们最后会停留在这个页面，这时先不要点击Done，也不要关闭网页。</p>
+<p><img src="https://i.loli.net/2020/02/16/z6c8uPATmW5ivr9.png" alt="12获取名称伺服器地址.png"></p>
+</li>
+<li>
+<p>Godaddy设置</p>
+<p>我们打开<a href="https://hk.godaddy.com/">GoDaddy</a>，进入自己的产品页面，选中自己域名的DNS选项。</p>
+<p><img src="https://i.loli.net/2020/02/16/M4bJAE3nWGxOCQU.png" alt="13配置Godaddy名称伺服器-.png"></p>
+<p>之后点击更改我们的名称伺服器：</p>
+<p><img src="https://i.loli.net/2020/02/16/MNTC6wmGoWqYE8d.png" alt="14配置Godaddy名称伺服器-2.png"></p>
+<p>选择&quot;输入我自己的名称伺服器&rdquo;</p>
+<p><img src="https://i.loli.net/2020/02/16/HVal1GL495NqkTv.png" alt="15配置Godaddy名称伺服器-3.png"></p>
+<p>在这里输入Netlify中给我们列出的四个地址，输入完后，点击保存。</p>
+<p><img src="https://i.loli.net/2020/02/16/bfrZ7Uu45hI8DeP.png" alt="16配置Godaddy名称伺服器-4.png"></p>
+<p>此时再切回Netlify的页面，点击&quot;Done&rdquo;，稍等片刻，出现如下的标志，即表示我们已经配置完成。</p>
+<p><img src="https://i.loli.net/2020/02/16/yQ31Hop6tMfasbL.png" alt="17DNS配置完成.png"></p>
+</li>
+<li>
+<p>Netlify配置Https</p>
+<p>Netlify配置https非常简单。我们配置完域名后，将页面往下拉，就会看到专门的https区域。点击&quot;Verify DNS configuration&rdquo;。等待系统处理一段时间后，就已经配置完成了。</p>
+<p><img src="https://i.loli.net/2020/02/16/bxBN2lODTeXSZJg.png" alt="18Netlify为网站开启HTTPS.png"></p>
+<p>完成后的状态：</p>
+<p><img src="https://i.loli.net/2020/02/16/AdfkUoHGFwEWg7K.png" alt="19Netlify成功开启HTTPS.png"></p>
+</li>
+</ol>
+</li>
+</ol>
+<p>不论你采用以上哪种路径，现在任何人只需要在浏览器中输入你的域名，就可以轻松访问到你网站上的内容。注意域名前的那把小锁，它会向访客表示你的网站遵循了一套国际认可的加密标准，去保护访客的安全性。</p>
+<p>在接下来的一节中，我们将讨论如何进行博文的编辑与发布，在这之后，你的网站就可以运行起来了。</p>
+<p><img src="https://i.loli.net/2020/02/16/tu3ovpOMNw8BqWD.png" alt="20线上网站完成.png"></p>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/categories/hugo%e5%88%9b%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%8c%87%e5%8d%97/">Hugo创建个人博客指南</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/blog101/">blog101</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e5%bb%ba%e7%ab%99/">建站</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    
+<div>
+  <h2>Say something</h2>
+    <form id="post-js-form" class="post-new-comment" method="POST">
+      
+      <h5 class='post-reply-notice hidden'>
+        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
+      </h5>
+
+      
+      <input type="hidden" name="options[entryId]" value="a87c236435177907c8fe71bad15e99df">
+      <input type='hidden' name='fields[replyThread]' value=''>
+      <input type='hidden' name='fields[replyID]' value=''>
+      <input type='hidden' name='fields[replyName]' value=''>
+
+      
+      <input required name='fields[name]' type='text' placeholder='Your name (Required)'>
+      <input name='fields[website]' type='text' placeholder='Your website'>
+      <input required name='fields[email]' type='email' placeholder='Your email address (Required for Gravatar)'>
+      <textarea required name='fields[body]' placeholder='Your message. Feel free to use Markdown (Google &#39;Markdown Cheat Sheet&#39;).' rows='10'></textarea>
+
+      
+      
+
+      
+      <p class='post-submit-notice'>
+        <strong class='post-submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+        <strong class='post-submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission.  Please make sure all required fields have been completed and try again.</strong>
+      </p>
+
+      
+      <input type='submit' value='Submit' class='button'>
+      <input type='submit' value='Submitted' class='hidden button' disabled>
+      <input type='reset' value='Reset' class='button'>
+    </form>
+</div>
+
+
+<div>
+  <h2>Comments</h2>
+
+  
+</div>
+
+  </article>
+
+
+  <div class="pagination">
+  
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-3%E5%86%85%E5%AE%B9%E4%B8%AD%E8%BD%AC/" class="button"><div class="previous"><div>利用Hugo构建个人网站-3：内容中转</div></div></a>
+  
+  
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/" class="button"><div class="next"><div>利用Hugo构建个人网站-5：内容管理</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/data-science/rs-basic-data-types/">R&#39;s Basic Data Types</a></h2>
+          <time class="published" datetime="">July 11, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E5%AE%89%E9%9D%99%E7%9A%84%E5%8A%9B%E9%87%8F%E5%86%85%E5%90%91%E9%AB%98%E6%95%8F%E8%80%85%E7%9A%84%E8%AF%B4%E6%98%8E%E6%89%8B%E5%86%8C/">安静的力量：内向高敏者的说明手册</a></h2>
+          <time class="published" datetime="">May 16, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E6%BC%AB%E6%BC%AB%E8%87%AA%E7%94%B1%E8%B7%AF/">漫漫自由路：曼德拉自传</a></h2>
+          <time class="published" datetime="">April 6, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/2020%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/">2020阅读计划</a></h2>
+          <time class="published" datetime="">February 23, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/">利用Hugo构建个人网站-6：个性化&amp;总结</a></h2>
+          <time class="published" datetime="">February 16, 2020</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">See more</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">hugo创建个人博客指南<span class="count">6</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/">精神越狱<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/hello-world/">hello-world<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This theme was developed for Hugo static site generator.</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
+<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        飞越疯人院
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.72.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.43312cfb6f0caa80b1d854248cdc1078d6e7e0d05ffbb5508839f05cc3a5aca2.js" integrity="sha256-QzEs&#43;28MqoCx2FQkjNwQeNbn4NBf&#43;7VQiDnwXMOlrKI="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

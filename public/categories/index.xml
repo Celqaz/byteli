@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 飞越疯人院</title>
+    <link>https://byteli.com/categories/</link>
+    <description>Recent content in Categories on 飞越疯人院</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Jul 2020 23:42:34 +0800</lastBuildDate>
+    
+	<atom:link href="https://byteli.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://byteli.com/categories/hello-world/</link>
+      <pubDate>Sat, 11 Jul 2020 23:42:34 +0800</pubDate>
+      
+      <guid>https://byteli.com/categories/hello-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>精神越狱</title>
+      <link>https://byteli.com/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/</link>
+      <pubDate>Sat, 16 May 2020 16:47:26 +0800</pubDate>
+      
+      <guid>https://byteli.com/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo创建个人博客指南</title>
+      <link>https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/</link>
+      <pubDate>Sun, 16 Feb 2020 10:18:00 +0800</pubDate>
+      
+      <guid>https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

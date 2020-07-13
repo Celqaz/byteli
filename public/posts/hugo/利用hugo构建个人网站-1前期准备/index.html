@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>利用Hugo构建个人网站-1：前期准备 - 飞越疯人院</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.72.0" /><meta itemprop="name" content="利用Hugo构建个人网站-1：前期准备">
+<meta itemprop="description" content="这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。这一切，从本篇开始。">
+<meta itemprop="datePublished" content="2020-02-15T18:36:26&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-15T18:36:26&#43;08:00" />
+<meta itemprop="wordCount" content="92">
+
+
+
+<meta itemprop="keywords" content="blog101,Hugo,建站," /><meta property="og:title" content="利用Hugo构建个人网站-1：前期准备" />
+<meta property="og:description" content="这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。这一切，从本篇开始。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-1%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87/" />
+<meta property="article:published_time" content="2020-02-15T18:36:26+08:00" />
+<meta property="article:modified_time" content="2020-02-15T18:36:26+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="利用Hugo构建个人网站-1：前期准备"/>
+<meta name="twitter:description" content="这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。这一切，从本篇开始。"/>
+<meta name="twitter:site" content="@example"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://byteli.com/img/main/logo.jpg" class="circle" width="" alt="飞越疯人院" /></a>
+  <header>
+    <h1>飞越疯人院</h1>
+  </header>
+  <main>
+    <p>There must be more to life than this.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-1%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87/">利用Hugo构建个人网站-1：前期准备</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-02-15 18:36:26 &#43;0800 CST">
+      February 15, 2020
+    </time>
+    <span class="author"></span>
+    
+      <p>1 minute read</p>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-1%ef%bc%9a%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87&amp;url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-1%25E5%2589%258D%25E6%259C%259F%25E5%2587%2586%25E5%25A4%2587%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-1%25E5%2589%258D%25E6%259C%259F%25E5%2587%2586%25E5%25A4%2587%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-1%25E5%2589%258D%25E6%259C%259F%25E5%2587%2586%25E5%25A4%2587%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-1%ef%bc%9a%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-1%25E5%2589%258D%25E6%259C%259F%25E5%2587%2586%25E5%25A4%2587%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-1%ef%bc%9a%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-1%25E5%2589%258D%25E6%259C%259F%25E5%2587%2586%25E5%25A4%2587%2f&amp;description=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-1%ef%bc%9a%e5%89%8d%e6%9c%9f%e5%87%86%e5%a4%87" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-1%25E5%2589%258D%25E6%259C%259F%25E5%2587%2586%25E5%25A4%2587%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </section>
+    
+
+    <div class="content">
+      <p>这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。</p>
+<p>主要的思路如下：</p>
+<ol>
+<li>Hugo——生成网页</li>
+<li>GitHub——内容中转</li>
+<li>Netlify——发布网站</li>
+<li>Forestry——内容管理</li>
+</ol>
+<h2 id="1-前期准备">1. 前期准备</h2>
+<p>在我们开始创建网站内容前，我们需要为我们的网站配置好基础的环境，它们包括Hugo、GitHub与Git，本章将具体说明如何进行配置。</p>
+<h3 id="11-hugo配置">1.1 Hugo配置</h3>
+<h4 id="111-下载安装">1.1.1 下载&amp;安装</h4>
+<p>首先下载在 <a href="https://github.com/gohugoio/hugo/releases">这里</a> 下载Hugo压缩包，每个操作系统有普通及拓展（extended）版本，这里建议选择extended版本。</p>
+<p>在这里，由于我是Windows  64位的系统，所以选择了最新的&quot;hugo_extended_0.64.1_Windows-64bit.zip&quot;安装包。</p>
+<p>下载后将Hugo解压到本地磁盘，可以是非系统盘，这里需要记住解压的位置，我们将在下一步使用。</p>
+<p>本次，我在E盘新建了一个Hugo文件夹，将压缩包中的内容解压到了&quot;E:\Hugo&rdquo;。</p>
+<h4 id="112-配置环境变量">1.1.2 配置环境变量</h4>
+<ol start="0">
+<li>右键点击&quot;我的电脑&rdquo;，点击“属性”</li>
+</ol>
+<p><img src="https://i.loli.net/2020/02/15/rMh2LDIXogBQVxc.jpg" alt="Hugo配置环境变量.jpg"></p>
+<ol>
+<li>
+<p>点击“高级系统设置”，打开“系统属性窗口”</p>
+</li>
+<li>
+<p>点击“环境变量”，打开“环境变量”窗口</p>
+</li>
+<li>
+<p>在“环境变量”中，选中“系统变量”下的“Path”选项</p>
+</li>
+<li>
+<p>点击“编辑”，打开“编辑环境变量”窗口</p>
+</li>
+<li>
+<p>在“编辑环境变量”中，点击“新建”</p>
+</li>
+<li>
+<p>输入我们解压Hugo压缩包的位置，本例，我输入了“E:\Hugo”</p>
+</li>
+<li>
+<p>输入完成后，依次点击“确定”来应用各个窗口的设置。</p>
+<p>安装完成。</p>
+</li>
+</ol>
+<h4 id="113-验证安装">1.1.3 验证安装</h4>
+<p>通过 win+R 的快捷键，调出运行栏，输入cmd，调出命令行工具。</p>
+<p><img src="https://i.loli.net/2020/02/15/OWRIxqG7AlJXjfC.png" alt="hugo验证-1.png"></p>
+<p>在命令行工具中输入：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">hugo version
+</code></pre></div><p><img src="https://i.loli.net/2020/02/15/KvQZCOoA2EThfgV.png" alt="hugo验证-2.png"></p>
+<p>如能正确显示版本号，即表示安装成功。</p>
+<h3 id="12--github配置">1.2  GitHub配置</h3>
+<ol>
+<li>
+<p>注册全球最大的 <del>同性交友</del> 开源社区<a href="https://github.com/">GitHub</a>账号.</p>
+</li>
+<li>
+<p>登录GitHub，并在<a href="https://github.com/new">这里</a>创建新的仓库（repository），仓库类型设置为公开（public），点击create repository。</p>
+<p><img src="https://i.loli.net/2020/02/15/6IwEftmOUBuhXcR.png" alt="在GitHub中创建仓库.png"></p>
+</li>
+<li>
+<p>创建完成后，我们需要复制下这个仓库的地址信息，即图中的红色部分，在之后将要用到。</p>
+<p><img src="https://i.loli.net/2020/02/15/5FPEaLvnUCMO7dT.png" alt="完成仓库创建.png"></p>
+</li>
+</ol>
+<h3 id="13--git配置">1.3  Git配置</h3>
+<p>Git是目前世界上最先进的分布式版本控制系统，我们安装Git，是为了将我们对本地文件的更改与GitHub进行同步，以实现对网站内容的更新。</p>
+<ol>
+<li>
+<p>Git的安装也十分简单，只需要在<a href="https://git-scm.com/downloads">官网下载</a>，并按默认选项安装即可。</p>
+<p>安装程序完成后，在cmd命令行工具中输入</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">git --version
+</code></pre></div><p>出现相关版本信息，即代表安装成功。</p>
+<p><img src="https://i.loli.net/2020/02/15/9ryVIYZxfAPatMb.png" alt="git 安装成功信息.png"></p>
+</li>
+<li>
+<p>之后，我们需要在git中存储我们的GitHub账号信息，以实现同步，我们需要在命令行输入我们上一步创建GitHub时，所用的用户名及邮箱信息：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c#" data-lang="c#">git config --global user.name <span style="color:#e6db74">&#34;Your Name&#34;</span> <span style="color:#75715e">//输入时不需要输入&#34;&#34;，完成后回车
+</span><span style="color:#75715e"></span>git config --global user.email <span style="color:#e6db74">&#34;email@example.com&#34;</span> <span style="color:#75715e">//输入时不需要输入&#34;&#34;，完成后回车
+</span></code></pre></div><p>这里，正常情况下，命令行不会有任何返回输出，这是正常的。</p>
+</li>
+</ol>
+<h3 id="14-域名申请可选">1.4 域名申请（可选）</h3>
+<p>首先需要说明，这一步对完成我们最终的目标——建立一个任何人都可以访问的网站，不是必需的。很多人可能还没有想好自己的域名，或者是还在摸索如何建站，但都没有关系，Netlify会给我们提供一个以&quot;netlify.com&quot;结尾的免费域名，足够让我们走得够远。</p>
+<p>但是，如果你在一开始就想拥有一个更特别、更好记、更利于访问的域名，我们可以在3分钟内完成这个流程。</p>
+<h4 id="141-godaddy还是万网">1.4.1 Godaddy还是万网</h4>
+<p>关于域名购买的网站，我最初选择的是Godaddy，中间有段时间管理公司网站用的万网，之后还是切回了GoDaddy。主要有以下的原因：</p>
+<ol>
+<li>国内对个人隐私的保护是个问题，起码你在GoDaddy上，不需要验证手机；</li>
+<li>避免被404支配的恐惧，不想让自己的写的东西，因为奇怪的原因就无法访问了；</li>
+<li>万网对个人博客而言太重了，繁复的后台占据了很多我从没用过的功能，然而我需要的只是配置域名；</li>
+<li>多年比较下来，Godaddy比万网的综合费用要低；</li>
+<li>如果有一天你现在的域名不想要了，GoDaddy的域名转卖服务体验也比万网要好太多了；</li>
+</ol>
+<h4 id="142-godaddy域名申请">1.4.2 Godaddy域名申请</h4>
+<p>我们接下里以GoDaddy为例，说明如何选购域名：</p>
+<ol>
+<li>
+<p>打开<a href="https://hk.godaddy.com/">GoDaddy</a>，注册账号后在首页的搜索框内，直接搜索自己想要的域名，推荐用&rdquo;.com&quot;结尾的域名，因为浏览器支持性很好。不过，我最近觉得&rdquo;.life&quot;结尾的也很cool。</p>
+</li>
+<li>
+<p>新页面会出现最新报价，如果出现的是外国货币，可以点击页面底部，选择到&quot;新加坡-简体中文&rdquo;，这样不仅会解决语言和货币单位的问题，还可以支持支付宝付款。如果筛选到了满意的域名，就可以加入购物车并结算。</p>
+<p><img src="https://i.loli.net/2020/02/15/2dI37ipcl4B6UkF.png" alt="godaddy  sg.png"></p>
+</li>
+<li>
+<p>付款前，GoDaddy还会安利下自家的隐私保护盾、免费建站服务和Linux虚拟主机，这些我们都不需要，取消掉后直接进入购物车就好。</p>
+</li>
+<li>
+<p>在购物车页面，确认自己的域名信息、购买年数和付款方式，国内一般用支付宝或银联卡，当然支付宝会方便很多。</p>
+</li>
+<li>
+<p>付款。然后，这个域名就属于你了。你可以说随时在你的GoDaddy页面内查看它。</p>
+<p><img src="https://i.loli.net/2020/02/15/9XlKLOYRT4x2uNc.png" alt="域名设置.png"></p>
+</li>
+</ol>
+<p>至此，我们已经完成了对Hugo、GitHub及Git的配置，我们将在下一节创建一个可以出现在浏览器中的网站。</p>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/categories/hugo%e5%88%9b%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%8c%87%e5%8d%97/">Hugo创建个人博客指南</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/blog101/">blog101</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e5%bb%ba%e7%ab%99/">建站</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    
+<div>
+  <h2>Say something</h2>
+    <form id="post-js-form" class="post-new-comment" method="POST">
+      
+      <h5 class='post-reply-notice hidden'>
+        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
+      </h5>
+
+      
+      <input type="hidden" name="options[entryId]" value="5b9163b573b083a6ea48731883e8992d">
+      <input type='hidden' name='fields[replyThread]' value=''>
+      <input type='hidden' name='fields[replyID]' value=''>
+      <input type='hidden' name='fields[replyName]' value=''>
+
+      
+      <input required name='fields[name]' type='text' placeholder='Your name (Required)'>
+      <input name='fields[website]' type='text' placeholder='Your website'>
+      <input required name='fields[email]' type='email' placeholder='Your email address (Required for Gravatar)'>
+      <textarea required name='fields[body]' placeholder='Your message. Feel free to use Markdown (Google &#39;Markdown Cheat Sheet&#39;).' rows='10'></textarea>
+
+      
+      
+
+      
+      <p class='post-submit-notice'>
+        <strong class='post-submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+        <strong class='post-submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission.  Please make sure all required fields have been completed and try again.</strong>
+      </p>
+
+      
+      <input type='submit' value='Submit' class='button'>
+      <input type='submit' value='Submitted' class='hidden button' disabled>
+      <input type='reset' value='Reset' class='button'>
+    </form>
+</div>
+
+
+<div>
+  <h2>Comments</h2>
+
+  
+</div>
+
+  </article>
+
+
+  <div class="pagination">
+  
+  
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-2%E7%94%9F%E6%88%90%E7%BD%91%E9%A1%B5/" class="button"><div class="next"><div>利用Hugo构建个人网站-2：生成网页</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/data-science/rs-basic-data-types/">R&#39;s Basic Data Types</a></h2>
+          <time class="published" datetime="">July 11, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E5%AE%89%E9%9D%99%E7%9A%84%E5%8A%9B%E9%87%8F%E5%86%85%E5%90%91%E9%AB%98%E6%95%8F%E8%80%85%E7%9A%84%E8%AF%B4%E6%98%8E%E6%89%8B%E5%86%8C/">安静的力量：内向高敏者的说明手册</a></h2>
+          <time class="published" datetime="">May 16, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E6%BC%AB%E6%BC%AB%E8%87%AA%E7%94%B1%E8%B7%AF/">漫漫自由路：曼德拉自传</a></h2>
+          <time class="published" datetime="">April 6, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/2020%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/">2020阅读计划</a></h2>
+          <time class="published" datetime="">February 23, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/">利用Hugo构建个人网站-6：个性化&amp;总结</a></h2>
+          <time class="published" datetime="">February 16, 2020</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">See more</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">hugo创建个人博客指南<span class="count">6</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/">精神越狱<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/hello-world/">hello-world<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This theme was developed for Hugo static site generator.</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
+<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        飞越疯人院
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.72.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.43312cfb6f0caa80b1d854248cdc1078d6e7e0d05ffbb5508839f05cc3a5aca2.js" integrity="sha256-QzEs&#43;28MqoCx2FQkjNwQeNbn4NBf&#43;7VQiDnwXMOlrKI="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>

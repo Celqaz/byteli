@@ -1,414 +1,479 @@
-<!DOCTYPE html>
-<html lang="zh-CN" data-theme="light">
-    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
-    <meta charset="UTF-8" /><meta name="theme-color" content="#fff" />
-        <script>
-            const userPrefers = localStorage.getItem('theme');
-            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
-            if (userPrefers === "dark") {
-                changeModeMeta("dark");
-            } else if (userPrefers === "light") {
-                changeModeMeta("light");
-            } else if (darkModeMediaQuery.matches) {
-                changeModeMeta("dark");
-            } else if (lightModeMediaQuery.matches) {
-                changeModeMeta("light");
-            }
-            function changeModeMeta() {
-                document.documentElement.setAttribute('data-theme', arguments[0]);
-                if (arguments[0] === "dark") {
-                    changeThemeColor("#1c1c21");
-                } else {
-                    changeThemeColor("#fff");
-                }
-            }
-            function changeThemeColor() {
-                document.querySelector('meta[name="theme-color"]').setAttribute('content', arguments[0]);
-            }
-        </script>
-
-    
-
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
-    
-    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-    
-    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
-    
-    <meta http-equiv="Cache-Control" content="no-transform" />
-    
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    
-    <meta name="renderer" content="webkit" />
-
-    <meta name="generator" content="Hugo 0.64.0" />
-
-    <title>Tags: blog101 | 飞越疯人院</title>
-
-    <link rel="stylesheet" href="/css/meme.min.45a44c520c2bab25d0aff66c696658dd15e3300afafd34dffa0f5a875caafbbc.css" integrity="sha256-RaRMUgwrqyXQr/ZsaWZY3RXjMAr6/TTf+g9ah1yq+7w=" data-instant-track />
-
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,700,700i|Noto+Serif+SC:400,500,700|Source+Code+Pro:400,400i,700,700i&display=swap&subset=chinese-simplified" rel="stylesheet" />
-
-    <meta name="author" content="达达里昂" />
-    <meta name="description" content="达达里昂的人生备份" />
-    <meta name="keywords" content="读书笔记, Hugo, 独立博客, 金融" />
-    
-    <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
-    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-title" content="飞越疯人院" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="application-name" content="飞越疯人院" />
-    <meta name="msapplication-starturl" content="../../" />
-    <meta name="msapplication-TileColor" content="#fff" />
-    <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
-    <link rel="manifest" href="/manifest.json" />
-
-    
-    
-
-    
-    <link rel="canonical" href="https://byteli.com/tags/blog101/" />
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>blog101 - 飞越疯人院</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "datePublished": "2016-09-20T20:17:43+00:00",
-        "dateModified": "2020-02-16T10:23:06+08:00",
-        "url": "https://byteli.com/tags/blog101/",
-        "name": "Tags: blog101",
-        "description": "达达里昂的人生备份",
-        "keywords": "读书笔记, Hugo, 独立博客, 金融",
-        "image": "https://byteli.com/icons/apple-touch-icon.png",
-        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)",
-        "publisher": {
-            "@type": "Organization",
-            "name": "飞越疯人院",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://byteli.com/icons/apple-touch-icon.png"
-            },
-            "url": "https://byteli.com/"
-        },
-        "mainEntityOfPage": {
-            "@type": "WebSite",
-            "@id": "https://byteli.com/"
-        }
-    }
-</script>
-
-    
-
-
-
-<meta name="twitter:card" content="summary" />
-
-
-    
-
-
-
-
-
-<meta property="og:title" content="Tags: blog101" />
-<meta property="og:description" content="达达里昂的人生备份" />
+<meta name="generator" content="Hugo 0.72.0" /><meta itemprop="name" content="blog101">
+<meta itemprop="description" content=""><meta property="og:title" content="blog101" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
 <meta property="og:url" content="https://byteli.com/tags/blog101/" />
-<meta property="og:site_name" content="飞越疯人院" />
-<meta property="og:locale" content="zh-CN" /><meta property="og:image" content="https://byteli.com/icons/apple-touch-icon.png" />
-    <meta property="og:type" content="website" />
-        
-
-
-    
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158588735-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-158588735-1');
-    </script>
-
-
-
-        
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
-        <script>
-    (adsbygoogle = window.adsbygoogle || []).push({
-        google_ad_client: "ca-pub-1552814990422749",
-        enable_page_level_ads: true
-    });
-</script>
-
-
-    
-
-    
+<meta property="og:updated_time" content="2020-02-16T10:18:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="blog101"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@example"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
 </head>
 
-    <body>
-        <div class="container">
-            
-    <header class="header">
-        <div class="site-brand">
-            
-            <a href="/" class="brand">飞越疯人院</a>
-            
-        </div>
-    </header>
-
-            
-    <nav class="nav">
-        <ul class="menu" id="menu">
-            
-                
-            
-            
-            
-                <li class="menu-item"><a href="/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="icon menu-item-icon"><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg><span class="menu-item-name">首页</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">文章</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon menu-item-icon"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">分类</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon menu-item-icon"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">标签</span></a>
-                </li>
-            
-                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon menu-item-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">关于</span></a>
-                </li>
-            
-        </ul>
-    </nav>
-
-            
-            
+  <body>
     
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
         
-            
+          
+            Tags
+          
         
-        <div id="theme-toggle" onclick="modeSwitcher()">🌞</div>
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
     
-
-            
     
-        <main class="main list" id="main">
-            <div class="main-inner">
-                <div class="content list-group">
-                    
-                        
-                        
-                            <h1 class="list-title">blog101</h1>
-                        
-                    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+</header>
 
-                    
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://byteli.com/img/main/logo.jpg" class="circle" width="" alt="飞越疯人院" /></a>
+  <header>
+    <h1>飞越疯人院</h1>
+  </header>
+  <main>
+    <p>There must be more to life than this.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+    <li><a href="/tags/blog101/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
 
-                    
-                    
 
-                    
-                    
-                    
-
-                    
-                    
-                        
-                        
-                    
-
-                    
-                    
-                    
-                        <ul class="list-part">
-                            
-                            
-                                
-                                
-                            
-                            
-                            
-                            
-                                
-                                
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                
-                                
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                    
-                                
-                                
-                                
-                            
-                            
-                            <h2 class="list-year">二〇二〇<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" class="icon chinese-zodiac"><path d="M675 908q7-10 17-29 10-18 28-69 17-52 15-98t-35-102q-32-56-106-95-54-15-69-8-5 3-6 8 0 5 18 39 17 33 36 74 20 41 25 85t-15 72q-47 0-88-35-21-18-34-46-1-2-4-4t-11-10q-7-8-17-9t-22 0q-13 1-28 12-88 69-76 98 2 5 8 18l25 50q6 13 7 20t-1 11q-3 2-58 4-56 2-70 9-26 16-7 33 25 22 131 30 46 4 75 0 28-4 39-14 10-10 13-21 3-10 3-25 0-16 4-22 12-21 27-19 14 2 19 23 1 5 1 15t2 17q2 6 5 18 3 10 10 15 6 5 18 10t29 5q24 0 68 6 44 7 72 6t37-12q20-18-28-44-34-16-57-16zm236-249q-11-30-24-55-14-26-26-40-8-9-23-27-12-12-19-18t-11-16q-4-9-4-16t8-21q14-19 43-55 39-57 22-62-3 1-7 2t-15 8-20 12q-10 5-23 17-13 11-22 20-10 9-20 25-10 15-13 27-3 13-2 30 1 18 11 34 13 24 39 53 15 17 44 49 18 21 29 44 10 24 3 53-8 28-43 61-19 19-95 24-2 1-4 3t-5 9q-1 3-4 10-1 3 5 10t18 5q16 1 40-3 23-4 52-16 28-12 48-34 19-21 28-53 2-10 2-22 0-25-12-58zM330 322q30 13 52 4l4-2q18-9 27-25 24-53 0-73-14-13-29-18-15-4-26-2-10 2-19 7-9 4-14 8-1 1-3 5-12 14-17 32-5 17 1 37 6 19 24 27zm-34 241q-46 90-66 116-10 14-17 36-7 23-6 43 1 21 15 25 8 3 20-2 11-5 22-13 11-9 26-23 9-9 26-27 13-12 28-30 22-26 44-34 23-8 41-2t37 29q87 110 106 79 7-13 2-49-3-23-8-46-5-22-11-41-6-18-13-33l-15-27q-7-13-13-22-6-8-11-18t-8-12q0-4 1-10t4-19q3-14 3-28v-26q0-14-5-24-1-1-2-3 6 1 14 1t15 2q31 2 54-6 22-8 32-25 11-16 15-32 4-17 3-32t-5-25q-22-48-99-54-3 0-7-1t-15 1-21 3q-9 1-20 12-11 12-17 22-21 46-9 84-81-35-166-10-57 17-80 39-22 21-24 42-12 0-16 2-17 4-27 11t-12 15q-1 2-1 4 0 6 7 15 21 22 62 18 2 3 5 8t16 16q12 10 23 21t33 19q22 7 40 11zm35-164q7 4 13 7t12 10q-10 10-25 18h-1q0-1-2-1t-4-1-7 0q-4 1-7-1t-8-1-9 0q20-41 38-31z"/></svg></h2>
-                            
-                                
-                                    
-                                    
-                                        
-                                        
-                                    
-                                    
-                                    <h3 class="list-month">二月</h3>
-                                    
-    <li class="list-item">
-        <a href="/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/" class="list-item-title">利用Hugo构建个人网站-6：个性化&amp;总结</a>
-        <time datetime="2020-02-16T10:18:00+08:00" class="list-item-time">2 月 16 日</time>
-    </li>
-
-    <li class="list-item">
-        <a href="/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/" class="list-item-title">利用Hugo构建个人网站-5：内容管理</a>
-        <time datetime="2020-02-16T09:55:00+08:00" class="list-item-time">2 月 16 日</time>
-    </li>
-
-    <li class="list-item">
-        <a href="/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/" class="list-item-title">利用Hugo构建个人网站-4：发布网站</a>
-        <time datetime="2020-02-16T09:06:26+08:00" class="list-item-time">2 月 16 日</time>
-    </li>
-
-    <li class="list-item">
-        <a href="/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-3%E5%86%85%E5%AE%B9%E4%B8%AD%E8%BD%AC/" class="list-item-title">利用Hugo构建个人网站-3：内容中转</a>
-        <time datetime="2020-02-15T22:51:26+08:00" class="list-item-time">2 月 15 日</time>
-    </li>
-
-    <li class="list-item">
-        <a href="/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-2%E7%94%9F%E6%88%90%E7%BD%91%E9%A1%B5/" class="list-item-title">利用Hugo构建个人网站-2：生成网页</a>
-        <time datetime="2020-02-15T22:27:26+08:00" class="list-item-time">2 月 15 日</time>
-    </li>
-
-    <li class="list-item">
-        <a href="/posts/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-1%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87/" class="list-item-title">利用Hugo构建个人网站-1：前期准备</a>
-        <time datetime="2020-02-15T18:36:26+08:00" class="list-item-time">2 月 15 日</time>
-    </li>
-
-                                
-                            
-                        </ul>
-                    
-                </div>
-            </div>
-        </main>
-    
-
-            
-    <div id="back-to-top" class="back-to-top">
-        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
-    </div>
-
-            
-    <footer id="footer" class="footer">
-        <div class="footer-inner"><div class="site-info">©&nbsp;2016–2020&nbsp;达达里昂</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
-
-            
-        </div>
+        
+      </ul>
     </footer>
+  
+</section>
 
-        </div>
-        <script src="/js/meme.min.28a5d4816af314c49aa3cbde0f1fcf915fde38249ea2822037483dabeba1c680.js" integrity="sha256-KKXUgWrzFMSao8veDx/PkV/eOCSeooIgN0g9q+uhxoA=" data-no-instant></script>
-
-
-    <script data-no-instant>InstantClick.init();</script>
-
-
-    <script data-no-instant>
-        InstantClick.on('change', function () {
-            backToTop();
-        });
-    </script>
-
-
-
-    <script data-no-instant>
-        InstantClick.on('change', function () {
-            const userPrefers = localStorage.getItem('theme');
-            const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-            const lightModeMediaQuery = window.matchMedia('(prefers-color-scheme: light)');
-            if (userPrefers === "dark") {
-                changeModeMeta("dark");
-                changeMode("🌙", "chroma", "chroma-dark");
-            } else if (userPrefers === "light") {
-                changeModeMeta("light");
-                changeMode("🌞", "chroma-dark", "chroma");
-            } else if (darkModeMediaQuery.matches) {
-                changeModeMeta("dark");
-                changeMode("🌙", "chroma", "chroma-dark");
-            } else if (lightModeMediaQuery.matches) {
-                changeModeMeta("light");
-                changeMode("🌞", "chroma-dark", "chroma");
-            }
-        });
-    </script>
-<script data-no-instant>
-            InstantClick.on('change', function () {
-                gtag('config', 'UA-158588735-1', {
-                    'page_path': location.pathname + location.search
-                });
-            });
-        </script>
+      <main id="site-main">
+        
+  
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/">利用Hugo构建个人网站-6：个性化&amp;总结</a></h2>
     
     
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-
-<script>
-    var scroll = new SmoothScroll('a[href*="#"]', {
-        speedAsDuration: true
-    });
-</script>
-
-
-
-
-
-
-
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-02-16 10:18:00 &#43;0800 CST">
+      February 16, 2020
+    </time>
+    <span class="author"></span>
     
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
-
-<script>
-    mediumZoom('[data-zoomable]', {
-        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
-    })
-</script>
-
-
-
-
-
-
+      <p>1 minute read</p>
     
-        <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  </div>
+</header>
+
+  
+
+  
+  <p>现在，你已经有了属于自己的独特网站，并掌握了更新博文的能力，这个网站已经有了你的个人色彩，但，怎能止步于此呢？</p>
+  <footer>
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/" class="button big">Read more</a>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
     
+      
+        
+          <li><a class="article-terms-link" href="/categories/hugo%e5%88%9b%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%8c%87%e5%8d%97/">Hugo创建个人博客指南</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/blog101/">blog101</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e5%bb%ba%e7%ab%99/">建站</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/">利用Hugo构建个人网站-5：内容管理</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-02-16 09:55:00 &#43;0800 CST">
+      February 16, 2020
+    </time>
+    <span class="author"></span>
+    
+      <p>1 minute read</p>
+    
+  </div>
+</header>
+
+  
+
+  
+  <p>现在，我们的网站框架已经搭设好，我们再进行最后一步设置，就可以随时编辑和发布文章了。</p>
+  <footer>
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/" class="button big">Read more</a>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/categories/hugo%e5%88%9b%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%8c%87%e5%8d%97/">Hugo创建个人博客指南</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/blog101/">blog101</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e5%bb%ba%e7%ab%99/">建站</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  
+    <article class="post">
+  <header>
+  <div class="title">
+    
+      <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/">利用Hugo构建个人网站-4：发布网站</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-02-16 09:06:26 &#43;0800 CST">
+      February 16, 2020
+    </time>
+    <span class="author"></span>
+    
+      <p>1 minute read</p>
+    
+  </div>
+</header>
+
+  
+
+  
+  <p>这一步中，Netlify将会把我们的网站推向整个互联网。</p>
+  <footer>
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/" class="button big">Read more</a>
+    <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/categories/hugo%e5%88%9b%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%8c%87%e5%8d%97/">Hugo创建个人博客指南</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/blog101/">blog101</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e5%bb%ba%e7%ab%99/">建站</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+  </footer>
+</article>
+
+  
+  
+<div class="pagination">
+  
+  
+    <a href="/tags/blog101/page/2/" class="button"><div class="next"><div>Next</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/data-science/rs-basic-data-types/">R&#39;s Basic Data Types</a></h2>
+          <time class="published" datetime="">July 11, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E5%AE%89%E9%9D%99%E7%9A%84%E5%8A%9B%E9%87%8F%E5%86%85%E5%90%91%E9%AB%98%E6%95%8F%E8%80%85%E7%9A%84%E8%AF%B4%E6%98%8E%E6%89%8B%E5%86%8C/">安静的力量：内向高敏者的说明手册</a></h2>
+          <time class="published" datetime="">May 16, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E6%BC%AB%E6%BC%AB%E8%87%AA%E7%94%B1%E8%B7%AF/">漫漫自由路：曼德拉自传</a></h2>
+          <time class="published" datetime="">April 6, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/2020%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/">2020阅读计划</a></h2>
+          <time class="published" datetime="">February 23, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/">利用Hugo构建个人网站-6：个性化&amp;总结</a></h2>
+          <time class="published" datetime="">February 16, 2020</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">See more</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">hugo创建个人博客指南<span class="count">6</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/">精神越狱<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/hello-world/">hello-world<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This theme was developed for Hugo static site generator.</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+    <li><a href="/tags/blog101/index.xml" type="application/rss+xml" target="_blank" title="RSS" class="fas fa-rss"></a></li>
+
+
+        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
 
 
 
 
-    </body>
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
+<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        飞越疯人院
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.72.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.43312cfb6f0caa80b1d854248cdc1078d6e7e0d05ffbb5508839f05cc3a5aca2.js" integrity="sha256-QzEs&#43;28MqoCx2FQkjNwQeNbn4NBf&#43;7VQiDnwXMOlrKI="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+<title>利用Hugo构建个人网站-5：内容管理 - 飞越疯人院</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="generator" content="Hugo 0.72.0" /><meta itemprop="name" content="利用Hugo构建个人网站-5：内容管理">
+<meta itemprop="description" content="网站上线后，forestry将为我们提供简单而高效的内容管理方案。">
+<meta itemprop="datePublished" content="2020-02-16T09:55:00&#43;08:00" />
+<meta itemprop="dateModified" content="2020-02-16T09:55:00&#43;08:00" />
+<meta itemprop="wordCount" content="62">
+
+
+
+<meta itemprop="keywords" content="blog101,Hugo,建站," /><meta property="og:title" content="利用Hugo构建个人网站-5：内容管理" />
+<meta property="og:description" content="网站上线后，forestry将为我们提供简单而高效的内容管理方案。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/" />
+<meta property="article:published_time" content="2020-02-16T09:55:00+08:00" />
+<meta property="article:modified_time" content="2020-02-16T09:55:00+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="利用Hugo构建个人网站-5：内容管理"/>
+<meta name="twitter:description" content="网站上线后，forestry将为我们提供简单而高效的内容管理方案。"/>
+<meta name="twitter:site" content="@example"/>
+<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+</head>
+
+  <body>
+    
+
+<header id="site-header">
+  <nav id="site-nav">
+    <h1 class="nav-title">
+      <a href="/" class="nav">
+        
+          
+            posts
+          
+        
+      </a>
+    </h1>
+    <menu id="site-nav-menu" class="flyout-menu menu">
+      
+        
+          
+          
+            <a href="/" class="nav link"><i class='fa fa-home'></i> Home</a>
+          
+        
+      
+        
+          
+          
+            <a href="/about/" class="nav link"><i class='far fa-id-card'></i> About</a>
+          
+        
+      
+        
+          
+          
+            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+          
+        
+      
+        
+          
+          
+            <a href="/categories/" class="nav link"><i class='fas fa-sitemap'></i> Categories</a>
+          
+        
+      
+        
+          
+          
+            <a href="/contact/" class="nav link"><i class='far fa-envelope'></i> Contact</a>
+          
+        
+      
+      
+      <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
+    </menu>
+    <a href="#search-input" class="nav search-toggle"><i class="fas fa-search fa-2x">&nbsp;</i></a>
+    
+    
+    <a href="#site-nav" class="nav nav-toggle"><i class="fas fa-bars fa-2x"></i></a>
+  </nav>
+  <menu id="search" class="menu"><input id="search-input" class="search-input menu"></input><div id="search-results" class="search-results menu"></div></menu>
+  
+  
+</header>
+
+    <div id="wrapper">
+      <section id="site-intro" >
+  <a href="/"><img src="https://byteli.com/img/main/logo.jpg" class="circle" width="" alt="飞越疯人院" /></a>
+  <header>
+    <h1>飞越疯人院</h1>
+  </header>
+  <main>
+    <p>There must be more to life than this.</p>
+  </main>
+  
+    <footer>
+      <ul class="socnet-icons">
+        
+
+        
+      </ul>
+    </footer>
+  
+</section>
+
+      <main id="site-main">
+        
+  <article class="post">
+    <header>
+  <div class="title">
+    
+      <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/">利用Hugo构建个人网站-5：内容管理</a></h2>
+    
+    
+  </div>
+  <div class="meta">
+    <time class="published" datetime="2020-02-16 09:55:00 &#43;0800 CST">
+      February 16, 2020
+    </time>
+    <span class="author"></span>
+    
+      <p>1 minute read</p>
+    
+  </div>
+</header>
+
+    <section id="socnet-share">
+      
+
+
+
+
+  
+    
+    <a href="//twitter.com/share?text=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-5%ef%bc%9a%e5%86%85%e5%ae%b9%e7%ae%a1%e7%90%86&amp;url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-5%25E5%2586%2585%25E5%25AE%25B9%25E7%25AE%25A1%25E7%2590%2586%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
+        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
+      </a>
+  
+
+  
+      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-5%25E5%2586%2585%25E5%25AE%25B9%25E7%25AE%25A1%25E7%2590%2586%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
+        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
+        </a>
+  
+
+  
+    <a href="//www.reddit.com/submit?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-5%25E5%2586%2585%25E5%25AE%25B9%25E7%25AE%25A1%25E7%2590%2586%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-5%ef%bc%9a%e5%86%85%e5%ae%b9%e7%ae%a1%e7%90%86" target="_blank" rel="noopener" class="nav share-btn reddit">
+          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
+        </a>
+  
+
+  
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-5%25E5%2586%2585%25E5%25AE%25B9%25E7%25AE%25A1%25E7%2590%2586%2f&amp;title=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-5%ef%bc%9a%e5%86%85%e5%ae%b9%e7%ae%a1%e7%90%86" target="_blank" rel="noopener" class="nav share-btn linkedin">
+            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
+          </a>
+  
+
+  
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-5%25E5%2586%2585%25E5%25AE%25B9%25E7%25AE%25A1%25E7%2590%2586%2f&amp;description=%e5%88%a9%e7%94%a8Hugo%e6%9e%84%e5%bb%ba%e4%b8%aa%e4%ba%ba%e7%bd%91%e7%ab%99-5%ef%bc%9a%e5%86%85%e5%ae%b9%e7%ae%a1%e7%90%86" target="_blank" rel="noopener" class="nav share-btn pinterest">
+          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
+        </a>
+  
+
+  
+        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fbyteli.com%2fposts%2fhugo%2f%25E5%2588%25A9%25E7%2594%25A8hugo%25E6%259E%2584%25E5%25BB%25BA%25E4%25B8%25AA%25E4%25BA%25BA%25E7%25BD%2591%25E7%25AB%2599-5%25E5%2586%2585%25E5%25AE%25B9%25E7%25AE%25A1%25E7%2590%2586%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
+          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
+        </a>
+  
+
+
+    </section>
+    
+
+    <div class="content">
+      <h2 id="1-内容管理配置forestry">1. 内容管理——配置forestry</h2>
+<p>现在，我们的网站框架已经搭设好，我们再进行最后一步设置，就可以随时编辑和发布文章了。</p>
+<h3 id="11-连接forestry与github">1.1 连接Forestry与Github</h3>
+<ol>
+<li>
+<p>访问<a href="https://forestry.io/">forestry</a>，在登录选项中，选择GitHub登录。</p>
+</li>
+<li>
+<p>登录成功后，点击&quot;Add site&rdquo;，并选择Hugo及最新的版本号。</p>
+<p><img src="https://i.loli.net/2020/02/16/GAJjqs2c71fr953.png" alt="1forestry添加网站-1.png"></p>
+</li>
+<li>
+<p>在&quot;git provider&quot;中，选择&quot;GitHub&rdquo;。之后选择我们放置网站的仓库。</p>
+<p><img src="https://i.loli.net/2020/02/16/KGjbXeEcs95VMuY.png" alt="2forestry添加网站-2.png"></p>
+</li>
+<li>
+<p>稍作等待，forestry就已经读取并同步我们的内容。我们可以新建、修改、发布文章。</p>
+<p><img src="https://i.loli.net/2020/02/16/18pUC4yMoRNJ7s3.png" alt="3forestry用户界面.png"></p>
+</li>
+</ol>
+<h3 id="12-通过front-matter进行内容管理">1.2 通过Front Matter进行内容管理</h3>
+<p>这里需要额外提醒的一点是Front matter，这个是我们博客的头文件，用于储存每篇博文的诸如：标签、分类、关键字、摘要等额外信息，既方便了我们对文章的分类及管理，又可以提升网站访问的体验。</p>
+<p>对于Meme主题，作者在主题项目页即详细列出来Meme主题支持的Front matter 字段及说明，我们可以参考。不同的主题，可能有所差异，需要我们参照项目的说明。</p>
+<p><img src="https://i.loli.net/2020/02/16/2Ieylc9oRnpPAkr.png" alt="4Meme支持的Front Matter.png"></p>
+<p>我们点击左侧侧边栏的Front matter，从已经创建的博文中，构建一个通用的模板。</p>
+<p><img src="https://i.loli.net/2020/02/16/EkZAQalGgeFzHdn.png" alt="5forestry新建Front Matter模板.png"></p>
+<p>这里，我添加了如下的字段：</p>
+<table>
+<thead>
+<tr>
+<th>序号</th>
+<th>字段</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>title</td>
+<td>文章标题</td>
+</tr>
+<tr>
+<td>2</td>
+<td>date</td>
+<td>文章创建日期</td>
+</tr>
+<tr>
+<td>3</td>
+<td>tags</td>
+<td>文章标签</td>
+</tr>
+<tr>
+<td>4</td>
+<td>categories</td>
+<td>文章分类</td>
+</tr>
+<tr>
+<td>5</td>
+<td>summary</td>
+<td>文章摘要，为访客提供文章的简要信息。<!-- raw HTML omitted -->为空则抓取文章正文的文字。</td>
+</tr>
+<tr>
+<td>6</td>
+<td>description</td>
+<td>文章表述，主要为搜索引擎提供文章的内容信息</td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://i.loli.net/2020/02/16/rQh8DSbK14iHCEG.png" alt="6我构建的Front Matter模板.png"></p>
+<h3 id="13-更新预览发布文章">1.3 更新&amp;预览&amp;发布文章</h3>
+<h4 id="131-更新">1.3.1 更新</h4>
+<p>我们点击&quot;helloworld&quot;这篇博文，应用这个模板文件。</p>
+<p><img src="https://i.loli.net/2020/02/16/C9RtGwBA2kpaJ6u.png" alt="7更改博文的Front Matter模板.png"></p>
+<p>这里注意，右上角的眼镜左侧，我们现在&quot;Draft&quot;为&quot;off&rdquo;，即表示我们保存后就会在网站上进行更新。</p>
+<p>如果你还不想发布，可以将模式点回&quot;On&rdquo;，这样&quot;Save&quot;选项就会变成&quot;Save Draft&rdquo;。</p>
+<p><img src="https://i.loli.net/2020/02/16/iPzATCEh3HXlIc7.png" alt="8保存编辑后的草稿文件.png"></p>
+<h4 id="132-预览">1.3.2 预览</h4>
+<p>保存草稿之后，如果我们需要即时预览的话，可以点击左侧的&quot;settings&rdquo;-&ldquo;Previews&rdquo;-&ldquo;Start Preview&rdquo;，当显示&quot;SERVER: READY&quot;的信息后，即表明我们的即时预览功能已经开启。</p>
+<p><img src="https://i.loli.net/2020/02/16/4GciUXfx3B1ZTzR.png" alt="9开启forestry的即时预览功能.png"></p>
+<h4 id="133-发布">1.3.3 发布</h4>
+<p>我们预览后，没有问题的话，就可以将&quot;Draft&quot;的状态设置为&quot;Off&rdquo;，并点击Sav，之后，forestry就会将我们的更改提交上去，我们刷新下自己的网站就能看到更新了。更新后的结果如下：</p>
+<p><img src="https://i.loli.net/2020/02/16/6Q5OznhLc4iV17E.png" alt="10网站完成.png"></p>
+<hr>
+<p>至此，我们已经完成了一个网站的创建，它包括独立的域名、安全的https、分类的页面及方便的内容管理。现在，你已经可以开始着手发布你的第一篇博文了 ✧*｡٩(ˊᗜˋ*)و✧*</p>
+<p>如果还想进一步个性化自己的网站，我们将在下一节给出两种简单有效的路径。</p>
+
+    </div>
+    <footer>
+      <ul class="stats">
+  <li class="categories">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/categories/hugo%e5%88%9b%e5%bb%ba%e4%b8%aa%e4%ba%ba%e5%8d%9a%e5%ae%a2%e6%8c%87%e5%8d%97/">Hugo创建个人博客指南</a></li>
+        
+      
+    
+    </ul>
+  </li>
+  <li class="tags">
+    <ul>
+    
+      
+        
+          <li><a class="article-terms-link" href="/tags/blog101/">blog101</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/hugo/">Hugo</a></li>
+        
+          <li><a class="article-terms-link" href="/tags/%e5%bb%ba%e7%ab%99/">建站</a></li>
+        
+      
+    
+    </ul>
+  </li>
+</ul>
+
+    </footer>
+  </article>
+  
+  <article class="post">
+    
+<div>
+  <h2>Say something</h2>
+    <form id="post-js-form" class="post-new-comment" method="POST">
+      
+      <h5 class='post-reply-notice hidden'>
+        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
+      </h5>
+
+      
+      <input type="hidden" name="options[entryId]" value="8cebadc4b754e596294a0ae43d154775">
+      <input type='hidden' name='fields[replyThread]' value=''>
+      <input type='hidden' name='fields[replyID]' value=''>
+      <input type='hidden' name='fields[replyName]' value=''>
+
+      
+      <input required name='fields[name]' type='text' placeholder='Your name (Required)'>
+      <input name='fields[website]' type='text' placeholder='Your website'>
+      <input required name='fields[email]' type='email' placeholder='Your email address (Required for Gravatar)'>
+      <textarea required name='fields[body]' placeholder='Your message. Feel free to use Markdown (Google &#39;Markdown Cheat Sheet&#39;).' rows='10'></textarea>
+
+      
+      
+
+      
+      <p class='post-submit-notice'>
+        <strong class='post-submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
+        <strong class='post-submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission.  Please make sure all required fields have been completed and try again.</strong>
+      </p>
+
+      
+      <input type='submit' value='Submit' class='button'>
+      <input type='submit' value='Submitted' class='hidden button' disabled>
+      <input type='reset' value='Reset' class='button'>
+    </form>
+</div>
+
+
+<div>
+  <h2>Comments</h2>
+
+  
+</div>
+
+  </article>
+
+
+  <div class="pagination">
+  
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/" class="button"><div class="previous"><div>利用Hugo构建个人网站-4：发布网站</div></div></a>
+  
+  
+    <a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/" class="button"><div class="next"><div>利用Hugo构建个人网站-6：个性化&amp;总结</div></div></a>
+  
+</div>
+
+
+      </main>
+      <section id="site-sidebar">
+  
+    <section id="recent-posts">
+      <header>
+        <h1>Recent posts</h1>
+      </header>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/data-science/rs-basic-data-types/">R&#39;s Basic Data Types</a></h2>
+          <time class="published" datetime="">July 11, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E5%AE%89%E9%9D%99%E7%9A%84%E5%8A%9B%E9%87%8F%E5%86%85%E5%90%91%E9%AB%98%E6%95%8F%E8%80%85%E7%9A%84%E8%AF%B4%E6%98%8E%E6%89%8B%E5%86%8C/">安静的力量：内向高敏者的说明手册</a></h2>
+          <time class="published" datetime="">May 16, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/%E6%BC%AB%E6%BC%AB%E8%87%AA%E7%94%B1%E8%B7%AF/">漫漫自由路：曼德拉自传</a></h2>
+          <time class="published" datetime="">April 6, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/reading/2020%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/">2020阅读计划</a></h2>
+          <time class="published" datetime="">February 23, 2020</time>
+        </header>
+      </article>
+      
+      <article class="mini-post">
+        <section>
+          
+
+        </section>
+        <header>
+          <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/">利用Hugo构建个人网站-6：个性化&amp;总结</a></h2>
+          <time class="published" datetime="">February 16, 2020</time>
+        </header>
+      </article>
+      
+      
+        <footer>
+          <a href="/blog/" class="button">See more</a>
+        </footer>
+      
+    </section>
+  
+
+  
+    
+      <section id="categories">
+        <header>
+          <h1><a href="/categories">Categories</a></h1>
+        </header>
+        <ul>
+          
+            
+          
+          
+          <li>
+            
+              <a href="/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/">hugo创建个人博客指南<span class="count">6</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/">精神越狱<span class="count">3</span></a>
+            
+          
+          <li>
+            
+              <a href="/categories/hello-world/">hello-world<span class="count">1</span></a>
+            
+          
+          </li>
+        </ul>
+      </section>
+    
+  
+
+  
+    <section id="mini-bio">
+      <header>
+        <h1>About</h1>
+      </header>
+      <p>This theme was developed for Hugo static site generator.</p>
+      <footer>
+        <a href="/about" class="button">Learn More</a>
+      </footer>
+    </section>
+  
+</section>
+
+      <footer id="site-footer">
+  
+      <ul class="socnet-icons">
+        
+
+        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
+
+
+
+
+
+
+<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
+
+
+
+
+<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
+<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
+
+
+
+<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
+<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+
+
+
+
+
+
+
+<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
+
+<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
+
+
+
+<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
+<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
+
+
+
+<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
+<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
+<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
+<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+      </ul>
+  
+  <p class="copyright">
+    
+      &copy; 2020
+      
+        飞越疯人院
+      
+    . <br>
+    Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.72.0' target='_blank' rel='noopener'>Hugo</a>
+  </p>
+</footer>
+<a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
+
+      <script src="/js/highlight.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.43312cfb6f0caa80b1d854248cdc1078d6e7e0d05ffbb5508839f05cc3a5aca2.js" integrity="sha256-QzEs&#43;28MqoCx2FQkjNwQeNbn4NBf&#43;7VQiDnwXMOlrKI="></script>
+    <script src="/js/add-on.js"></script>
+    </div>
+  </body>
+</html>
