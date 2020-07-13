@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on Byteli</title>
+    <link>https://byteli.com/about/</link>
+    <description>Recent content in About on Byteli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 12 Feb 2020 16:24:05 +0800</lastBuildDate>
+    
+	<atom:link href="https://byteli.com/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://byteli.com/about/about/</link>
+      <pubDate>Wed, 12 Feb 2020 16:24:05 +0800</pubDate>
+      
+      <guid>https://byteli.com/about/about/</guid>
+      <description>There must be more to life than this.</description>
+    </item>
+    
+  </channel>
+</rss>

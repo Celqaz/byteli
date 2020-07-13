@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
   <meta charset="utf-8">
-<title>R&#39;s Basic Data Types - 飞越疯人院</title>
+<title>R&#39;s Basic Data Types - Byteli</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -23,8 +23,11 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="R&#39;s Basic Data Types"/>
 <meta name="twitter:description" content="R&rsquo;s basic data types."/>
-<meta name="twitter:site" content="@example"/>
-<link rel="stylesheet" href="/css/bundle.min.759e3848ea529eef056dab665b241e2af569e601ab80f68f8d4a4d002a155dd4.css" integrity="sha256-dZ44SOpSnu8FbatmWyQeKvVp5gGrgPaPjUpNACoVXdQ="><link rel="stylesheet" href="/css/add-on.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/github.min.css"><link rel="stylesheet" href="/css/normalize.css">
+        <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css">
+        <script src="https://kit.fontawesome.com/be54eb011a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" /><link rel="stylesheet" href="/css/main.min.f6072bc46612793d6659c7d53f393936ecb0b7baf2813888f1761a141e8b53b6.css" integrity="sha256-9gcrxGYSeT1mWcfVPzk5Nuywt7rygTiI8XYaFB6LU7Y="><link rel="stylesheet" href="/css/add-on.css">
 </head>
 
   <body>
@@ -60,7 +63,7 @@
         
           
           
-            <a href="/blog/" class="nav link"><i class='far fa-newspaper'></i> Blog</a>
+            <a href="/posts/" class="nav link"><i class='far fa-newspaper'></i> posts</a>
           
         
       
@@ -78,6 +81,13 @@
           
         
       
+        
+          
+          
+            <a href="/tags/" class="nav link"><i class='far fa-newspaper'></i> Tags</a>
+          
+        
+      
       
       <a href="#search-input" class="nav search-toggle"><i class="fas fa-search">&nbsp;</i>Search</a>
     </menu>
@@ -92,10 +102,10 @@
 </header>
 
     <div id="wrapper">
-      <section id="site-intro" >
-  <a href="/"><img src="https://byteli.com/img/main/logo.jpg" class="circle" width="" alt="飞越疯人院" /></a>
+      <section id="site-intro" class="hidden-single-column">
+  <a href="/"><img src="https://byteli.com/img/main/logo.jpg" class="circle" width="100" alt="达达里昂" /></a>
   <header>
-    <h1>飞越疯人院</h1>
+    
   </header>
   <main>
     <p>There must be more to life than this.</p>
@@ -127,8 +137,6 @@
     </time>
     <span class="author"></span>
     
-      <p>3 minute read</p>
-    
   </div>
 </header>
 
@@ -137,43 +145,6 @@
 
 
 
-
-  
-    
-    <a href="//twitter.com/share?text=R%27s%20Basic%20Data%20Types&amp;url=https%3a%2f%2fbyteli.com%2fposts%2fdata-science%2frs-basic-data-types%2f" target="_blank" rel="noopener" class="nav share-btn twitter">
-        <i class="fab fa-twitter"></i><p>&nbsp;Twitter</p>
-      </a>
-  
-
-  
-      <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fbyteli.com%2fposts%2fdata-science%2frs-basic-data-types%2f" target="_blank" rel="noopener" class="nav share-btn facebook">
-        <i class="fab fa-facebook"></i><p>&nbsp;Facebook</p>
-        </a>
-  
-
-  
-    <a href="//www.reddit.com/submit?url=https%3a%2f%2fbyteli.com%2fposts%2fdata-science%2frs-basic-data-types%2f&amp;title=R%27s%20Basic%20Data%20Types" target="_blank" rel="noopener" class="nav share-btn reddit">
-          <i class="fab fa-reddit-alien"></i><p>&nbsp;Reddit</p>
-        </a>
-  
-
-  
-        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fbyteli.com%2fposts%2fdata-science%2frs-basic-data-types%2f&amp;title=R%27s%20Basic%20Data%20Types" target="_blank" rel="noopener" class="nav share-btn linkedin">
-            <i class="fab fa-linkedin"></i><p>&nbsp;LinkedIn</p>
-          </a>
-  
-
-  
-        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fbyteli.com%2fposts%2fdata-science%2frs-basic-data-types%2f&amp;description=R%27s%20Basic%20Data%20Types" target="_blank" rel="noopener" class="nav share-btn pinterest">
-          <i class="fab fa-pinterest-p"></i><p>&nbsp;Pinterest</p>
-        </a>
-  
-
-  
-        <a href="mailto:?subject=Check%20out%20this%20post%20by %7b%20%20%20%20%20%20%20%20map%5b%5d%7d&amp;body=https%3a%2f%2fbyteli.com%2fposts%2fdata-science%2frs-basic-data-types%2f" target="_blank" class="nav share-btn email" data-proofer-ignore>
-          <i class="fas fa-envelope"></i><p>&nbsp;Email</p>
-        </a>
-  
 
 
     </section>
@@ -358,53 +329,6 @@ b <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
     </footer>
   </article>
   
-  <article class="post">
-    
-<div>
-  <h2>Say something</h2>
-    <form id="post-js-form" class="post-new-comment" method="POST">
-      
-      <h5 class='post-reply-notice hidden'>
-        <span class='post-reply-arrow'></span><span class='post-reply-name'></span>
-      </h5>
-
-      
-      <input type="hidden" name="options[entryId]" value="b0e9a429f9610d62685ea0e0e5c2ca7d">
-      <input type='hidden' name='fields[replyThread]' value=''>
-      <input type='hidden' name='fields[replyID]' value=''>
-      <input type='hidden' name='fields[replyName]' value=''>
-
-      
-      <input required name='fields[name]' type='text' placeholder='Your name (Required)'>
-      <input name='fields[website]' type='text' placeholder='Your website'>
-      <input required name='fields[email]' type='email' placeholder='Your email address (Required for Gravatar)'>
-      <textarea required name='fields[body]' placeholder='Your message. Feel free to use Markdown (Google &#39;Markdown Cheat Sheet&#39;).' rows='10'></textarea>
-
-      
-      
-
-      
-      <p class='post-submit-notice'>
-        <strong class='post-submit-notice-text submit-success hidden'>Thanks for your comment! It will be shown on the site once it has been approved.</strong>
-        <strong class='post-submit-notice-text submit-failed hidden'>Sorry, there was an error with your submission.  Please make sure all required fields have been completed and try again.</strong>
-      </p>
-
-      
-      <input type='submit' value='Submit' class='button'>
-      <input type='submit' value='Submitted' class='hidden button' disabled>
-      <input type='reset' value='Reset' class='button'>
-    </form>
-</div>
-
-
-<div>
-  <h2>Comments</h2>
-
-  
-</div>
-
-  </article>
-
 
   <div class="pagination">
   
@@ -416,73 +340,6 @@ b <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
 
       </main>
       <section id="site-sidebar">
-  
-    <section id="recent-posts">
-      <header>
-        <h1>Recent posts</h1>
-      </header>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/posts/data-science/rs-basic-data-types/">R&#39;s Basic Data Types</a></h2>
-          <time class="published" datetime="">July 11, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/posts/reading/%E5%AE%89%E9%9D%99%E7%9A%84%E5%8A%9B%E9%87%8F%E5%86%85%E5%90%91%E9%AB%98%E6%95%8F%E8%80%85%E7%9A%84%E8%AF%B4%E6%98%8E%E6%89%8B%E5%86%8C/">安静的力量：内向高敏者的说明手册</a></h2>
-          <time class="published" datetime="">May 16, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/posts/reading/%E6%BC%AB%E6%BC%AB%E8%87%AA%E7%94%B1%E8%B7%AF/">漫漫自由路：曼德拉自传</a></h2>
-          <time class="published" datetime="">April 6, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/posts/reading/2020%E9%98%85%E8%AF%BB%E8%AE%A1%E5%88%92/">2020阅读计划</a></h2>
-          <time class="published" datetime="">February 23, 2020</time>
-        </header>
-      </article>
-      
-      <article class="mini-post">
-        <section>
-          
-
-        </section>
-        <header>
-          <h2><a href="/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/">利用Hugo构建个人网站-6：个性化&amp;总结</a></h2>
-          <time class="published" datetime="">February 16, 2020</time>
-        </header>
-      </article>
-      
-      
-        <footer>
-          <a href="/blog/" class="button">See more</a>
-        </footer>
-      
-    </section>
   
 
   
@@ -508,7 +365,7 @@ b <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
           
           <li>
             
-              <a href="/categories/hello-world/">hello-world<span class="count">1</span></a>
+              <a href="/categories/hello-world/">hello-world<span class="count">2</span></a>
             
           
           </li>
@@ -518,42 +375,13 @@ b <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
   
 
   
-    <section id="mini-bio">
-      <header>
-        <h1>About</h1>
-      </header>
-      <p>This theme was developed for Hugo static site generator.</p>
-      <footer>
-        <a href="/about" class="button">Learn More</a>
-      </footer>
-    </section>
-  
 </section>
 
       <footer id="site-footer">
   
       <ul class="socnet-icons">
         
-
-        <li><a href="//github.com/pacollins/hugo-future-imperfect-slim" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
-
-
-
-
-
-
-<li><a href="//flickr.com/photos/example" target="_blank" rel="noopener" title="Flickr" class="fab fa-flickr"></a></li>
-
-
-
-
-<li><a href="//linkedin.com/in/example" target="_blank" rel="noopener" title="LinkedIn" class="fab fa-linkedin"></a></li>
-<li><a href="//linkedin.com/company/examplebusiness" target="_blank" rel="noopener" title="LinkedIn Company" class="fab fa-linkedin"></a></li>
-
-
-
-<li><a href="//facebook.com/example" target="_blank" rel="noopener" title="Facebook" class="fab fa-facebook"></a></li>
-<li><a href="//reddit.com/user/example" target="_blank" rel="noopener" title="Reddit" class="fab fa-reddit"></a></li>
+        <li><a href="//github.com/celqaz" target="_blank" rel="noopener" title="GitHub" class="fab fa-github"></a></li>
 
 
 
@@ -561,21 +389,39 @@ b <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
 
 
 
-<li><a href="//instagram.com/example" target="_blank" rel="noopener" title="Instagram" class="fab fa-instagram"></a></li>
-
-<li><a href="//twitter.com/example" target="_blank" rel="noopener" title="Twitter" class="fab fa-twitter"></a></li>
 
 
 
-<li><a href="//pinterest.com/example" target="_blank" rel="noopener" title="Pinterest" class="fab fa-pinterest-p"></a></li>
-<li><a href="//telegram.me/example" target="_blank" rel="noopener" title="telegram" class="fab fa-telegram"></a></li>
 
 
 
-<li><a href="//researchgate.net/profile/example" target="_blank" rel="noopener" title="Research Gate"><i class="ai ai-researchgate"></i></a></li>
-<li><a href="//keybase.io/example" target="_blank" rel="noopener" title="keybase" class="fab fa-keybase"></a></li>
-<li><a href="//example.com/@example" target="_blank" rel="noopener" title="mastodon" class="fab fa-mastodon"></a></li>
-<li><a href="mailto:example" target="_blank" title="Email" class="far fa-envelope"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="mailto:libin9400@gmail.com" target="_blank" title="Email" class="far fa-envelope"></a></li>
 
       </ul>
   
@@ -583,7 +429,7 @@ b <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
     
       &copy; 2020
       
-        飞越疯人院
+        Byteli
       
     . <br>
     Theme: <a href='https://github.com/pacollins/hugo-future-imperfect-slim' target='_blank' rel='noopener'>Hugo Future Imperfect Slim</a><br>A <a href='https://html5up.net/future-imperfect' target='_blank' rel='noopener'>HTML5 UP port</a> | Powered by <a href='https://gohugo.io/' title='0.72.0' target='_blank' rel='noopener'>Hugo</a>
@@ -591,9 +437,12 @@ b <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">4</span>
 </footer>
 <a id="back-to-top" href="#" class="fas fa-arrow-up fa-2x"></a>
 
-      <script src="/js/highlight.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script><script src="/js/bundle.min.43312cfb6f0caa80b1d854248cdc1078d6e7e0d05ffbb5508839f05cc3a5aca2.js" integrity="sha256-QzEs&#43;28MqoCx2FQkjNwQeNbn4NBf&#43;7VQiDnwXMOlrKI="></script>
-    <script src="/js/add-on.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/html.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/css.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/js.min.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/languages/toml.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script><script src="//code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
+    <script src="//unpkg.com/lunr/lunr.js"></script><script src="/js/bundlecdn.min.452a4dc63d27874513a2d3ca6500310ab862e56e256c0570e10d6c3594680e0a.js" integrity="sha256-RSpNxj0nh0UTotPKZQAxCrhi5W4lbAVw4Q1sNZRoDgo=">
+    <script src="\/js\/add-on.js"></script>
     </div>
   </body>
 </html>

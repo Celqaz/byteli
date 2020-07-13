@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>2020 on 飞越疯人院</title>
+    <title>2020 on Byteli</title>
     <link>https://byteli.com/tags/2020/</link>
-    <description>Recent content in 2020 on 飞越疯人院</description>
+    <description>Recent content in 2020 on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Sun, 23 Feb 2020 17:12:16 +0800</lastBuildDate>
     
 	<atom:link href="https://byteli.com/tags/2020/index.xml" rel="self" type="application/rss+xml" />

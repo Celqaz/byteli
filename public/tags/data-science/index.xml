@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Science on 飞越疯人院</title>
+    <title>Data Science on Byteli</title>
     <link>https://byteli.com/tags/data-science/</link>
-    <description>Recent content in Data Science on 飞越疯人院</description>
+    <description>Recent content in Data Science on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Sat, 11 Jul 2020 23:42:34 +0800</lastBuildDate>
     
 	<atom:link href="https://byteli.com/tags/data-science/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>R&#39;s Basic Data Types</title>
+      <link>https://byteli.com/contact/contact/</link>
+      <pubDate>Sat, 11 Jul 2020 23:42:34 +0800</pubDate>
+      
+      <guid>https://byteli.com/contact/contact/</guid>
+      <description>R&amp;rsquo;s basic data types.</description>
+    </item>
     
     <item>
       <title>R&#39;s Basic Data Types</title>

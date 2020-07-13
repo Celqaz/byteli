@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo创建个人博客指南 on 飞越疯人院</title>
+    <title>Hugo创建个人博客指南 on Byteli</title>
     <link>https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/</link>
-    <description>Recent content in Hugo创建个人博客指南 on 飞越疯人院</description>
+    <description>Recent content in Hugo创建个人博客指南 on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
     <lastBuildDate>Sun, 16 Feb 2020 10:18:00 +0800</lastBuildDate>
     
 	<atom:link href="https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/index.xml" rel="self" type="application/rss+xml" />
