@@ -2,7 +2,7 @@
 title: 利用Hugo构建个人网站-5：内容管理
 tags: [blog101, Hugo, 建站]
 date: 2020-02-16T09:55:00.000+08:00
-summary: "网站上线后，forestry将为我们提供简单而高效的内容管理方案。"
+description: "网站上线后，forestry将为我们提供简单而高效的内容管理方案。"
 categories: ["Hugo创建个人博客指南"]
 keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub, CMS, 内容管理平台]
 ---

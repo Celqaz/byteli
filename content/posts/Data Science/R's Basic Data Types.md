@@ -1,17 +1,17 @@
 ---
 title: R's Basic Data Types
 tags: [Data Science, R]
-date: 2020-07-11T23:42:34.000+08:00
-summary: "R's basic data types."
+date: 2020-07-11T23:42:34.000+08:00 
 categories: ["Hello World"]
+description: "Brief introduction of R's basic data types."
 keywords: [Data Science, R]
 ---
 
-# 
+
+
+## 
 
 # R's Basic Data Types
-
-# 
 
 ## Atomic Classes
 

@@ -2,7 +2,7 @@
 title: 利用Hugo构建个人网站-6：个性化&总结
 tags: [blog101, Hugo, 建站]
 date: 2020-02-16T10:18:00.000+08:00
-summary: "进一步个性化你的网站。"
+description: "进一步个性化你的网站。"
 categories: ["Hugo创建个人博客指南"]
 keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub, 自定义Hugo主题]
 ---

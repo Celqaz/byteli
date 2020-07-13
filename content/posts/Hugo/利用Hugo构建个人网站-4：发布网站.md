@@ -2,7 +2,7 @@
 title: 利用Hugo构建个人网站-4：发布网站
 tags: [blog101, Hugo, 建站]
 date: 2020-02-16T09:06:26.000+08:00
-summary: "现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。"
+description: "现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。"
 categories: ["Hugo创建个人博客指南"]
 keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub, https]
 ---

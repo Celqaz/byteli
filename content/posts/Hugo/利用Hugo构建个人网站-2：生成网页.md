@@ -2,7 +2,7 @@
 title: 利用Hugo构建个人网站-2：生成网页
 tags: [blog101, Hugo, 建站]
 date: 2020-02-15T22:27:26.000+08:00
-summary: "此前我们已经完成了搭建网站的所有前期准备，现在，让我们开始创造吧。"
+description: "此前我们已经完成了搭建网站的所有前期准备，现在，让我们开始创造吧。"
 categories: ["Hugo创建个人博客指南"]
 keywords: [hugo, 个人博客, 建站教程, hugo教程, 个人博客, 独立博客, 网站建站, 零基础建站, netlify, forestry, GitHub]
 ---

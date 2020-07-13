@@ -5,6 +5,7 @@
     <link>https://byteli.com/tags/r/</link>
     <description>Recent content in R on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sat, 11 Jul 2020 23:42:34 +0800</lastBuildDate>
     
 	<atom:link href="https://byteli.com/tags/r/index.xml" rel="self" type="application/rss+xml" />
@@ -25,7 +26,13 @@
       <pubDate>Sat, 11 Jul 2020 23:42:34 +0800</pubDate>
       
       <guid>https://byteli.com/posts/data-science/rs-basic-data-types/</guid>
-      <description>R&amp;rsquo;s basic data types.</description>
+      <description>R&amp;rsquo;s Basic Data Types Atomic Classes   character
+  numeric( real numbers)
+# Inf represents infinity &amp;gt; 1/0 [1] Inf &amp;gt; 1 / Inf [1] 0   integer
+  complex( complex number )
+  logical( True/False)
+  Vector and List Vector contains the same types of data，while list could contains different kinds of data.
+&amp;gt; x = 0:3 &amp;gt; x [1] 0 1 2 3 &amp;gt; as.</description>
     </item>
     
   </channel>

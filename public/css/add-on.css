@@ -1,0 +1,40 @@
+/*
+  This css file is for individual users to restyle items for their personal site,
+  or for the implementation of features specifically for their site. Anything that
+  is an official part of the theme (ex. Pull Requests) should be included in main.css
+  and follow the formatting and style given.
+*/
+/* 设置显示溢出的文字 */
+.post > footer .stats li ul li a {
+  overflow:-moz-hidden-unscrollable;
+}
+/* 增加宽度以显示文字 */
+.post > footer .stats li{
+  max-width: 80%;
+}
+/* 设置日期居中，flex属性 */
+.meta{
+  justify-content: center; 
+  align-items: center;
+}
+/* header{
+  height: auto;
+} */
+/* 设置标题区域高度及宽度 */
+.post > header div{
+  padding: 0em 1em;
+}
+/* 设置description字号 */
+.post > header p{
+  font-size: medium;
+}
+/* 不显示文章摘要 */
+.post > p{
+  margin:0 0 0 0;
+  display: none;
+}
+/* 隐藏read more按钮 */
+footer .button{
+  width:30%;
+  display: none;
+}

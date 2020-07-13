@@ -5,6 +5,7 @@
     <link>https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/</link>
     <description>Recent content in Hugo创建个人博客指南 on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sun, 16 Feb 2020 10:18:00 +0800</lastBuildDate>
     
 	<atom:link href="https://byteli.com/categories/hugo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%8C%87%E5%8D%97/index.xml" rel="self" type="application/rss+xml" />
@@ -16,7 +17,18 @@
       <pubDate>Sun, 16 Feb 2020 10:18:00 +0800</pubDate>
       
       <guid>https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-6%E4%B8%AA%E6%80%A7%E5%8C%96%E6%80%BB%E7%BB%93/</guid>
-      <description>进一步个性化你的网站。</description>
+      <description>1. 个性化&amp;amp;总结 现在，你已经有了属于自己的独特网站，并掌握了更新博文的能力，这个网站已经有了你的个人色彩，但，怎能止步于此呢？
+1.1 自定义congif.toml 你可以通过修改我们根目录中的&amp;quot;config.toml&amp;quot;文件的其他字段，来完成进一步的定制。这些字段包括：网站的语言、作者信息、你的社交链接、菜单栏、网站字体样式，这将是一段非常个人化但又新奇的体验。
+但首先，由于我们在forestry中的更改已经同步给GitHub，但我们本地的文件还没有同步，所以在一切开始前，我们需要先通过简单的git语言，使得我们的本地文件与GitHub同步。
+e: //进入E盘 cd hugo //进入E盘下的Hugo文件夹 cd byteli-local //进入网站本地的根目录——&amp;#34;E:\Hugo\byteli-local&amp;#34; git pull //拉取GitHub的更新内容，更新我们的本地文件 在你同步完成后，可以根据自己的偏好，更改网站的配置文件，每个主题作者的设置都所有差别，你需要阅读config.toml中的注释，通常而言，你总是可以更改自己网站的名称、菜单栏名称、作者名称、网站icon、联系信息等内容。
+在你设置完成后，参考我们3.1向Github同步网站的内容，再次将这部分更新推给GitHub。
+// 此时位于博客根目录下——&amp;#34;E:\Hugo\byteli-local&amp;#34; hugo server // 应用修改后的config.toml配置文件 hugo // 更新我们在&amp;#34;public&amp;#34;文件夹下的网页文件 然后向GitHub推送这次同步：
+git add . // 添加所有更新 git commit -m &amp;#34;update config&amp;#34; // 填写更新说明 git push origin master // 推送给GitHub，因为GitHub已经记住了我们的仓库地址，所以不需再填写地址信息。 待同步完成后，刷新下我们的主页就可以看到更新后的。
+1.2 自定义css 对于其他一些主题，作者会在&amp;quot;config.toml&amp;quot;文件中，给用户说明可以放置自定义css文件的地方，为用户的高度个人化定制提供了很大的方便。需要指出的是，并不是所有主题都会开放这样的方式，我们需要阅读主题作者的配置文件以了解这部分内容。
+以Hermit主题为例，我们根据作者的引导，在&amp;quot;网站根目录/static/css&amp;quot;下建立一个css文件，之后就可以通过这个css文件，重新定义网站样式。
+当然，你修改之后，还是需要GitHub的仓库推送这次更新：
+git add . git commit -m &amp;#34;uodate config&amp;#34; git push origin master 值得庆祝的是，当你完成了网站的自定义后，你将是你很长一段时间内最后一次使用git语句了。当你需要发布文章时，只需要在forestry中编辑并保存，forestry会帮你完成剩下的工作。
+2. 总结 以上就是我对自己最近接触和使用Hugo网站框架进行建站的记录 ，核心是还是利用Hugo网站框架，聚合其他的第三方平台的支撑资源，打造个人个博客网站。</description>
     </item>
     
     <item>
@@ -25,7 +37,16 @@
       <pubDate>Sun, 16 Feb 2020 09:55:00 +0800</pubDate>
       
       <guid>https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-5%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86/</guid>
-      <description>网站上线后，forestry将为我们提供简单而高效的内容管理方案。</description>
+      <description>1. 内容管理——配置forestry 现在，我们的网站框架已经搭设好，我们再进行最后一步设置，就可以随时编辑和发布文章了。
+1.1 连接Forestry与Github   访问forestry，在登录选项中，选择GitHub登录。
+  登录成功后，点击&amp;quot;Add site&amp;rdquo;，并选择Hugo及最新的版本号。
+  在&amp;quot;git provider&amp;quot;中，选择&amp;quot;GitHub&amp;rdquo;。之后选择我们放置网站的仓库。
+  稍作等待，forestry就已经读取并同步我们的内容。我们可以新建、修改、发布文章。
+  1.2 通过Front Matter进行内容管理 这里需要额外提醒的一点是Front matter，这个是我们博客的头文件，用于储存每篇博文的诸如：标签、分类、关键字、摘要等额外信息，既方便了我们对文章的分类及管理，又可以提升网站访问的体验。
+对于Meme主题，作者在主题项目页即详细列出来Meme主题支持的Front matter 字段及说明，我们可以参考。不同的主题，可能有所差异，需要我们参照项目的说明。
+我们点击左侧侧边栏的Front matter，从已经创建的博文中，构建一个通用的模板。
+这里，我添加了如下的字段：
+   序号 字段 说明     1 title 文章标题   2 date 文章创建日期   3 tags 文章标签   4 categories 文章分类   5 summary 文章摘要，为访客提供文章的简要信息。为空则抓取文章正文的文字。   6 description 文章表述，主要为搜索引擎提供文章的内容信息    1.</description>
     </item>
     
     <item>
@@ -34,7 +55,24 @@
       <pubDate>Sun, 16 Feb 2020 09:06:26 +0800</pubDate>
       
       <guid>https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-4%E5%8F%91%E5%B8%83%E7%BD%91%E7%AB%99/</guid>
-      <description>现在我们将通过Netlify的一键部署，完成网站内容从本地到全球的最后跳跃。</description>
+      <description>1. 发布网站——配置Netlify 1.1 将网站托管于Netlify 这一步中，Netlify将会把我们的网站推向整个互联网。
+1.1.1 向全球部署你的网站   注册并登录Netlify，点击首页的&amp;quot;New site from Git&amp;rdquo;，然后在下面的页面中点击GitHub进行连接。  选择授权Netlify的仓库，即我们的项目仓库，点击保存确认，提示&amp;quot;Authorized&amp;quot;即表明授权完成，我们可以进入下一步。
+  这一步 ，我们确认连接的仓库和我们此前创建的一致后，点击这个仓库名称，进入下一步。
+  这一步无需任何更改，点击最下方的&amp;quot;deploy site&amp;quot;即可：
+  稍等片刻，Netlifty就会将我们的网站部署好，红框内即是我们的域名，点击就可以访问了。
+这里，如果你选择的也是Meme主题，这里可能会因为版本原因部署失败，我们马上会给出解决办法。关于Meme主题提示部署失败的解决办法：
+我这里第一步部署时提示失败，我们可以切换到&amp;quot;Deploy&amp;quot;页面，查看此次报错的日志( Deploy Log)。高亮的部分即首次报错的记录。我们发现，我这次选用的MEME主题，不支持Netlify默认的&amp;quot;Hugo 0.54.0&amp;quot;版本，该主题需要的最低版本号为&amp;quot;Hugo 0.62.2&amp;rdquo;，所以导致了失败。
+在 Hugo关于Netlify的官方的配置说明 中，我们找到了通过修改&amp;quot;HUGO_VERSION&amp;quot;参数，更改版本号的方法。
+接下来，我们只需要在设置选项中，修改这个参数即可。因为我本地的Hugo版本为&amp;quot;0.64.0&amp;rdquo;，所以我将Netlify也指定为该版本。
+之后选择清空缓存并重新部署网站(&amp;ldquo;Clear cache and deploy site&amp;quot;选项)，网站就部署成功了。
+  1.1.2 配置个性化域名 目前，你实际已经拥有了自己的网站，如果你对现状很满意，那么就可以直接进入第4章。如果你想让自己的免费域名更个性一些，或者在考虑使用自己购买的个性域名，并免费配置Https提升网站的安全性，那么我们将通过简单的步骤一一实现。
+  配置nelify域名
+我们在&amp;quot;Domain management&amp;quot;中 ，选择系统随机给我们分配的链接，然后点击&amp;quot;Edit site name&amp;rdquo;，在弹出的页面中输入我们想要的域名开头，然后保存即可。
+由于你的网站用的书Netlify提供的域名，所以默认已经开启了Https访问。
+  配置自己的域名
+  Ntelif添加域名
+还是在&amp;quot;Domain management&amp;quot;中，我们点击&amp;quot;Add custom domain&amp;rdquo;，添加自己的域名，一路yes点完，我们会看到新的域名已经添加至Netlify。
+点击 &amp;ldquo;Check DNS configuration&amp;rdquo;，在弹出的窗口中，点击&amp;quot;Set up Netlify DNS for 你的域名&amp;rdquo;，然后一路确认。</description>
     </item>
     
     <item>
@@ -43,7 +81,10 @@
       <pubDate>Sat, 15 Feb 2020 22:51:26 +0800</pubDate>
       
       <guid>https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-3%E5%86%85%E5%AE%B9%E4%B8%AD%E8%BD%AC/</guid>
-      <description>在完成本地网站的搭建后，我们在这一步中将把GitHub作为我们的内容中转平台，用来在线上存储我们的网站内容。</description>
+      <description>1. 内容中转——配置GitHub 1.1 向GitHub同步网站 这里我们使用cmd命令行工具，向Github推送我们的更新，现在还不用理解这些代码：
+e: cd hugo cd byteli-local //定位到博客根目录，对我而言，及&amp;#34;E:\Hugo\byteli-local&amp;#34; git init //初始化git git add . //添加所有文件，最后有一个&amp;#34;.&amp;#34;，表示选择所有文件 git commit -m &amp;#34;byteli&amp;#34; //编写提交的备注，方便之后自己查看版本 git remote add origin https://github.com/Celqaz/byteli.git //输入GitHub仓库的地址 git push origin master //发出推送命令 最后一步向我们GitHub仓库推送成功的反馈结果大致如下：
+现在，我们再次打开GitHub的仓库页面，可以看到我们的项目已经成功上传。
+至此，我们就完成了本地网站的上传。</description>
     </item>
     
     <item>
@@ -52,7 +93,13 @@
       <pubDate>Sat, 15 Feb 2020 22:27:26 +0800</pubDate>
       
       <guid>https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-2%E7%94%9F%E6%88%90%E7%BD%91%E9%A1%B5/</guid>
-      <description>此前我们已经完成了搭建网站的所有前期准备，现在，让我们开始创造吧。</description>
+      <description>1. 生成网页——配置Hugo 1.1 搭建网站框架 1.1.1 创建框架文件 再一次打开cmd命令行工具，通过定位到我们此前解压Hugo的文件夹中。
+cd e: //先且换到E盘 cd hugo //再进入Hugo文件夹，此时定位于&amp;#34;E:\Hugo&amp;#34; 这时，通过一行语句就可以创建我们个人网站本地的初始文件，下文的&amp;quot;byteli-local&amp;quot;可以替换为你的网站名称。
+hugo new site byteli-local //创建网站根目录，byteli-local可以替换为你的网站名称 此时，本地网站初始化成功，我们进入&amp;quot;E:\Hugo&amp;quot;文件夹，可以看到多了一个&amp;quot;byteli-local&amp;quot;的文件夹，里面即是已经创建好的网站初始文件。
+相关文件夹及文件的说明如下，其中，我们初期只需要了解content、themes和config.html三个文件的位置即可：
+   子目录名称 功能     archetypes 存放新文章默认的模板   content 存放所有Markdown格式的文章   data 存放数据文件   layouts 存放自定义的版式，可为空   static 存放图像、CNAME、css、js等资源，发布后该目录下所有资源将处于网页根目录   themes 存放下载的主题   config.toml Hugo配置文档    1.1.2 创建并编辑博文内容 这一步的目的主要是为了之后我们可以在本地预览效果。
+1.1.2.1 创建博文文件 首先，打开cmd命令行工具，进入我们的网站根目录，对我而言，即&amp;quot;E:\Hugo\byteli&amp;rdquo;。
+cd e: //进入E盘 cd hugo //再进入E盘下的Hugo文件夹 cd byteli-local //替换为你创建的网站文件夹名称 然后在命令行工具中输入如下代码，创建两篇博文，其中包含一篇我们自定义位置的博文：</description>
     </item>
     
     <item>
@@ -61,7 +108,26 @@
       <pubDate>Sat, 15 Feb 2020 18:36:26 +0800</pubDate>
       
       <guid>https://byteli.com/posts/hugo/%E5%88%A9%E7%94%A8hugo%E6%9E%84%E5%BB%BA%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%AB%99-1%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87/</guid>
-      <description>这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。&lt;!-- raw HTML omitted --&gt;这一切，从本篇开始。</description>
+      <description>这是一篇建立个人博客网站的指南，它将展示在Windows系统下，如何脱离繁琐的代码编写，仅通过开源网站框架（Hugo）与第三方平台（GitHub、Netlify、Forestry）之间的简单连接，在最低零成本的情况下，生成独属于个人的网站。
+主要的思路如下：
+ Hugo——生成网页 GitHub——内容中转 Netlify——发布网站 Forestry——内容管理  1. 前期准备 在我们开始创建网站内容前，我们需要为我们的网站配置好基础的环境，它们包括Hugo、GitHub与Git，本章将具体说明如何进行配置。
+1.1 Hugo配置 1.1.1 下载&amp;amp;安装 首先下载在 这里 下载Hugo压缩包，每个操作系统有普通及拓展（extended）版本，这里建议选择extended版本。
+在这里，由于我是Windows 64位的系统，所以选择了最新的&amp;quot;hugo_extended_0.64.1_Windows-64bit.zip&amp;quot;安装包。
+下载后将Hugo解压到本地磁盘，可以是非系统盘，这里需要记住解压的位置，我们将在下一步使用。
+本次，我在E盘新建了一个Hugo文件夹，将压缩包中的内容解压到了&amp;quot;E:\Hugo&amp;rdquo;。
+1.1.2 配置环境变量 右键点击&amp;quot;我的电脑&amp;rdquo;，点击“属性”    点击“高级系统设置”，打开“系统属性窗口”
+  点击“环境变量”，打开“环境变量”窗口
+  在“环境变量”中，选中“系统变量”下的“Path”选项
+  点击“编辑”，打开“编辑环境变量”窗口
+  在“编辑环境变量”中，点击“新建”
+  输入我们解压Hugo压缩包的位置，本例，我输入了“E:\Hugo”
+  输入完成后，依次点击“确定”来应用各个窗口的设置。
+安装完成。
+  1.1.3 验证安装 通过 win+R 的快捷键，调出运行栏，输入cmd，调出命令行工具。
+在命令行工具中输入：
+hugo version 如能正确显示版本号，即表示安装成功。
+1.2 GitHub配置   注册全球最大的 同性交友 开源社区GitHub账号.
+  登录GitHub，并在这里创建新的仓库（repository），仓库类型设置为公开（public），点击create repository。</description>
     </item>
     
   </channel>

@@ -3,6 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://byteli.com/</loc>
+    <lastmod>2020-07-11T23:42:34+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://byteli.com/fr/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pl"
+                href="https://byteli.com/pl/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://byteli.com/pt/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="de"
+                href="https://byteli.com/de/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es"
+                href="https://byteli.com/es/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://byteli.com/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-tw"
+                href="https://byteli.com/zh-tw/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://byteli.com/ja/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://byteli.com/"
+                />
+  </url>
+  
+  <url>
     <loc>https://byteli.com/categories/</loc>
     <lastmod>2020-07-11T23:42:34+08:00</lastmod>
     <xhtml:link
@@ -53,6 +103,11 @@
   </url>
   
   <url>
+    <loc>https://byteli.com/contact/</loc>
+    <lastmod>2020-07-11T23:42:34+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://byteli.com/tags/data-science/</loc>
     <lastmod>2020-07-11T23:42:34+08:00</lastmod>
   </url>
@@ -69,6 +124,11 @@
   
   <url>
     <loc>https://byteli.com/tags/r/</loc>
+    <lastmod>2020-07-11T23:42:34+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://byteli.com/contact/contact/</loc>
     <lastmod>2020-07-11T23:42:34+08:00</lastmod>
   </url>
   
@@ -124,56 +184,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://byteli.com/tags/"
-                />
-  </url>
-  
-  <url>
-    <loc>https://byteli.com/</loc>
-    <lastmod>2020-07-11T23:42:34+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="fr"
-                href="https://byteli.com/fr/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pl"
-                href="https://byteli.com/pl/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://byteli.com/pt/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://byteli.com/de/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="es"
-                href="https://byteli.com/es/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://byteli.com/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-tw"
-                href="https://byteli.com/zh-tw/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://byteli.com/ja/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://byteli.com/"
                 />
   </url>
   
@@ -274,6 +284,11 @@
   
   <url>
     <loc>https://byteli.com/about/</loc>
+    <lastmod>2020-02-12T16:24:05+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://byteli.com/about/about/</loc>
     <lastmod>2020-02-12T16:24:05+08:00</lastmod>
   </url>
   
