@@ -95,7 +95,7 @@ disableLanguages        = [""]
   [[menu.main]]
     name              = "posts"
     identifier        = "blog"
-    url               = "/archive/"
+    url               = "/posts/"
     pre               = "<i class='far fa-newspaper'></i>"
     weight            = 3
 
