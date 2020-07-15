@@ -117,7 +117,7 @@ disableLanguages        = [""]
     name              = "Tags"
     identifier        = "tags"
     url               = "/tags/"
-    pre               = "<i class='far fa-newspaper'></i>"
+    pre               = "<i class='fa fa-tag'></i>"
     weight            = 7
 
 [social]
