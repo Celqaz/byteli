@@ -55,13 +55,7 @@ In the end, all the feelings will find their forms.</description>
       <pubDate>Sat, 11 Jul 2020 23:42:34 +0800</pubDate>
       
       <guid>https://byteli.com/posts/data-science/rs-basic-data-types/</guid>
-      <description>R&amp;rsquo;s Basic Data Types Atomic Classes   character
-  numeric( real numbers)
-# Inf represents infinity &amp;gt; 1/0 [1] Inf &amp;gt; 1 / Inf [1] 0   integer
-  complex( complex number )
-  logical( True/False)
-  Vector and List Vector contains the same types of data，while list could contains different kinds of data.
-&amp;gt; x = 0:3 &amp;gt; x [1] 0 1 2 3 &amp;gt; as.</description>
+      <description>R&amp;rsquo;s basic data types.</description>
     </item>
     
     <item>

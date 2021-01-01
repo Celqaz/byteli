@@ -1,17 +1,13 @@
 ---
 title: R's Basic Data Types
 tags: [Data Science, R]
-date: 2020-07-11T23:42:34.000+08:00 
+date: 2020-07-11T23:42:34.000+08:00
+summary: "R's basic data types."
 categories: ["Hello World"]
-description: "Brief introduction of R's basic data types."
 keywords: [Data Science, R]
 ---
 
-
-
-## 
-
-# R's Basic Data Types
+# R's Basic Data Types 
 
 ## Atomic Classes
 
@@ -60,7 +56,7 @@ Matrices must have every element be the same class
 ```
 
 ```r
-# dim() method
+# dim()方法转换
 > m =1:10
 > m
 [1] 1 2 3 4 5 6 7 8 9 10
