@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Byteli</title>
-    <link>https://byteli.com/posts/</link>
-    <description>Recent content in Posts on Byteli</description>
+    <title>Byteli</title>
+    <link>https://byteli.com/</link>
+    <description>Recent content on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Fri, 01 Jan 2021 13:47:27 +0800</lastBuildDate>
     
-	<atom:link href="https://byteli.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://byteli.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -47,6 +47,15 @@ Photo by Henry Xu on Unsplash
  在我的阅读经历中，很难再在另一本书找到相似的特质，既有强烈的疏离感，又有让人难以忍受的压迫感，像是在一个被隐隐雷鸣吵醒的沉闷潮湿深夜，准备合眼再次睡去的瞬间，一道意外的闪电让人直面镜子中陌生的、还没来得及防备的自己。
 作者袁哲生在这本书里敏感地记录了“我”在十三至十四岁的人生故事，说是故事，但作者捕捉的是瞬间。日常在书中被一一剖解，在和人生偶然的直接对视中，“我”失去的远比预想的更多，虚无感在每一个文字的角落层层累积，然后在即将到达顶点，让人刚准备说些什么以打破这份无法忍受的寂静前，陡然散去，但你又发现可以在周遭现实中的任何一个事物身上感受到它。
 In the end, all the feelings will find their forms.</description>
+    </item>
+    
+    <item>
+      <title>R&#39;s Basic Data Types</title>
+      <link>https://byteli.com/contact/contact/</link>
+      <pubDate>Sat, 11 Jul 2020 23:42:34 +0800</pubDate>
+      
+      <guid>https://byteli.com/contact/contact/</guid>
+      <description>R&amp;rsquo;s basic data types.</description>
     </item>
     
     <item>
@@ -243,6 +252,15 @@ cd e: //进入E盘 cd hugo //再进入E盘下的Hugo文件夹 cd byteli-local //
 hugo version 如能正确显示版本号，即表示安装成功。
 1.2 GitHub配置   注册全球最大的 同性交友 开源社区GitHub账号.
   登录GitHub，并在这里创建新的仓库（repository），仓库类型设置为公开（public），点击create repository。</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://byteli.com/about/about/</link>
+      <pubDate>Wed, 12 Feb 2020 16:24:05 +0800</pubDate>
+      
+      <guid>https://byteli.com/about/about/</guid>
+      <description>There must be more to life than this.</description>
     </item>
     
     <item>

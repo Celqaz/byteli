@@ -8,16 +8,13 @@ paginate                = 5
 disqusShortname         = ""
 googleAnalytics         = ""
 pluralizeListTitles     = false
-disableLanguages        = []
-
-[markup.goldmark.renderer]
-  unsafe                = true
+disableLanguages        = [""]
 
 [outputs]
-  home                  = ["html", "json", "rss"]
+  home                  = ["html", "json"]
 
 [params]
-  enableCDN             = false
+  enableCDN             = true
   cssFiles              = ["default"]
   jsFiles               = ["default"]
   highlightjs           = true
@@ -25,10 +22,7 @@ disableLanguages        = []
   highlightjsLang       = ["html", "css", "js", "toml"]
   viewMorePostsLink     = "/posts/"
   readingTime           = false
-  imageStretch          = ""
-  removeBlur            = false
   # socialShare           = ["twitter", "facebook", "reddit", "linkedin", "pinterest", "email"]default
-  hideEmptyStats        = false
 
   [params.meta]
     description         = "达达里昂的个人博客"
