@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 11 Jul 2020 23:42:34 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 Jan 2021 13:47:27 +0800</lastBuildDate>
     
 	<atom:link href="https://byteli.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>精神越狱</title>
+      <link>https://byteli.com/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/</link>
+      <pubDate>Fri, 01 Jan 2021 13:47:27 +0800</pubDate>
+      
+      <guid>https://byteli.com/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hello World</title>
@@ -17,15 +26,6 @@
       <pubDate>Sat, 11 Jul 2020 23:42:34 +0800</pubDate>
       
       <guid>https://byteli.com/categories/hello-world/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>精神越狱</title>
-      <link>https://byteli.com/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/</link>
-      <pubDate>Sat, 16 May 2020 16:47:26 +0800</pubDate>
-      
-      <guid>https://byteli.com/categories/%E7%B2%BE%E7%A5%9E%E8%B6%8A%E7%8B%B1/</guid>
       <description></description>
     </item>
     
