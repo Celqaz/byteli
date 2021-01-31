@@ -6,9 +6,10 @@ summary: " "
 description: " "
 categories: ["日有寸进"]
 keywords: [FRM,Expected Value,Variance, Covariance, Correlation Coefficient]
+draft: true
 ---
 
-# Relationships Between Expected Value and Variance, Covariance, Correlation Coefficient
+# 
 
 ## Expection
 

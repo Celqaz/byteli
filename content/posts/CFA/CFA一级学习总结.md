@@ -8,6 +8,7 @@ description: "总结了自己在准备CFA一级考试时的经验和教训，主
 description: "总结了自己在准备CFA一级考试时的经验和教训，主要集中在学习资源、学习规划、mock的使用和时间安排。"
 categories: ["日有寸进"]
 keywords: [CFA一级总结, CFA]
+include_toc: true
 ---
 
 1月29日，我收到了通过CFA一级考试的邮件。这是我第二次参与CFA一级的考试，和上次相比，这次进步还是很明显的。
