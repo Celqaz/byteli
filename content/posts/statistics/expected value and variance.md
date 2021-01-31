@@ -1,3 +1,13 @@
+---
+title: Relationships Between Expected Value and Variance, Covariance, Correlation Coefficient
+tags: [Statistics, FRM]
+date: 2020-10-30T17:51:16.000+08:00
+summary: " "
+description: " "
+categories: ["日有寸进"]
+keywords: [FRM,Expected Value,Variance, Covariance, Correlation Coefficient]
+---
+
 # Relationships Between Expected Value and Variance, Covariance, Correlation Coefficient
 
 ## Expection

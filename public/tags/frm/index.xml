@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FRM on Byteli</title>
+    <link>https://byteli.com/tags/frm/</link>
+    <description>Recent content in FRM on Byteli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 30 Oct 2020 17:51:16 +0800</lastBuildDate>
+    
+	<atom:link href="https://byteli.com/tags/frm/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Relationships Between Expected Value and Variance, Covariance, Correlation Coefficient</title>
+      <link>https://byteli.com/posts/statistics/expected-value-and-variance/</link>
+      <pubDate>Fri, 30 Oct 2020 17:51:16 +0800</pubDate>
+      
+      <guid>https://byteli.com/posts/statistics/expected-value-and-variance/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
