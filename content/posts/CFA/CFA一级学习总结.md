@@ -1,10 +1,10 @@
 ---
 title: CFA一级学习总结
 tags: [CFA, 总结]
-date: 2021-01-13 T16:51:16.000+08:00
+date: 2021-01-31T16:51:16.000+08:00
 description: "总结了自己在准备CFA一级考试时的经验和教训，主要集中在学习资源、学习规划、mock的使用和时间安排。"
-categories: ["精神越狱"]
-keywords: [阅读计划, 读书计划]
+categories: ["日有寸进"]
+keywords: [CFA一级总结, CFA]
 ---
 
 [toc]
