@@ -303,15 +303,6 @@ hugo version 如能正确显示版本号，即表示安装成功。
     
     <item>
       <title></title>
-      <link>https://byteli.com/posts/cfa/cal-cml-sml/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://byteli.com/posts/cfa/cal-cml-sml/</guid>
-      <description>CAL, CML, SML </description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>https://byteli.com/posts/statistics/expected-value-and-variance/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -319,6 +310,33 @@ hugo version 如能正确显示版本号，即表示安装成功。
       <description>Relationships Between Expected Value and Variance, Covariance, Correlation Coefficient Expection The expected value is the weighted average of the possible outcomes of a random variable, where the weights are the probabilities that the outcomes will occur $$ E(X) = \sum P(x_i)x_i = P(x_1)x_1 + P(x_2)x_2 + &amp;hellip;+ P(x_n)x_n $$
 The symbol $x_n$ represents the $n$ observed value (observation) for random variable $X$;
 Mean$(\mu)$ of a equal-weighted random variable: $$ \mu = E(X) $$</description>
+    </item>
+    
+    <item>
+      <title>CFA一级学习总结</title>
+      <link>https://byteli.com/posts/cfa/cfa%E4%B8%80%E7%BA%A7%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://byteli.com/posts/cfa/cfa%E4%B8%80%E7%BA%A7%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</guid>
+      <description>[toc]
+1月29日，我收到了通过CFA一级考试的邮件。这是我第二次参与CFA一级的考试，和上次相比，这次进步还是很明显的。
+  2019年6月考试成绩
+  2020年12月考试成绩
+  百分位
+  最近我也报名了CFA二级8月的考试，在这里先总结下自己在准备CFA一级考试时的经验和教训，主要集中在学习资源、学习规划、mock的使用和时间安排，希望可以用到之后的准备中。
+学习资源 课本材料  CFA官方的学习系统（CFA® Program Learning Ecosystem） Kaplan Schweser notes Kaplan Schweser mocks  学习软件   Anki
+首先需要明确的一点是，学后面忘前面是不可避免的🤷‍♂️，尤其对于CFA这种知识点繁多的考试。
+anki本来是自己背单词用的，后来我将自己在学习cfa过程中一些细碎的知识点和错题都编辑进去，它会根据记忆曲线生成每天需要复习的卡片。因为平常还要工作，所以这种可以利用碎片时间复习的途径比较适合我，可以保持对知识点的记忆强度。
+Anki除了iOS收费，其他的移动端或电脑端都是免费。
+  参考网站
+  CFA wiki
+这个网站除了列出了cfa考试的基础信息，还收集并分析了cfa考生自愿参加的有关考试的调查，尤其是关于mock的信息有比较好的参考价值，下文会进行说明。
+  学习规划 背景  我报名的应该是2020年6月的考试，后来CFA协会通知将考试延期至12月时，已经复习的内容基本也忘差不多了，算是从2020年二季度开始重新复习。 在职准备考试，平常时间也比较紧张。不过工作也是和投资直接相关，教材中的一些知识可以在项目尽调中直接利用，尤其在财务尽调，所以书中的内容对我而言还挺有意思的，基本一直保持着“学习+应用“的状态。 去年下半年我先准备了FRM一级的考试，所以在复习CFA时给Quantitative Methods、Alternative Investments和Derivatives降低了权重。  规划   计划预留了差不多1-2个月复习和做mock的时间，确定第一轮复习的终止日。
+  在Learning Ecosystem中设定终止日，确定每天需要学习的内容。
+这里其实会有官方教材和notes取舍问题。官方教材的优势也在于它的逻辑性更强，对于陌生的概念，它逻辑或公式上的推倒是非常友好的，但官方教材文本量巨大，完完整整阅读的时间成本很高。相较而言，notes中的知识上存在一定的思维跳跃，对于没有金融相关知识储备的同学会有一定的理解门槛，但紧密结合LOS让它具备知识密度高的优点，复习会更有效率。但这个力量的代价就是，notes忽略的细枝末节的知识，CFA正式考试中可能会出现。
+我在这次准备考试的过程中，基本是notes和官方教材一起看。重点先理解notes中的知识，再快速过一遍教材，重点解决自己关于“为什么”的问题。对于LOS中有些要求比较低的章节，在官方教材中留个印象就放过了。
+  针对学习中出现的需要复习的知识点及课后题的错题，都收录到anki中，并不断回顾。
+  在第一轮复习结束后，最开始学的东西还是会忘得差不多，我花了差不多一周的时间，只看notes回顾了整本的核心知识点，完成了第二遍复习，毕竟这些决定了考试成绩的下限。</description>
     </item>
     
   </channel>
