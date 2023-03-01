@@ -17,7 +17,7 @@ title = "Byteli"
   color = 'linen'
 
   github = 'Celqaz'
-  instagram = 'nan.xiaobei'
+  instagram = 'petox717'
   linkedin = 'in/jasonlib/'
   rss = true
 
@@ -38,15 +38,20 @@ title = "Byteli"
 [menu]
 
   [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
     weight = 10
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 10
+  #[[menu.main]]
+    #identifier = "contact"
+    #name = "Contact"
+    #url = "/contact/"
+    #weight = 10
 
 [taxonomies]
 category = "categories"
