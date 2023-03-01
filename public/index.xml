@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Byteli</title>
+    <link>https://byteli.vercel.app/</link>
+    <description>Recent content on Byteli</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://byteli.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>https://byteli.vercel.app/post/hello_world/</link>
+      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://byteli.vercel.app/post/hello_world/</guid>
+      <description>👋 Hello World
+const a = 120; function t(x){ return x + 3 * a } console.log(t(5)) $$\sum^{10}_i X_iY_i + \prod MN + \sigma$$
+I love Mac.
+We eten een boterham. $5ab \frac{1}{3}$</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://byteli.vercel.app/about/</link>
+      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://byteli.vercel.app/about/</guid>
+      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hugo makes use of a variety of open source projects including:
+https://github.com/yuin/goldmark https://github.</description>
+    </item>
+    
+  </channel>
+</rss>
