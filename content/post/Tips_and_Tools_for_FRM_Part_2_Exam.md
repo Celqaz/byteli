@@ -4,6 +4,7 @@ author : "Jason Li"
 title : "Sharing My FRM Part 2 Exam Tips - Passed with 111231"
 date : "2023-06-25"
 description : "Tips and Tools about FRM Part 2"
+summary: "FRM Part 2 Tips"
 tags : ["FRM"]
 math: false
 ---
