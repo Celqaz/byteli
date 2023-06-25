@@ -6,28 +6,37 @@
     <description>Recent content on Byteli</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 03 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://byteli.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://byteli.vercel.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sharing My FRM Part 2 Exam Tips - Passed with 111231</title>
+      <link>https://byteli.vercel.app/post/tips_and_tools_for_frm_part_2_exam/</link>
+      <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://byteli.vercel.app/post/tips_and_tools_for_frm_part_2_exam/</guid>
+      <description>After serval months&amp;rsquo; preparation, I passed the part 2 exam with 111231, and I would like to share my experience preparing for the exam, hoping to give some references to others.
+Qualitative questions weigh more than quantitative ones. From the feedback I got from the BT forum, the P2 exam has always focused more on qualitative questions in recent years.
+So you better understand the theoretical concepts in the first place rather than memorize formulas repeatedly and painfully.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://byteli.vercel.app/about/</link>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://byteli.vercel.app/about/</guid>
+      <description>👋 I&amp;rsquo;m Jason.</description>
+    </item>
+    
     <item>
       <title>Hello World</title>
       <link>https://byteli.vercel.app/post/hello_world/</link>
-      <pubDate>Tue, 03 Jan 2023 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>https://byteli.vercel.app/post/hello_world/</guid>
       <description>👋 Hello World
 const a = 120; function t(x){ return x + 3 * a } console.log(t(5)) $$\sum^{10}_i X_iY_i + \prod MN + \sigma$$
 I love Mac.
 We eten een boterham. $5ab \frac{1}{3}$</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://byteli.vercel.app/about/</link>
-      <pubDate>Thu, 28 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://byteli.vercel.app/about/</guid>
-      <description>Written in Go, Hugo is an open source static site generator available under the Apache Licence 2.0. Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
-Hugo makes use of a variety of open source projects including:
-https://github.com/yuin/goldmark https://github.</description>
     </item>
     
   </channel>
