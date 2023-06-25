@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>index on Byteli</title>
-    <link>https://byteli.vercel.app/tags/index/</link>
-    <description>Recent content in index on Byteli</description>
+    <title>index on Jason Li</title>
+    <link>https://byteli.com/tags/index/</link>
+    <description>Recent content in index on Jason Li</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://byteli.vercel.app/tags/index/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://byteli.com/tags/index/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Posts</title>
-      <link>https://byteli.vercel.app/post/</link>
+      <link>https://byteli.com/post/</link>
       <pubDate>Sun, 25 Jun 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://byteli.vercel.app/post/</guid>
+      <guid>https://byteli.com/post/</guid>
       <description></description>
     </item>
     

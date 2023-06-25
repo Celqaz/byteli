@@ -2,37 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://byteli.vercel.app/</loc>
+    <loc>https://byteli.com/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://byteli.vercel.app/tags/frm/</loc>
+    <loc>https://byteli.com/tags/frm/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://byteli.vercel.app/post/</loc>
+    <loc>https://byteli.com/series/frm-certification/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://byteli.vercel.app/post/tips_and_tools_for_frm_part_2_exam/</loc>
+    <loc>https://byteli.com/post/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://byteli.vercel.app/tags/</loc>
+    <loc>https://byteli.com/series/</loc>
     <lastmod>2023-06-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://byteli.vercel.app/about/</loc>
+    <loc>https://byteli.com/post/tips_and_tools_for_frm_part_2_exam/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://byteli.com/tags/</loc>
+    <lastmod>2023-06-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://byteli.com/about/</loc>
     <lastmod>2023-03-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://byteli.vercel.app/post/hello_world/</loc>
-    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
+    <loc>https://byteli.com/categories/</loc>
   </url><url>
-    <loc>https://byteli.vercel.app/tags/post/</loc>
-    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://byteli.vercel.app/tags/test/</loc>
-    <lastmod>2023-03-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://byteli.vercel.app/categories/</loc>
-  </url><url>
-    <loc>https://byteli.vercel.app/tags/index/</loc>
-  </url><url>
-    <loc>https://byteli.vercel.app/series/</loc>
+    <loc>https://byteli.com/tags/index/</loc>
   </url>
 </urlset>

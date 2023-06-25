@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Series on Byteli</title>
-    <link>https://byteli.vercel.app/series/</link>
-    <description>Recent content in Series on Byteli</description>
+    <title>Series on Jason Li</title>
+    <link>https://byteli.com/series/</link>
+    <description>Recent content in Series on Jason Li</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://byteli.vercel.app/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sun, 25 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://byteli.com/series/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

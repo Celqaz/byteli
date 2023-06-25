@@ -11,7 +11,7 @@ ignoreErrors = ["error-remote-getjson"]
 
 # ------------------------------
 theme = "paper"
-title = "Jason Li"
+# title = "Jason Li"
 
 [params]
   color = 'linen'

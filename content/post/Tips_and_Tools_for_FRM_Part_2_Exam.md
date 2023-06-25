@@ -6,6 +6,8 @@ date : "2023-06-25"
 description : "Tips and Tools about FRM Part 2"
 summary: "FRM Part 2 Tips"
 tags : ["FRM"]
+category: ['Tips']
+series: ['FRM Certification']
 math: false
 ---
 
