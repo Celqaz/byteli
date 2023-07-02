@@ -16,7 +16,7 @@ math: true
 
 In the unpredictable world of financial markets, investors often seek strategies to protect their portfolios from potential downturns. One approach to managing downside risk is through the use of options. By employing various options strategies, investors can hedge against potential losses in their portfolios if the market experiences a decline. 
 
-Among all the options strategies, protective put it an easy-to-construct yet effective way to hedge market downside risk while participating in the market's potential upside. This article will explore how to construct a protective put, providing an overview of this strategy and its potential strengths and weaknesses.
+Among all the options strategies, protective put is an easy-to-construct yet effective way to hedge market downside risk while participating in the market's potential upside. This article will explore how to construct a protective put, providing an overview of this strategy and its potential strengths and weaknesses.
 
 ![compre stock payoff](/blog/protective_put/compare_stock_payoff.png "Downside Risk Reduction Under Protective Put Strategy")
 
