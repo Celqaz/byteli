@@ -1,6 +1,6 @@
 baseURL = "https://byteli.com/"
-title = "Jason Li"
-author = "Jason Li"
+title = "Bin Li"
+author = "Bin Li"
 paginate = 5
 languageCode = "en"
 DefaultContentLanguage = "en"
@@ -11,7 +11,7 @@ ignoreErrors = ["error-remote-getjson"]
 
 # ------------------------------
 theme = "paper"
-# title = "Jason Li"
+# title = "Bin Li"
 
 [params]
   color = 'linen'
