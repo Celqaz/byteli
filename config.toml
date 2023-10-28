@@ -21,7 +21,7 @@ theme = "paper"
   linkedin = 'in/jasonlib/'
   rss = true
 
-  avatar = 'libin9400@gmail.com'
+  avatar = '#'
   name = 'Bin Li'
   bio = 'Another Wanderer.'
   focus = 'Life ｜ Financial Risk Management | Data Science |'
