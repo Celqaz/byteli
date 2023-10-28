@@ -22,8 +22,9 @@ theme = "paper"
   rss = true
 
   avatar = 'libin9400@gmail.com'
-  name = 'Jason Li'
-  bio = 'Writing about what I have learnt in financial risk management'
+  name = 'Bin Li'
+  bio = 'Another Wanderer.'
+  focus = 'Life ｜ Financial Risk Management | Data Science |'
 
 
 
