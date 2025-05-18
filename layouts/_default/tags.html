@@ -1,0 +1,11 @@
+{{ define "main" }}
+<h1>All Tags</h1>
+<ul>
+    {{ range $tag, $taxonomy := .Site.Taxonomies.tags }}
+    <li>
+        <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">{{ $tag }}</a>
+        ({{ len $taxonomy }})
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
