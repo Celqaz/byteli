@@ -1,0 +1,13 @@
+.tag-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem; /* space between items */
+}
+
+.tag-list li {
+    display: inline-block;
+    padding: 0.4rem 0.4rem 0 0;
+}

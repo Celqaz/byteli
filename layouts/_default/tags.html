@@ -1,10 +1,16 @@
 {{ define "main" }}
-<h1>All Tags</h1>
-<ul>
-    {{ range $tag, $taxonomy := .Site.Taxonomies.tags }}
+<ul class="tag-list">
+    {{ $tags := .Site.Taxonomies.tags }}
+    {{ $tagList := slice }}
+    {{ range $tag, $pages := $tags }}
+    {{ $tagList = $tagList | append (dict "tag" $tag "count" (len $pages)) }}
+    {{ end }}
+
+    {{ $sorted := sort $tagList "count" "desc" }}
+    {{ range $t := $sorted }}
     <li>
-        <a href="{{ "/tags/" | relLangURL }}{{ $tag | urlize }}">{{ $tag }}</a>
-        ({{ len $taxonomy }})
+        <a href="{{ "/tags/" | relLangURL }}{{ $t.tag | urlize }}">{{ $t.tag }}</a>
+        ({{ $t.count }})
     </li>
     {{ end }}
 </ul>
