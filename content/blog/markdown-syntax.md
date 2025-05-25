@@ -8,10 +8,7 @@ tags = [
     "css",
     "html",
 ]
-categories = [
-    "themes",
-    "syntax",
-]
+category = "themes"
 series = ["Themes Guide"]
 aliases = ["migrate-from-jekyl"]
 +++

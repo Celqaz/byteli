@@ -3,7 +3,7 @@ author = "Bin Li"
 title = "Weekly Reflection 25#1: 新年的转变"
 date = "2025-01-04"
 description = "2025 年第 1 周的回顾与反思"
-categories = ["Life",]
+category = "Life"
 tags = ["Weekly Reflection",]
 +++
 

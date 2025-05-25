@@ -9,7 +9,7 @@
     {{ $sorted := sort $tagList "count" "desc" }}
     {{ range $t := $sorted }}
     <li>
-        <a href="{{ "/tags/" | relLangURL }}{{ $t.tag | urlize }}">{{ $t.tag }}</a>
+        <a href="{{ "/tags/" | relLangURL }}{{ $t.tag | urlize }}">#{{ $t.tag }}</a>
         ({{ $t.count }})
     </li>
     {{ end }}

@@ -5,19 +5,31 @@
     {{ end }}
     <ul class="blog-posts">
         {{ range (where .Site.RegularPages "Section" "blog") }}
-        <li>
-      <span>
-        <i>
-          <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-            {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
-          </time>
-        </i>
-      </span>
-            {{ if .Params.link }}
-            <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
-            {{ else }}
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            {{ end }}
+        <li style="display: flex; align-items: center;">
+            <div>
+                <!-- Post Date -->
+                <span>
+                  <i>
+                    <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
+                      {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
+                    </time>
+                  </i>
+                </span>
+                <!-- Post Title -->
+                <span style="padding: 0 0.7rem">
+                            {{ if .Params.link }}
+                            <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
+                            {{ else }}
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                            {{ end }}
+                </span>
+            </div>
+            <!-- Category -->
+            <div style="margin-left: auto;">
+                {{ with .Params.category }}
+                    <span style="color: gray;">{{ . }}</span>
+                {{ end }}
+            </div>
         </li>
         {{ else }}
         <li>
@@ -25,13 +37,13 @@
         </li>
         {{ end }}
     </ul>
-    {{ if not .Data.Singular }}
-    <div>
-        {{ range .Site.Taxonomies.tags }}
-        <a class="blog-tags" href="{{ .Page.RelPermalink }}">#{{ lower .Page.Title }}</a>
-        {{ end }}
-    </div>
-    {{ end }}
+<!--    {{ if not .Data.Singular }}-->
+<!--    <div>-->
+<!--        {{ range .Site.Taxonomies.tags }}-->
+<!--        <a class="blog-tags" href="{{ .Page.RelPermalink }}">#{{ lower .Page.Title }}</a>-->
+<!--        {{ end }}-->
+<!--    </div>-->
+<!--    {{ end }}-->
 </content>
 
 {{ end }}
