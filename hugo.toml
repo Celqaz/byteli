@@ -62,7 +62,7 @@ enableRobotsTXT = true
   # If your blog is multilingual but you haven't translated a page, this theme
   # will create a disabled link. By setting `hideUntranslated` to true, you can
   # have the theme simply not show any link
-  hideUntranslated = false
+  hideUntranslated = true
 
   # (EXPERIMENTAL) This theme has two options for its CSS styles: "original" and
   # "herman". The former is what you see on Bear Cub's demo (an optimized

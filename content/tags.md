@@ -1,5 +1,5 @@
 ---
-title: "All Tags"
+title: "Tags"
 menu: "main"
 layout: tags
 weight: 3

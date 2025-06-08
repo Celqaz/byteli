@@ -5,10 +5,10 @@
     {{ end }}
     <ul class="blog-posts">
         {{ range (where .Site.RegularPages "Section" "blog") }}
-        <li style="display: flex; align-items: center;">
-            <div>
+        <li>
+            <div style="display: flex; flex-direction: row; flex-wrap: wrap;">
                 <!-- Post Date -->
-                <span>
+                <span style="flex: 0 0 5%; white-space: nowrap;">
                   <i>
                     <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
                       {{ .Date.Format (default "2006-01-02" .Site.Params.dateFormat) }}
@@ -16,19 +16,13 @@
                   </i>
                 </span>
                 <!-- Post Title -->
-                <span style="padding: 0 0.7rem">
-                            {{ if .Params.link }}
-                            <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
-                            {{ else }}
-                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                            {{ end }}
+                <span style="flex: 1; padding: 0 0.7rem;">
+                  {{ if .Params.link }}
+                  <a href="{{ .Params.link }}" target="_blank">{{ .Title }} ↪</a>
+                  {{ else }}
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  {{ end }}
                 </span>
-            </div>
-            <!-- Category -->
-            <div style="margin-left: auto;">
-                {{ with .Params.category }}
-                    <span style="color: gray;">{{ . }}</span>
-                {{ end }}
             </div>
         </li>
         {{ else }}
