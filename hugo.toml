@@ -76,7 +76,7 @@ enableRobotsTXT = true
   # for posts that don't have `images` defined in their front matter; By setting
   # `generateSocialCard` to false, you can prevent this behavior. For more
   # information see layouts/partials/social_card.html
-  generateSocialCard = true
+  generateSocialCard = false
 
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.

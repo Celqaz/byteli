@@ -4,6 +4,7 @@ menu: "main"
 weight: 9
 ---
 
-# About
-
 Nothing here (yet) :) 
+
+
+📮: [binli@byteli.com](mailto:binli@byteli.com)
