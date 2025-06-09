@@ -3,7 +3,7 @@ title: '2020 读书总结'
 description: '在往年，书籍是一个入口，通向一个与现实隔绝的避难所，但是从今年的某个时候，它逐渐成为了一个出口，当我在选择中权衡时，书中的人物、事件或段落开始在现实中激起回响，引导自己在不确定中保持相对的清醒，这也是我2020年最大的收获。'
 date: '2021-01-01T13:47:27.000'
 category: 'Reading'
-tags: ['Annual Review', 'Reading']
+tags: ['年度总结', '精神越狱']
 ---
 
 2020年我的关键词是“选择”。在这一年中，自己主动或被动地做了很多关键而且不能读档的选择，也因为这些选择用掉了自己的绝大多数时间，第一次真真切切地感觉自己的时间不够用。但也是在这样略显紧张的环境中，自己才会带着新的问题去寻找答案，在往年，书籍是一个入口，通向一个与现实隔绝的避难所，但是从今年的某个时候，它逐渐成为了一个出口，当我在选择中权衡时，书中的人物、事件或段落开始在现实中激起回响，引导自己在不确定中保持相对的清醒，这也是我2020年最大的收获。
@@ -22,14 +22,10 @@ tags: ['Annual Review', 'Reading']
 
 Don't stop believing.
 
-![rxdMAs.jpg](https://s3.ax1x.com/2021/01/01/rxdMAs.jpg)
 
-<div className={'caption'}>
-	Photo by [Henry
-	Xu](https://unsplash.com/@henry2cute?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-	on
-	[Unsplash](https://unsplash.com/s/photos/middle-earth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-</div>
+
+{{<figure src="https://images.unsplash.com/photo-1565560049450-c77cc3b40c8d?q=80&w=1500" alt="魔戒" caption="Photo by [Henry Xu](https://unsplash.com/@henry2cute?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/brown-house-with-moss-X-eekRFSieM)" >}}
+
 
 ## 《断头王后》
 

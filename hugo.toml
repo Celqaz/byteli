@@ -30,6 +30,7 @@ enableRobotsTXT = true
     contentDir = "content"
     [languages.en.params]
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      visitorCount = "[Visitors](https://cloud.umami.is/share/cBHKoKd0cMM2u7Ev/byteli.com)"
   [languages.cn]
     title = "Byteli"
     languageName = "中文"
@@ -37,6 +38,7 @@ enableRobotsTXT = true
     contentDir = "content.cn"
     [languages.cn.params]
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+      visitorCount = "[访客](https://cloud.umami.is/share/cBHKoKd0cMM2u7Ev/byteli.com)"
 
 [params]
   # The description of your website
