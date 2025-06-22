@@ -55,7 +55,7 @@ description: '2024 年第 4 周的回顾与反思'
 
 这一周从此前一直主要投实习的节奏中切换回来，继续在 DataCamp 上学习。
 
-这周主要学了 [seaborn](https://seaborn.pydata.org/) ，并写了一篇博客 [A Guide to the Power of `hue` in Seaborn Visualizations](https://www.byteli.com/post/datascience/hue-in-seaborn/)。
+这周主要学了 [seaborn](https://seaborn.pydata.org/) ，并写了一篇博客 [Data Visualization: `hue` in Seaborn](https://www.byteli.com/blog/2024/hue-in-seaborn/)。
 
 这周还做了 DataCamp 上 Visualizing the History of Nobel Prize Winners 的项目，我惊讶于自己遗忘速度之快，很多基础的切片操作学完不用就忘记了，之后每日的代码练习还是需要继续。
 
@@ -73,4 +73,4 @@ description: '2024 年第 4 周的回顾与反思'
 
 - [google-indexing-script](https://github.com/goenning/google-indexing-script) 通过`Google Search Console API` 和 `Web Search Indexing API` ，读取网站 sitemap 并自动向 Google 推送尚未被收录的网址。作者在项目介绍中说 <br/> <blockquote> Use this script to get your entire site indexed on Google in less than 48 hours.</blockquote> <br/>我虽然严格按照作者的教程进行设置，但仍然发现作者漏掉了一些说明，之后准备写一篇博客补充下。
 
-- 在 [上一篇博客](https://www.byteli.com/post/life/weekly-reflection-week-3/) 中，当我尝试引用豆瓣读书的图片封面 url 时，发现豆瓣有防盗链设置，因此无法在我的网站上显示，经过简单的 Google， 发现可以使用 [weserv.nl](https://images.weserv.nl/) 的服务进行中转，绕开图片引用的限制。
+- 在 [上一篇博客](https://www.byteli.com/cn/blog/2024/weekly-reflection-week-3/) 中，当我尝试引用豆瓣读书的图片封面 url 时，发现豆瓣有防盗链设置，因此无法在我的网站上显示，经过简单的 Google， 发现可以使用 [weserv.nl](https://images.weserv.nl/) 的服务进行中转，绕开图片引用的限制。

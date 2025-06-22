@@ -73,7 +73,7 @@ heroImage: '../../../assets/images/Life/2024_01_13_WR24_2/cover.jpeg'
 
 ## 输出
 
-过去的一周，写了一篇 [weekly reflection](https://www.byteli.com/post/life/weekly-reflection-week-1/) 和 学习的文章 [Exploring CDF vs PPF in SciPy: Understanding Probability Functions](https://www.byteli.com/post/datascience/cdf-and-ppf-in-in-scipy/)，虽然写的过程充满了逐渐拾起表达能力的不适感，在好久没有写作之后，有这样的开始自己感觉还是很满意。
+过去的一周，写了一篇 [weekly reflection](https://www.byteli.com/cn/blog/2024/weekly-reflection-week-1/) 和 学习的文章 [Exploring CDF vs PPF in SciPy: Understanding Probability Functions](https://www.byteli.com/blog/2024/cdf-and-ppf-in-in-scipy/)，虽然写的过程充满了逐渐拾起表达能力的不适感，在好久没有写作之后，有这样的开始自己感觉还是很满意。
 
 在写文章的过程中，发现目前自己博客网站使用的[模版](https://github.com/danielcgilibert/blog-template)，竟然不支持 Math typesetting，于是研究了一下午，将 [Katex](https://katex.org/) 集成到了网站中。
 

@@ -19,7 +19,7 @@ description: '2025 年第 3 周的回顾与反思'
 
 ## 跑向深蓝
 
-时隔一个月，这周二我又出门跑了步，也是 2025 年的第一次跑步。翻看去年的 [Weekly Reflection 24#2: 强风吹拂](https://www.byteli.com/post/life/weekly-reflection-week-2/)，当时自己是在新年第二周跑的步，自己这次的动机和去年类似：外面的阳光就是一个无法拒绝的邀请，虽然温暖的屋内确实 cozy，但是想到屋外冷鲜的空气和延展的道路，就感觉到某种召唤。
+时隔一个月，这周二我又出门跑了步，也是 2025 年的第一次跑步。翻看去年的 [Weekly Reflection 24#2: 强风吹拂](https://www.byteli.com/cn/blog/2024/weekly-reflection-week-2/)，当时自己是在新年第二周跑的步，自己这次的动机和去年类似：外面的阳光就是一个无法拒绝的邀请，虽然温暖的屋内确实 cozy，但是想到屋外冷鲜的空气和延展的道路，就感觉到某种召唤。
 
 这次跑步时，在 1km 处时就感觉左腿膝盖外侧的韧带有些疼痛，但是自己但是没有太在意，以为是太久没有跑步身体没适应，在跑步的后半段，这种疼痛确实有所缓解，自己于是继续跑完了 5 km。在跑完步后，我发现自己现在的配速和多年前的还是差不多，想到自己身体机能起码没有明显的下降，感觉还是很开心。在写这片 reflection 的时候，我又查了一下，发现自己膝盖处的疼痛，可能是外侧副韧带 (LCL) 有所拉伤，之后要进行下冰敷，缓解下炎症，顺便加强下下肢的肌肉，提升韧带的稳定性。感觉这也算是某种提醒，一是告诉自己要更加注重身体，尤其是异常信号的反馈，另一方面是珍惜健康的生活，自己终有一天无法再自由地奔跑，所以享受跑步的当下。
 
@@ -31,7 +31,7 @@ description: '2025 年第 3 周的回顾与反思'
 
 ## Home Lab on Raspberry Pi
 
-在 Reddit [selfhosted](https://www.reddit.com/r/selfhosted/) 和 [homelab](https://www.reddit.com/r/homelab/) 两个板块的影响下，我重新运行了放在角落很久的 Raspberry Pi，准备搭建一个 tiny home lab，更具体的原因我写在了 [Why I Built a Home Lab](https://www.byteli.com/post/life/why_i_need_a_home_lab/)。
+在 Reddit [selfhosted](https://www.reddit.com/r/selfhosted/) 和 [homelab](https://www.reddit.com/r/homelab/) 两个板块的影响下，我重新运行了放在角落很久的 Raspberry Pi，准备搭建一个 tiny home lab，更具体的原因我写在了 [Why I Built a Home Lab](https://www.byteli.com/blog/2025/why_i_built_a_home_lab/)。
 
 具体的搭建过程比想象中要容易很多，除了在用 SSH 连接时一直出现账户的错误，后来换了一个用户名就可以了，我猜测可能是自己用了一个和系统文件夹名字相同的用户名。之后安装 Node.js，做了一个简单的页面，配置了下内网访问，就可以访问了。
 
