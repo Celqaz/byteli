@@ -1,4 +1,4 @@
-baseURL = 'https://byteli.com/'
+baseURL = 'https://www.byteli.com/'
 
 theme = "hugo-bearcub"
 
