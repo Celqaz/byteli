@@ -1,9 +1,20 @@
 {
   "build": {
-    "env": {
-      "HUGO_VERSION": "0.147.3",
-      "GO_VERSION": "1.24.0"
-    }
+    "env": { "HUGO_VERSION": "0.147.3", "GO_VERSION": "1.24.0" }
   },
-  "buildCommand": "hugo --gc --minify"
+  "buildCommand": "hugo --gc --minify",
+  "headers": [
+    {
+      "source": "/sitemap.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/xml" }]
+    },
+    {
+      "source": "/en/sitemap.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/xml" }]
+    },
+    {
+      "source": "/cn/sitemap.xml",
+      "headers": [{ "key": "Content-Type", "value": "application/xml" }]
+    }
+  ]
 }
