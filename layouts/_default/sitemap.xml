@@ -3,10 +3,12 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.w3.org/TR/xhtml11/xhtml11_schema.html http://www.w3.org/2002/08/xhtml/xhtml1-strict.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/TR/xhtml11/xhtml11_schema.html">
-    {{ range .Site.RegularPages -}}
+    {{ range .Site.RegularPages }}
+    {{- if and (not .Params.noindex) (ne .Date.Year 1) }}
     <url>
         <loc>{{ .Permalink }}</loc>
-        <lastmod>{{ .Date.Format "2006-01-02T15:04:05-07:00" }}</lastmod>
+        <lastmod>{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
     </url>
-    {{ end -}}
+    {{- end }}
+    {{ end }}
 </urlset>
