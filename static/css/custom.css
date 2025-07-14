@@ -1,7 +1,8 @@
 @import url('https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css');
 
 body {
-    font-family: Verdana, "LXGW WenKai Screen", sans-serif;
+    /*font-family: Verdana, "LXGW WenKai Screen", sans-serif;*/
+    font-family: monospace, "LXGW WenKai Screen", sans-serif;
     /*font-size: 16px;*/
 }
 .tag-list {
