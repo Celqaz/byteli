@@ -5,6 +5,7 @@ body {
     font-family: monospace, "LXGW WenKai Screen", sans-serif;
     /*font-size: 16px;*/
 }
+
 .tag-list {
     list-style: none;
     padding: 0;
@@ -35,4 +36,15 @@ hr {
 
 figure img {
     border-radius: 1%;
+}
+
+/*h1{*/
+/*    color:#87CEFA;*/
+/*}*/
+h2{
+    color: #DDA78C;
+}
+
+h3{
+    color: #9ADD8C;
 }
