@@ -6,6 +6,9 @@ cover: 'img/cover.jpg'
 description: '我在荷兰学帆船'
 ---
 
+{{< spotify "https://open.spotify.com/embed/track/7taDBUREJAT5h9HwhyiZnH" >}}
+
+
 一个月前，当熊小花从公司的帆船活动中回来后，就一直给我安利帆船这项运动，我因为从没有体验过，就也想尝试一下，毕竟航行这件事，对人总是有莫名地吸引力，更别说是全手动操控。于是我们上周一起请了年假，到荷兰北部的 Sneek 开始了 3 天的乘风破浪。
 
 ## 风的手感
