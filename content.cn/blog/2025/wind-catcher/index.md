@@ -12,7 +12,7 @@ description: '我在荷兰学帆船'
 
 Dick 是我们第一天的教练。他十几岁学会了帆船后就一直享受这项运动，如今已经头发近乎花白的他，他的眼睛藏在帽子的阴影中，平常话不多，但是笑起来的时候，又有深深的笑纹，只是不知道这些痕迹，是因为岁月，还是因为劲风。
 
-{{< cus_pic src="img/kielboot_day1.jpg" height="800px" alt="ready for sailing" caption="准备出发的帆船" >}}
+{{< cus_pic src="img/kielboot_day1.jpg" width="500px" alt="ready for sailing" caption="准备出发的帆船" >}}
 
 
 文学和影视总是展现帆船的自由，但是却跳过了扬帆之前众多繁琐但必要的细节，而打绳结就是其中最重要的一项。我们早上 8:30 开始整船理线，Dick 首先教了我们用 Cleat Hitch 将绳索牢牢固定在系缆栓上，在多次尝试后，我也可以单手打结了。我们用船篙和船桨将船推出港，然后停在岸边芦苇丛前解开了收起的主帆和三角帆，我在船头向下一点点拉主帆的绳索，风从侧面吹动着一点点向上展开的船帆，发出像海浪一样的拍击声。随着船帆逐渐紧绷，上方的声音的节奏逐渐消失，取而代之的是帆船侧面移动摩擦芦苇的细小声音，待 Dick 确认了绳索的安全性和主帆的高度后，我们用木棍将自己推离岸边，才开始了航行。
@@ -21,7 +21,7 @@ Dick 是我们第一天的教练。他十几岁学会了帆船后就一直享受
 
 我们行驶到湖中，将主帆和三角帆开向不同的方向，调整船舵抵消帆的动力，停在了原地，然后 Dick 拿出了杯子，我们在湖上风中，享受了一杯特别的咖啡。
 
-{{< cus_pic src="img/coffee_in_kielboot.jpg" height="800px" alt="coffee_in_kielboot" caption="船上咖啡" >}}
+{{< cus_pic src="img/coffee_in_kielboot.jpg" width="500px" alt="coffee_in_kielboot" caption="船上咖啡" >}}
 
 ## Perfect Blue
 
@@ -65,7 +65,7 @@ Dick 此时也已经完成了对我们进度的评定，告诉我们已经通过
 不过在这个时候，这个证书也只是锦上添花，我们两个在这三天发现了一个我们都很喜欢而且还有些擅长的运动，让我们之后在假日中有了更多的选择。对我而言，最大的不同是自己曾经迟钝的感官都被激活了，身体的感官都逐渐打开去捕捉自由的风并感受真实的当下，接着用着自航海时代一直传承的简单物理和几何，去理解天气、风向和变化，然后驱动着这艘小船直挂云帆、长风破浪，甚至像风一样自由。
 
 
-{{< cus_pic src="img/sailing_together.jpg" height="800px" alt="sailing_together">}}
+{{< cus_pic src="img/sailing_together.jpg" width="500px" alt="sailing_together">}}
 
 
 

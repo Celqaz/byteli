@@ -1,0 +1,11 @@
+<figure class="hugo-figure">
+    <img src="{{ .Get "src" }}"
+    {{ with .Get "alt" }}alt="{{ . }}"{{ end }}
+    style="
+    {{ with .Get "width" }}width:{{ . }};{{ end }}
+    {{ with .Get "height" }}height:{{ . }};{{ else }}height:auto;{{ end }}
+    ">
+    {{ with .Get "caption" }}
+    <figcaption>{{ . }}</figcaption>
+    {{ end }}
+</figure>
