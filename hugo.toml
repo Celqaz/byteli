@@ -2,7 +2,7 @@ baseURL = 'https://www.byteli.com/'
 
 theme = "hugo-bearcub"
 
-copyright = "Byteli (CC BY 4.0)"
+copyright = "Byteli (CC BY-NC 4.0)"
 defaultContentLanguage = "en"
 
 # Generate a nice robots.txt for SEO
