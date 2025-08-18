@@ -13,6 +13,14 @@
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
 
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+  <meta property="og:image" content="{{ .Permalink }}{{ .Params.cover }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+
   <!--  canonicalUrl-->
   {{ if .Params.canonicalUrl }}
   <link rel="canonical" href="{{ .Params.canonicalUrl }}" />

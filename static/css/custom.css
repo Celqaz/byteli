@@ -43,8 +43,40 @@ figure img {
 /*}*/
 h2{
     color: #DDA78C;
+    /*font-weight: bold;*/
 }
 
 h3{
     color: #9ADD8C;
+    /*# bold text*/
+    /*font-weight: bold;*/
 }
+
+.blog_pic_portrait img{
+    /*width: auto;*/
+    /*height: 20%;*/
+    /*border-radius: 10px;*/
+}
+
+
+/* 让 figure 居中对齐 */
+.hugo-figure {
+    text-align: center;   /* caption 居中 */
+    margin: 1em auto;     /* 整个 figure 居中，并加点上下间距 */
+}
+
+/* 让图片在容器中水平居中 */
+.hugo-figure img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* caption 美化一下 */
+.hugo-figure figcaption {
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    color: #666;
+}
+
+
