@@ -2,7 +2,7 @@
 title: '捕风记'
 tags: ['the moment']
 pubDate: '2025-08-18'
-cover: 'img/cover.png'
+cover: 'img/cover.jpg'
 description: '我在荷兰学帆船'
 ---
 
