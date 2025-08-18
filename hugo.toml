@@ -51,7 +51,7 @@ enableRobotsTXT = true
   # to your site. Ignored if `generateSocialCard = true`. For more information
   # about previews, see https://gohugo.io/templates/internal#twitter-cards and
   # https://gohugo.io/templates/internal#open-graph
-  images = ["images/share.webp"]
+  # images = ["images/share.webp"]
 
   # This title is used as the site_name on the Hugo's internal opengraph
   # structured data template
@@ -80,8 +80,8 @@ enableRobotsTXT = true
 
   # Social media. Delete any item you aren't using to make sure it won't show up
   # in your website's metadata.
-    [params.social]
-     twitter = "example" # Twitter handle (without '@')
+  #  [params.social]
+  #   twitter = "example" # Twitter handle (without '@')
   #   facebook_admin = "0000000000" # Facebook Page Admin ID
 
   # Author metadata. This is mostly used for the RSS feed of your site, but the
