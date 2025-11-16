@@ -25,8 +25,6 @@ Create a service account [here](https://console.cloud.google.com/iam-admin/servi
 
 Then click the service account we just created, and go to the `Keys` panel to create a new key.
 
-## <img src={generateKey.src} alt='Generate a key' />
-
 ![Generate a key](generate_key_2.png)
 
 ![Download the key](download_key.png)

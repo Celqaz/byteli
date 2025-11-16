@@ -19,7 +19,14 @@ enableRobotsTXT = true
     # to people with poor eyesight. For more information about color contrast
     # and accessibility, see https://web.dev/color-and-contrast-accessibility/
     noClasses = false
-
+  [markup.goldmark.renderer]
+    hardWraps = false
+    unsafe = true
+    xhtml = false
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 # Multilingual mode config. More for information about how to setup translation,
 # see https://gohugo.io/content-management/multilingual/
 [languages]
