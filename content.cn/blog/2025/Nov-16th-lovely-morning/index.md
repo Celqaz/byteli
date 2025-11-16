@@ -1,7 +1,7 @@
 ---
 title: 'Nov 16th,2025 美好的清晨'
 tags: ['carpe diem']
-pubDate: '2025-07-13'
+pubDate: '2025-11-16'
 description: 'Nov 16th,2025 美好的清晨'
 ---
 
