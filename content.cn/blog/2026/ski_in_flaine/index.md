@@ -4,6 +4,7 @@ tags: ['余生皆假期']
 cover: 'img/cover_m.jpg'
 pubDate: '2026-03-21T18:41:27+01:00'
 description: '在滑雪假期临近尾声的时候，我也站到了勃朗峰前。'
+canonicalUrl: 'https://www.byteli.com/cn/blog/2026/ski_in_flaine/?v=3'
 ---
 
 {{< spotify "https://open.spotify.com/embed/track/3pjpoLfDjGWgCXNl5Ybhkh" >}}
