@@ -8,8 +8,6 @@ description: '在滑雪假期临近尾声的时候，我也站到了勃朗峰前
 
 {{< spotify "https://open.spotify.com/embed/track/3pjpoLfDjGWgCXNl5Ybhkh" >}}
 
-# Flaine 一周
-
 在滑雪假期临近尾声的时候，我也站到了勃朗峰前。
 {{< figure src="img/Mont_Blanc.jpg" caption="勃朗峰" class="hugo-figure">}}
 
