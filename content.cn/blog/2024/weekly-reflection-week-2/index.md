@@ -4,7 +4,7 @@ tags: ['Weekly Reflection']
 pubDate: '2024-01-15T15:37:27.000'
 description: '2024 年第 2 周的回顾与反思'
 category: 'Life'
-heroImage: '../../../assets/images/Life/2024_01_13_WR24_2/cover.jpeg'
+heroImage: '../../../assets/images/Life/2024_01_13_WR24_2/cover.jpg'
 ---
 
 ![窗外日落](cover.jpeg)
