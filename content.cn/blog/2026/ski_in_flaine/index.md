@@ -1,7 +1,7 @@
 ---
 title: '在 Flaine 的一周滑雪'
 tags: ['余生皆假期']
-cover: 'img/cover_ski.jpg'
+cover: 'img/cover_ski_2.jpg'
 pubDate: '2026-03-21T18:41:27+01:00'
 description: '在滑雪假期临近尾声的时候，我也站到了勃朗峰前。'
 ---

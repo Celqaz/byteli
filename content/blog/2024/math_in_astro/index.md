@@ -3,7 +3,7 @@ title: 'Math Typesetting in Astro .mdx: Using remark-math & rehype-katex'
 description: 'Learn how to enable math typesetting in Astro .mdx files using remark-math and rehype-katex. Enhance technical content with beautiful mathematical expressions.'
 pubDate: '2024-01-17T11:18:10.000'
 category: 'Web Dev'
-heroImage: '../../../assets/images/WebDev/24_01_17_astro_math_typesetting/cover.jpg'
+heroImage: '../../../assets/images/WebDev/24_01_17_astro_math_typesetting/cover_ski_2.jpg'
 tags: ['Frontend', 'Astro']
 ---
 
