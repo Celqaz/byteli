@@ -3,6 +3,7 @@ title: 'chess'
 tags: ['chess']
 pubDate: '2026-04-18T18:41:27+01:00'
 description: 'chess'
+draft: true
 ---
 
 <iframe src="https://lichess.org/embed/game/29BlgOdj?theme=auto&bg=auto#0"
