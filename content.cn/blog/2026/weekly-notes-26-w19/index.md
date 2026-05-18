@@ -8,7 +8,7 @@ description: '2026 年第 19 周的记录'
 {{< spotify "https://open.spotify.com/embed/track/0aWvHNZ36ZagH36grdZw59" >}}
 
 
-2026-05-03 - 2026-05-09
+`2026-05-03` - `2026-05-09`
 
 ## 重看《低俗小说》
 
