@@ -181,3 +181,72 @@ h3{
 }
 
 
+/* ===== Table of contents ===== */
+.toc .toc-head {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.35rem;
+    letter-spacing: 0.02em;
+}
+.toc ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.toc li {
+    margin: 0.2rem 0;
+}
+.toc ul ul {
+    padding-left: 1.1rem;
+}
+.toc a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(200, 209, 217, 0.4);
+}
+.toc a:hover {
+    color: #8cc2dd;
+}
+
+/* Mobile / narrow: inline, expanded, under the byline (or below a leading Spotify embed) */
+.toc-inline {
+    margin: 0 0 1.25rem;
+    padding: 0.6rem 1rem;
+    border: 1px dashed #4a5160;
+    border-radius: 8px;
+    background: rgba(127, 127, 127, 0.07);
+}
+
+/* Wide screens: fixed sidebar on the right */
+.toc-aside {
+    display: none;
+}
+@media (min-width: 1280px) {
+    .toc-inline {
+        display: none;
+    }
+    .toc-aside {
+        display: block;
+        position: fixed;
+        top: 1.5rem;
+        left: calc(50% + 385px); /* body is centered at 720px → starts 25px past its right edge */
+        width: 240px;
+        max-height: calc(100vh - 3rem);
+        overflow-y: auto;
+        box-sizing: border-box;
+        font-size: 0.85em;
+        border-left: 2px solid #4a5160;
+        padding-left: 0.9rem;
+    }
+    .toc-aside .toc-head {
+        font-size: 0.78em;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #8b949e;
+    }
+    .toc-aside ul ul {
+        padding-left: 0.9rem;
+    }
+}
+
+

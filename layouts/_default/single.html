@@ -1,4 +1,5 @@
 {{ define "main" }}
+{{ $hasToc := and (gt (len .TableOfContents) 0) (not .Params.hideToc) }}
 {{ if not .Params.menu }}
 <h1>{{ .Title }}</h1>
 <p class="byline">
@@ -9,8 +10,21 @@
 </p>
 {{ end }}
 <content>
+  {{- if $hasToc -}}
+  <nav id="toc-inline" class="toc toc-inline" aria-label="{{ i18n "toc-label" }}">
+    <span class="toc-head">{{ i18n "toc-label" }}</span>
+    {{ .TableOfContents }}
+  </nav>
+  {{- end -}}
   {{ .Content }}
 </content>
+
+{{- if $hasToc -}}
+<aside id="toc-aside" class="toc toc-aside" aria-label="{{ i18n "toc-label" }}">
+  <span class="toc-head">{{ i18n "toc-label" }}</span>
+  {{ replaceRE `id="TableOfContents"` "" .TableOfContents | safeHTML }}
+</aside>
+{{- end -}}
 
 <p>
   {{ range (.GetTerms "tags") }}
@@ -25,5 +39,8 @@
   {{ partial "contact_form.html" $ }}
 </details>
 {{ end }}
+{{ end }}
+{{ if $hasToc }}
+<script src="/js/toc.js" defer></script>
 {{ end }}
 {{ end }}

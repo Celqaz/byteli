@@ -7,6 +7,9 @@
 
 [contact-send]
   other = "Send message"
+
+[toc-label]
+  other = "Contents"
 [reply-sending]
   other = "Sending…"
 [reply-success]

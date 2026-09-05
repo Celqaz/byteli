@@ -13,6 +13,9 @@
 
 [contact-send]
   other = "发送留言"
+
+[toc-label]
+  other = "目录"
 [reply-sending]
   other = "发送中…"
 [reply-success]
