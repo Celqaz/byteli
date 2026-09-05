@@ -22,31 +22,8 @@
 {{ with .Site.Params.author.email }}
 <details class="post-reply">
   <summary>{{ i18n "email-reply" }} ↪</summary>
-  <form class="reply-form" action="/api/contact" method="post"
-        data-title="{{ $.Title }}"
-        data-url="{{ $.Permalink }}"
-        data-success="{{ i18n "reply-success" }}"
-        data-error="{{ i18n "reply-error" }}"
-        data-sending="{{ i18n "reply-sending" }}">
-    <label class="reply-field">
-      <span>{{ i18n "reply-email" }}</span>
-      <input type="email" name="email" autocomplete="email" maxlength="200" required>
-    </label>
-    <label class="reply-field">
-      <span>{{ i18n "reply-message" }}</span>
-      <textarea name="message" rows="6" maxlength="5000" required></textarea>
-    </label>
-    <p class="reply-hp" hidden aria-hidden="true">
-      <label>Leave this field empty<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
-    </p>
-    <p class="reply-status" role="status" aria-live="polite"></p>
-    <p class="reply-actions">
-      <button type="submit">{{ i18n "reply-send" }}</button>
-      <span class="reply-direct">{{ i18n "reply-fallback" }} <a href='mailto:{{ . }}?subject={{ i18n "email-subject" }}"{{ default $.Site.Title $.Page.Title }}"'>{{ . }}</a></span>
-    </p>
-  </form>
+  {{ partial "contact_form.html" $ }}
 </details>
-<script src="/js/reply.js" defer></script>
 {{ end }}
 {{ end }}
 {{ end }}
