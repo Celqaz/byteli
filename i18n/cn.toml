@@ -1,0 +1,5 @@
+[email-subject]
+  other = "回复："
+
+[email-reply]
+  other = "通过邮件回复本文"
