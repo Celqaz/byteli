@@ -181,6 +181,69 @@ h3{
 }
 
 
+/* ===== Home (index) ===== */
+.home-intro {
+    text-align: center;
+    color: #8b949e;
+    margin: 0 0 2.6rem;
+    font-size: 1.05em;
+    line-height: 1.7;
+}
+.home-posts {
+    list-style: none;
+    margin: 3rem 0 0;
+    padding: 0;
+}
+.home-year {
+    margin: 0 0 2.6rem;
+}
+.home-year-label {
+    font-size: 0.78em;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8b949e;
+    margin: 0 0 0.7rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(200, 209, 217, 0.16);
+}
+.home-year-posts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.home-post {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.34rem 0;
+}
+.home-post-date {
+    flex: 0 0 3.4rem;
+    font-family: monospace, sans-serif;
+    font-size: 0.85em;
+    color: #8b949e;
+    white-space: nowrap;
+}
+.home-post-title {
+    color: #c9d1d9;
+    text-decoration: none;
+    font-size: 1.02em;
+    line-height: 1.6;
+    transition: color 0.18s ease;
+}
+.home-post-title:hover {
+    color: #8cc2dd;
+}
+@media (max-width: 560px) {
+    .home-intro {
+        text-align: left;
+    }
+    .home-post-date {
+        flex-basis: 3rem;
+    }
+}
+
 /* ===== Table of contents ===== */
 .toc .toc-head {
     display: block;
