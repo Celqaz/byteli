@@ -1,4 +1,6 @@
 {{ if .Site.Params.author.email }}
+{{ $sendLabel := i18n "reply-send" }}
+{{ if eq .Type "contact" }}{{ $sendLabel = i18n "contact-send" }}{{ end }}
 <form class="reply-form" action="/api/contact" method="post"
       data-title="{{ .Title }}"
       data-url="{{ .Permalink }}"
@@ -18,7 +20,7 @@
   </p>
   <p class="reply-status" role="status" aria-live="polite"></p>
   <p class="reply-actions">
-    <button type="submit">{{ i18n "reply-send" }}</button>
+    <button type="submit">{{ $sendLabel }}</button>
     <span class="reply-direct">{{ i18n "reply-fallback" }} <a href='mailto:{{ .Site.Params.author.email }}?subject={{ i18n "email-subject" }}"{{ default .Site.Title .Title }}"'>{{ .Site.Params.author.email }}</a></span>
   </p>
 </form>

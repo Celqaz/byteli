@@ -5,6 +5,8 @@
   <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://cdn.staticfile.org" crossorigin>
+  <link rel="preconnect" href="https://cloud.umami.is" crossorigin>
   {{- partial "favicon.html" . -}}
   <!--  Umami Traffic Analyze -->
     {{- partial "umami.html" . -}}
@@ -13,19 +15,40 @@
   {{- partial "seo_tags.html" . -}}
   <meta name="referrer" content="no-referrer-when-downgrade" />
 
-  <!-- Open Graph -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="{{ .Title }}">
-  <meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
-  <meta property="og:image" content="{{ .Permalink }}{{ .Params.cover }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:site_name" content="{{ .Site.Title }}">
+  <!-- Social share image: post cover if present, else site default -->
+  {{ $ogImage := "" }}
+  {{ with .Params.cover }}
+    {{ if or (hasPrefix . "http://") (hasPrefix . "https://") (hasPrefix . "//") }}
+      {{ $ogImage = . }}
+    {{ else }}
+      {{ with ($.Page.Resources.GetMatch (strings.TrimPrefix "./" .)) }}
+        {{ $ogImage = .Permalink }}
+      {{ else }}
+        {{ $ogImage = printf "%s%s" $.Permalink . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ if not $ogImage }}
+    {{ $ogImage = (absURL "images/og-default.jpg") }}
+  {{ end }}
+  <meta property="og:image" content="{{ $ogImage }}">
+  <meta name="twitter:image" content="{{ $ogImage }}">
 
   <!--  canonicalUrl-->
   {{ if .Params.canonicalUrl }}
   <link rel="canonical" href="{{ .Params.canonicalUrl }}" />
   {{ else }}
   <link rel="canonical" href="{{ .Permalink }}" />
+  {{ end }}
+
+  <!-- hreflang language alternates -->
+  {{ $defaultLang := .Sites.Default.Language.Lang }}
+  <link rel="alternate" hreflang="{{ .Site.LanguageCode }}" href="{{ .Permalink }}" />
+  {{ range .Translations }}
+  <link rel="alternate" hreflang="{{ .Language.LanguageCode }}" href="{{ .Permalink }}" />
+  {{ end }}
+  {{ if eq .Site.Language.Lang $defaultLang }}
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
   {{ end }}
 
   {{ $style := print (default "original" .Site.Params.themeStyle) ".css" | resources.Get | minify }}
@@ -53,6 +76,10 @@
   {{ if or .Params.math .Site.Params.math }}
   {{ partial "math.html" . }}
   {{ end }}
+
+  <!-- LXGW WenKai Screen webfont (loaded non-blocking) -->
+  <link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdn.staticfile.org/lxgw-wenkai-screen-webfont/1.6.0/lxgwwenkaiscreen.css"></noscript>
   <link rel="stylesheet" href="/css/custom.css"/>
 </head>
 

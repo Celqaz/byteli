@@ -1,0 +1,27 @@
+{{- /* Markdown image render hook: optimize local raster images to WebP, lazy-load everything. */ -}}
+{{- $dst := .Destination -}}
+{{- $alt := .Text | default .Title | plainify -}}
+{{- $title := .Title -}}
+{{- $isRemote := or (hasPrefix $dst "http://") (hasPrefix $dst "https://") (hasPrefix $dst "//") -}}
+
+{{- if and (not $isRemote) (ne $dst "") -}}
+  {{- $name := strings.TrimPrefix "./" $dst -}}
+  {{- $res := .Page.Resources.GetMatch $name -}}
+  {{- $convertible := in (slice "jpeg" "png" "webp") (lower (default "" $res.MediaType.SubType)) -}}
+  {{- if and $res (eq $res.ResourceType "image") $convertible -}}
+    {{- $q := "q82" }}
+    {{- if eq $res.MediaType.SubType "png" }}{{ $q = "q90" }}{{ end -}}
+    {{- $maxW := 1600 -}}
+    {{- $proc := $res -}}
+    {{- if gt $res.Width $maxW -}}
+      {{- $proc = $res.Resize (printf "%dx webp %s" $maxW $q) -}}
+    {{- else -}}
+      {{- $proc = $res.Resize (printf "%dx webp %s" $res.Width $q) -}}
+    {{- end -}}
+    <img src="{{ $proc.RelPermalink }}" alt="{{ $alt }}" width="{{ $proc.Width }}" height="{{ $proc.Height }}" loading="lazy" decoding="async"{{ with $title }} title="{{ . }}"{{ end }}>
+  {{- else -}}
+    <img src="{{ $dst | safeURL }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ with $title }} title="{{ . }}"{{ end }}>
+  {{- end -}}
+{{- else -}}
+  <img src="{{ $dst | safeURL }}" alt="{{ $alt }}" loading="lazy" decoding="async"{{ with $title }} title="{{ . }}"{{ end }}>
+{{- end -}}

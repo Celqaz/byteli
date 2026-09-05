@@ -1,11 +1,30 @@
+{{- /* Image figure shortcode with Hugo image optimization (WebP + lazy). */ -}}
+{{- $src := .Get "src" | default "" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $cap := .Get "caption" -}}
+{{- $style := "height:auto;" }}
+{{- with .Get "width" }}{{ $style = printf "width:%s;height:auto;" . }}{{ end -}}
 <figure class="hugo-figure">
-    <img src="{{ .Get "src" }}"
-    {{ with .Get "alt" }}alt="{{ . }}"{{ end }}
-    style="
-    {{ with .Get "width" }}width:{{ . }};{{ end }}
-    {{ with .Get "height" }}height:{{ . }};{{ else }}height:auto;{{ end }}
-    ">
-    {{ with .Get "caption" }}
-    <figcaption>{{ . }}</figcaption>
-    {{ end }}
+  {{- if ne $src "" -}}
+    {{- $name := strings.TrimPrefix "./" $src -}}
+    {{- $res := .Page.Resources.GetMatch $name -}}
+    {{- $convertible := in (slice "jpeg" "png" "webp") (lower (default "" $res.MediaType.SubType)) -}}
+    {{- if and $res (eq $res.ResourceType "image") $convertible -}}
+      {{- $q := "q82" }}
+      {{- if eq $res.MediaType.SubType "png" }}{{ $q = "q90" }}{{ end -}}
+      {{- $maxW := 1600 -}}
+      {{- $proc := $res -}}
+      {{- if gt $res.Width $maxW -}}
+        {{- $proc = $res.Resize (printf "%dx webp %s" $maxW $q) -}}
+      {{- else -}}
+        {{- $proc = $res.Resize (printf "%dx webp %s" $res.Width $q) -}}
+      {{- end -}}
+      <img src="{{ $proc.RelPermalink }}" alt="{{ $alt }}" width="{{ $proc.Width }}" height="{{ $proc.Height }}" loading="lazy" decoding="async" style="{{ $style | safeCSS }}">
+    {{- else -}}
+      <img src="{{ $src }}" alt="{{ $alt }}" loading="lazy" decoding="async" style="{{ $style | safeCSS }}">
+    {{- end -}}
+  {{- end -}}
+  {{- with $cap -}}
+  <figcaption>{{ . }}</figcaption>
+  {{- end -}}
 </figure>

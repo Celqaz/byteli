@@ -4,6 +4,9 @@
   other = "Message"
 [reply-send]
   other = "Send reply"
+
+[contact-send]
+  other = "Send message"
 [reply-sending]
   other = "Sending…"
 [reply-success]

@@ -10,6 +10,9 @@
   other = "内容"
 [reply-send]
   other = "发送回复"
+
+[contact-send]
+  other = "发送留言"
 [reply-sending]
   other = "发送中…"
 [reply-success]
