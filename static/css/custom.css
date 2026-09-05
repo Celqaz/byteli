@@ -390,4 +390,39 @@ blockquote { color: var(--gb-fg2); border-left-color: var(--gb-bg3); }
 .reply-actions button:hover { background: rgba(60, 56, 54, 0.6); }
 .reply-direct { color: var(--gb-fg3); }
 
+/* ===== Click-to-zoom lightbox ===== */
+content img,
+.hugo-figure img {
+    cursor: zoom-in;
+}
+.zoom-lock {
+    overflow: hidden;
+}
+.zoom-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh;
+    background: rgba(20, 21, 22, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.18s ease, visibility 0.18s ease;
+}
+.zoom-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+.zoom-overlay img {
+    max-width: 96vw;
+    max-height: 96vh;
+    object-fit: contain;
+    border-radius: 4px;
+    cursor: zoom-out;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.55);
+}
+
+
 
