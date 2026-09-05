@@ -1,0 +1,14 @@
+[reply-email]
+  other = "Email"
+[reply-message]
+  other = "Message"
+[reply-send]
+  other = "Send reply"
+[reply-sending]
+  other = "Sending…"
+[reply-success]
+  other = "Thanks — your reply is on its way!"
+[reply-error]
+  other = "Sorry, something went wrong. Please try again or email me directly."
+[reply-fallback]
+  other = "Prefer your email app?"

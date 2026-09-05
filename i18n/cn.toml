@@ -3,3 +3,18 @@
 
 [email-reply]
   other = "通过邮件回复本文"
+
+[reply-email]
+  other = "邮箱"
+[reply-message]
+  other = "内容"
+[reply-send]
+  other = "发送回复"
+[reply-sending]
+  other = "发送中…"
+[reply-success]
+  other = "谢谢，回复已发出！"
+[reply-error]
+  other = "抱歉出错了，请重试，或直接给我发邮件。"
+[reply-fallback]
+  other = "想用邮箱应用直接发送？"

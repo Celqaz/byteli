@@ -80,3 +80,99 @@ h3{
 }
 
 
+/* ===== Inline "reply to this post" form ===== */
+.post-reply {
+    margin-top: 0.5rem;
+}
+.post-reply summary {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    color: #666;
+    font-size: 0.95em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 0.35rem 0.7rem;
+    transition: color 0.15s ease, border-color 0.15s ease;
+}
+.post-reply summary:hover {
+    color: #000;
+    border-color: #888;
+}
+
+.reply-form {
+    margin-top: 0.75rem;
+    padding: 1rem 1.1rem;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    max-width: 34rem;
+    display: grid;
+    gap: 0.8rem;
+}
+.reply-field {
+    display: grid;
+    gap: 0.25rem;
+    font-size: 0.9em;
+}
+.reply-field em {
+    font-style: normal;
+    opacity: 0.6;
+    font-size: 0.85em;
+}
+.reply-field input,
+.reply-field textarea {
+    font: inherit;
+    padding: 0.45rem 0.55rem;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    background: #fff;
+    color: #1c1c1c;
+    width: 100%;
+    box-sizing: border-box;
+}
+.reply-field textarea {
+    resize: vertical;
+}
+.reply-hp {
+    display: none;
+}
+.reply-status {
+    margin: 0;
+    font-size: 0.9em;
+    min-height: 1.2em;
+}
+.reply-status.success {
+    color: #2e7d32;
+}
+.reply-status.error {
+    color: #c62828;
+}
+.reply-actions {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+}
+.reply-actions button {
+    font: inherit;
+    cursor: pointer;
+    border: 1px solid #888;
+    border-radius: 6px;
+    background: transparent;
+    color: inherit;
+    padding: 0.35rem 0.9rem;
+}
+.reply-actions button:hover {
+    background: rgba(127, 127, 127, 0.12);
+}
+.reply-actions button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+.reply-direct {
+    font-size: 0.85em;
+    opacity: 0.8;
+}
+
+
